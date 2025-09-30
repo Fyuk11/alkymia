@@ -1,13 +1,20 @@
-/* main.css */
-@import "variables.css";    /* VARIABLES */
-@import "reset.css";        /* RESET / BASE */
+/* main.css *
+@import "variables.css";    /* VARIABLES *
+@import "reset.css";        /* RESET / BASE 
 @import "container.css";    /* CONTAINER */
+@import "branding.css"; /* BRANDING */
 @import "nav.css";          /* NAV y burger */
 @import "hero.css";         /* HERO */
+@import "hero-alkymia.css"; /* HERO ALKYMIA */
+@import "pain.css"; /* PAIN */
+@import "resources.css"; /* RESOURCS */
 @import "benefits.css";     /* BENEFITS */
 @import "section-divider.css"; /* SECTION DIVIDER */
 @import "steps.css";        /* STEPS */
-@import "about.css";        /* ABOUT */
+@import "about.css";        /* ABOUT alk */
+@import "portfolio.css"; /* PORTFOLIO alk */
+@import "works.css"; /* works */
+@import "downloads.css"; /* downloads */
 @import "faqs.css"; /* FAQS */
 @import "testimonials.css"; /* TESTIMONIALS */
 @import "cta-video.css";    /* CTA VIDEO */

@@ -1,0 +1,16 @@
+<section class="downloads" id="downloads">
+  <div class="container">
+    <h2 class="section-title animate-on-scroll">Recursos Descargables</h2>
+    <p class="section-subtitle animate-on-scroll">Guías y materiales para tu camino alquímico</p>
+
+    <div class="downloads-list">
+      {% for file in section_data.files %}
+        <a href="{{ file.url }}" class="download-card fade-up animate-on-scroll" download>
+          <h3>{{ file.title }}</h3>
+          <p>{{ file.description }}</p>
+          <span class="btn-download">Descargar PDF</span>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

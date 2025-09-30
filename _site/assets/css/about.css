@@ -1,125 +1,170 @@
-/* =======================
-   About Section Premium
-======================= */
+/* ============================================
+   ABOUT SECTION
+   Sección "Sobre Nosotros" con layout
+   de 2 columnas (imagen + contenido)
+   ============================================ */
+
 .about {
-  padding: 120px 40px; /* más aire */
-  background: linear-gradient(135deg, #f7f7f8 0%, #e4e6eb 50%, #fdfdfd 100%);
-  position: relative;
-  overflow: hidden;
+  padding: var(--space-24) 0;
+  background-color: var(--color-white);
 }
 
-/* grid más amplio */
+/* ========== GRID LAYOUT ========== */
+
 .about__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: var(--space-12);
   align-items: center;
+  max-width: 72rem;
+  margin: 0 auto;
 }
 
-/* textos con fade-in */
-.about__content {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.about__content.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.about__content h2 {
-  font-size: 2.4rem;
-  margin-bottom: 1.2rem;
-  color: #1a1a1a;
-  font-weight: 700;
-}
-
-.about__content p {
-  font-size: 1.2rem;
-  color: #444;
-  margin-bottom: 1.2rem;
-  line-height: 1.6;
-}
-
-/* slideshow con efecto fade+slide */
-.about__slideshow {
-  position: relative;
-  overflow: hidden;
-  border-radius: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 480px;
-  background: #fff;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-}
-
-.slideshow {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  left: 100%; /* todas empiezan fuera a la derecha */
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease, left 1s ease;
-  z-index: 0;
-}
-
-.slide.active {
-  left: 0;
-  opacity: 1;
-  z-index: 1;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: center;
-  border-radius: 14px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
+@media (min-width: 1024px) {
   .about__grid {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 2rem;
-  }
-  .about__slideshow {
-    height: 280px;
-  }
-  .about__content h2 {
-    font-size: 1.8rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 480px) {
-  .about__slideshow {
-    height: 220px;
-  }
-  .about__content h2 {
-    font-size: 1.6rem;
-  }
-  .about__content p {
-    font-size: 1rem;
+/* ========== IMAGE SIDE ========== */
+
+.about__image-wrapper {
+  position: relative;
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+.about__image-container {
+  position: relative;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.about__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about__image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13, 27, 42, 0.2) 0%,
+    transparent 100%
+  );
+}
+
+/* ========== FLOATING CARD ========== */
+
+.about__floating-card {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1.5rem;
+  background-color: var(--color-white);
+  padding: var(--space-6);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-gold);
+  animation: float 3s ease-in-out infinite;
+}
+
+.about__floating-number {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-secondary);
+}
+
+.about__floating-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-600);
+}
+
+/* ========== CONTENT SIDE ========== */
+
+.about__content {
+  animation: fade-in 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.about__badge {
+  display: inline-block;
+  background-color: rgba(230, 57, 130, 0.1);
+  color: var(--color-secondary);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--space-6);
+}
+
+.about__title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-gray-900);
+  margin-bottom: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .about__title {
+    font-size: var(--font-size-5xl);
   }
 }
 
-/* 🖥️ Ultra wide */
-@media (min-width: 1920px) {
+.about__description {
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-gray-600);
+  margin-bottom: var(--space-6);
+}
+
+/* ========== BENEFITS LIST ========== */
+
+.about__benefits {
+  list-style: none;
+  margin: 0 0 var(--space-6) 0;
+  padding: 0;
+}
+
+.about__benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.about__benefit-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--color-secondary);
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.about__benefit-text {
+  font-size: var(--font-size-base);
+  color: var(--color-gray-900);
+}
+
+/* ========== CTA ========== */
+
+.about__cta {
+  padding-top: var(--space-4);
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 1023px) {
   .about {
-    padding: 140px 80px;
+    padding: var(--space-16) 0;
   }
-  .about__content h2 {
-    font-size: 2.8rem;
+
+  .about__floating-card {
+    bottom: 1rem;
+    right: 1rem;
+    padding: var(--space-4);
   }
-  .about__content p {
-    font-size: 1.4rem;
+
+  .about__title {
+    font-size: var(--font-size-3xl);
   }
 }

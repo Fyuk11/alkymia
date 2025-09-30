@@ -3,6 +3,7 @@ import { initScrollAnimations, initAboutAnimations, initContactParticles } from 
 import { initSlideshow } from "./slideshow.js";
 import { initFaqs } from './faqs.js';
 import { initContactForm } from "./form.js";
+import { initHeroAlkymia } from './hero-alkymia.js';
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initFaqs();
   initContactParticles();
   initContactForm();
+  initHeroAlkymia();   // <-- 🚀 acá lo llamás
 
 
   console.log("Landing loaded ✅");

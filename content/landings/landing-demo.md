@@ -31,6 +31,54 @@ sections:
       - text: Quiero mi página
         url: "#contact"
 
+  - type: hero-alkymia
+    title: "Alkymia: Transformamos Ideas en Realidad"
+    subtitle: "Un enfoque sobrio, claro y orientado a resultados."
+    background: "/assets/images/hero-alkymia.jpg"
+    ctas:
+      - text: "Descúbrenos"
+        url: "/contacto"
+
+  - type: portfolio
+    title: Nuestro trabajo
+    subtitle: Algunos de los proyectos destacados que hemos creado para nuestros clientes.
+    projects:
+     - title: Proyecto A
+       category: Branding
+       image: /assets/images/portfolio/proyecto-a.jpg
+     - title: Proyecto B
+       category: Diseño Web
+       image: /assets/images/portfolio/proyecto-b.jpg
+     - title: Proyecto C
+       category: E-commerce
+       image: /assets/images/portfolio/proyecto-c.jpg
+     - title: Proyecto D
+       category: App Móvil
+       image: /assets/images/portfolio/proyecto-d.jpg
+     - title: Proyecto E
+       category: Estrategia Digital
+       image: /assets/images/portfolio/proyecto-e.jpg
+     - title: Proyecto F
+       category: UI/UX
+       image: /assets/images/portfolio/proyecto-f.jpg
+
+
+  - type: about
+    badge: Sobre nosotros
+    title: Creamos experiencias digitales memorables
+    description: Nuestro equipo combina diseño, tecnología y estrategia para dar vida a proyectos digitales que impactan. Creemos en el poder de las ideas y en la ejecución impecable.
+    image: /assets/images/about/about-placeholder.jpg
+    floating:
+      number: +50
+      label: Proyectos entregados
+    benefits:
+      - Diseños modernos y funcionales
+      - Desarrollo ágil y optimizado
+      - Estrategias que generan resultados
+    cta:
+     text: Conversemos sobre tu proyecto
+     url: "#contact"
+
   - type: pain
     title: "¿Te sientes identificado con alguno de estos problemas?"
     subtitle: "No estás solo. Muchos emprendedores y marketers pasan por esto antes de encontrar una solución definitiva."
@@ -60,6 +108,24 @@ sections:
         title: Conexión inmediata
         text: Tu página habla por vos y enamora a tu audiencia.
 
+  - type: resources
+    title: Recursos digitales
+    subtitle: Guías prácticas para potenciar tu negocio online.
+    items:
+      - title: Guía de primeros pasos en Tiendanube
+        description: Aprende a montar tu tienda en menos de una semana.
+        image: /assets/images/resources/tiendanube-guide.png
+        gumroad_url: https://alkymia.gumroad.com/l/primeros-pasos
+        cta_text: Comprar ahora
+
+      - title: Checklist para tu landing page
+        description: Una lista rápida para que no te olvides de nada al lanzar.
+        image: /assets/images/resources/checklist-landing.png
+        download_url: /assets/pdfs/checklist-landing.pdf
+        cta_text: Descargar gratis
+
+
+
   - type: steps
     title: Proceso claro y humano
     steps:
@@ -86,22 +152,32 @@ sections:
         color: "#ff8a72"
         opacity: 0.6
 
-  - type: about
-    title: "Más que una landing: una herramienta de crecimiento"
-    text: >
-      Creamos sistemas vivos, diseñados para que tu negocio crezca con solidez y transparencia. 
-      Nuestras landings están optimizadas desde la base: velocidad, seguridad y diseño responsivo en todos los dispositivos.
 
-    extra_text: >
-      Podés actualizar textos, imágenes o secciones en minutos, sin conocimientos técnicos. 
-      Además, tenés acceso a estadísticas reales sobre cómo la gente encuentra tu negocio en la web. 
-      Y lo mejor: cada landing está pensada para ser escalable, para que tu presencia digital crezca al mismo ritmo que vos.
+  - type: works
+    title: "Nuestros Trabajos"
+    subtitle: "Transformamos ideas en experiencias digitales"
+    items:
+      - title: "Landing Energía Escalar"
+        description: "Sitio con animaciones y diseño minimalista."
+        image: /assets/images/work1.jpg
+      - title: "Academia Online"
+        description: "Plataforma educativa con pagos integrados."
+        image: /assets/images/work2.jpg
 
-    images:
-      - "/assets/images/about/cms.webp"         # Admin panel
-      - "/assets/images/about/googlesearch.webp"            # Google console
-      - "/assets/images/about/mockup.webp"          # Ejemplo real de landing
-     # - "/assets/images/about/mockup2.jpg"
+
+
+  - type: downloads
+    title: "Recursos Descargables"
+    subtitle: "Guías y herramientas para tu camino alquímico"
+    files:
+      - title: "Guía de Introducción a la Alquimia"
+        description: "Un PDF con fundamentos básicos."
+        url: "https://alkymia.gumroad.com/l/guia-alquimia" # Link Gumroad
+      - title: "Rituales Digitales"
+        description: "Manual práctico con ejercicios."
+        url: "https://alkymia.gumroad.com/l/rituales"
+
+
 
   - type: faqs
     title: Preguntas frecuentes

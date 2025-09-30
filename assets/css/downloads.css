@@ -1,0 +1,57 @@
+/* ============================
+   Downloads / PDFs
+   ============================ */
+
+.downloads {
+  background: var(--color-dark);
+  color: var(--color-light);
+}
+
+.downloads .section-title,
+.downloads .section-subtitle {
+  color: var(--color-light);
+}
+
+.downloads-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.download-card {
+  display: block;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.download-card h3 {
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+  margin-bottom: 10px;
+}
+
+.download-card p {
+  font-size: 1rem;
+  color: var(--color-light);
+  opacity: 0.85;
+  margin-bottom: 15px;
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-dark);
+  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+}
+
+.download-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.1);
+}

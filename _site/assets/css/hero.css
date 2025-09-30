@@ -33,7 +33,7 @@
 }
 .hero-fallback { 
   z-index: -5;
-  background: url('/assets/images/hero-fallback.png') center/cover no-repeat; 
+  background: url('/assets/images/placeholder.jpg') center/cover no-repeat; 
 }
 .hero-particles { z-index: -2; }
 

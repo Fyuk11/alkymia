@@ -1,0 +1,197 @@
+/* PAIN SECTION (Modo Premium con detalle rojo) - Mobile First */
+
+.pain {
+  position: relative;
+  padding: 4rem 1rem;
+  background: #f8f9fb;
+  overflow: hidden;
+}
+
+.pain::before,
+.pain::after {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.12;
+  filter: blur(60px);
+}
+
+.pain::before {
+  top: -80px;
+  left: -80px;
+  background: #dc3545;
+}
+
+.pain::after {
+  bottom: -80px;
+  right: -80px;
+  background: #007bff; /* opcional */
+}
+
+.pain .container {
+  position: relative;
+  z-index: 1;
+}
+
+.pain .section-header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.pain .section-header p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pain-points {
+  max-width: 100%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .pain-points {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pain-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pain-point:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.pain-point-icon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #ffe6e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #dc3545;
+  font-size: 1.1rem;
+}
+
+.pain-point-content h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.pain-point-content p {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* PAIN CTA (Transición elegante) */
+
+.pain-cta {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f9f9fb, #ffffff);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.pain-cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top left, rgba(220, 53, 69, 0.12), transparent 60%),
+              radial-gradient(circle at bottom right, rgba(0, 123, 255, 0.12), transparent 60%);
+  animation: bgMove 8s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+@keyframes bgMove {
+  from { transform: scale(1) translate(0,0); }
+  to   { transform: scale(1.1) translate(15px, -15px); }
+}
+
+.pain-cta p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #222;
+  margin-bottom: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.pain-cta .btn {
+  position: relative;
+  z-index: 1;
+  padding: 0.75rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 50px;
+  background: #dc3545;
+  color: #fff;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 14px rgba(220,53,69,0.25);
+}
+
+.pain-cta .btn:hover {
+  background: #b02a37;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(220,53,69,0.35);
+}
+
+/* Media Queries Tablet, Desktop, UltraWide */
+
+@media (min-width: 768px) {
+  .pain {
+    padding: 5rem 2rem;
+  }
+  .pain .section-header h2 { font-size: 2rem; }
+  .pain .section-header p { font-size: 1.05rem; max-width: 600px; }
+  .pain-points { gap: 1.5rem; }
+  .pain-point { padding: 1.75rem; }
+}
+
+@media (min-width: 1024px) {
+  .pain {
+    padding: 6rem 4rem;
+  }
+  .pain .section-header h2 { font-size: 2.25rem; }
+  .pain .section-header p { font-size: 1.125rem; max-width: 700px; }
+  .pain-points { gap: 2rem; }
+  .pain-point { padding: 2rem; }
+}
+
+@media (min-width: 1600px) {
+  .pain {
+    padding: 7rem 6rem;
+  }
+  .pain .section-header h2 { font-size: 2.5rem; }
+  .pain .section-header p { font-size: 1.25rem; max-width: 800px; }
+  .pain-points { gap: 2.5rem; }
+  .pain-point { padding: 2.25rem; }
+}

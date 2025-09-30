@@ -1,0 +1,24 @@
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <header class="portfolio__header">
+      <h2 class="portfolio__title">{{ section_data.title }}</h2>
+      <p class="portfolio__subtitle">{{ section_data.subtitle }}</p>
+    </header>
+
+    <div class="portfolio__grid">
+      {% for project in section_data.projects %}
+      <article class="portfolio__card">
+        <div class="portfolio__image-wrapper">
+          <img src="{{ project.image }}" alt="{{ project.title }}" class="portfolio__image">
+        </div>
+        <div class="portfolio__overlay">
+          <div>
+            <span class="portfolio__category">{{ project.category }}</span>
+            <h3 class="portfolio__project-title">{{ project.title }}</h3>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

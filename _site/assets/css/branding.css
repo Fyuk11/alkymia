@@ -1,0 +1,82 @@
+/* ============================
+   Branding Alkymia
+   ============================ */
+
+/* Tipografías */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Cormorant+Garamond:wght@500;700&display=swap');
+
+:root {
+  /* Paleta Alkymia */
+  --color-primary: #6B21A8;   /* Violeta alquímico */
+  --color-secondary: #EAB308; /* Dorado alquímico */
+  --color-dark: #0F172A;      /* Azul profundo */
+  --color-light: #F9FAFB;     /* Casi blanco */
+  --color-gray: #9CA3AF;
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-alt: 'Cormorant Garamond', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+/* Reset */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  color: var(--color-dark);
+}
+
+p {
+  font-family: var(--font-body);
+  color: var(--color-gray);
+}
+
+/* Secciones */
+section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Titulares de sección */
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--color-dark);
+}
+
+/* Botón principal */
+.btn-primary {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}

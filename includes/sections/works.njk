@@ -1,0 +1,16 @@
+<section class="works" id="works">
+  <div class="container">
+    <h2 class="section-title animate-on-scroll">Nuestros Trabajos</h2>
+    <p class="section-subtitle animate-on-scroll">Transformamos ideas en experiencias digitales</p>
+
+    <div class="works-grid">
+      {% for item in section_data.items %}
+        <div class="work-card fade-up animate-on-scroll">
+          <img src="{{ item.image }}" alt="{{ item.title }}">
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

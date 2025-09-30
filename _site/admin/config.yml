@@ -66,6 +66,19 @@ collections:
                       - { name: "title", label: "Título", widget: "string" }
                       - { name: "text", label: "Texto", widget: "text" }
 
+              - label: "Steps"
+                name: "steps"
+                widget: "object"
+                fields:
+                  - { name: "title", label: "Título", widget: "string" }
+                  - label: "Pasos"
+                    name: "steps"
+                    widget: "list"
+                    fields:
+                      - { name: "number", label: "Número", widget: "number" }
+                      - { name: "title", label: "Título", widget: "string" }
+                      - { name: "text", label: "Texto", widget: "text" }
+
               - label: "Divider"
                 name: "section-divider"
                 widget: "object"
@@ -90,17 +103,17 @@ collections:
                   - { name: "extra_text", label: "Texto Extra", widget: "text", required: false }
                   - { name: "images", label: "Imágenes", widget: "list", field: { name: "image", label: "Imagen", widget: "image" } }
 
-              - label: "Testimonios"
-                name: "testimonials"
+              - label: "FAQs"
+                name: "faqs"
                 widget: "object"
                 fields:
                   - { name: "title", label: "Título", widget: "string" }
-                  - label: "Items"
+                  - label: "Preguntas"
                     name: "items"
                     widget: "list"
                     fields:
-                      - { name: "name", label: "Nombre", widget: "string" }
-                      - { name: "text", label: "Testimonio", widget: "text" }
+                      - { name: "question", label: "Pregunta", widget: "string" }
+                      - { name: "answer", label: "Respuesta", widget: "text" }
 
               - label: "CTA Video"
                 name: "cta-video"
@@ -138,5 +151,5 @@ collections:
                     name: "social"
                     widget: "list"
                     fields:
-                      - { name: "type", label: "Tipo", widget: "string" }
+                      - { name: "network", label: "Red", widget: "string" }
                       - { name: "url", label: "URL", widget: "string" }
