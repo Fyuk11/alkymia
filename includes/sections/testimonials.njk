@@ -1,0 +1,21 @@
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <header class="testimonials__header">
+      <h2 class="testimonials__title">{{ section_data.title or "Lo que dicen nuestros clientes" }}</h2>
+      <p class="testimonials__subtitle">{{ section_data.subtitle or "Historias de éxito y confianza" }}</p>
+    </header>
+
+    <div class="testimonials__grid">
+      {% for testimonial in section_data.testimonials %}
+        <div class="testimonial-card">
+          {% if testimonial.avatar %}
+            <img src="{{ testimonial.avatar }}" alt="{{ testimonial.name }}" class="testimonial-avatar">
+          {% endif %}
+          <p class="testimonial-text">"{{ testimonial.text }}"</p>
+          <h4 class="testimonial-name">{{ testimonial.name }}</h4>
+          <span class="testimonial-role">{{ testimonial.role }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

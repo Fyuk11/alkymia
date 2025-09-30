@@ -1,19 +1,20 @@
 /* ========================== */
-/* SECCION PASO A PASO        */
+/* SECCION PASO A PASO - ALKYMIa */
 /* ========================== */
 .steps {
   position: relative;
   padding: 100px 20px;
   text-align: center;
   overflow: hidden;
-  color: var(--color-black);
-  background: linear-gradient(135deg, rgba(10,132,255,0.05), rgba(156,163,175,0.15), rgba(17,24,39,0.1));
+  color: #fff;
+  background: linear-gradient(135deg, #0a84ff0d, #9ca3af26, #1118271a); /* sutil gradiente azul/lila */
 }
 
 .steps h2 {
   font-size: 2.4rem;
   margin-bottom: 60px;
-  color: var(--color-primary);
+  color: #ffd700; /* dorado */
+  font-weight: 800;
 }
 
 /* Grid para los pasos */
@@ -27,11 +28,11 @@
 
 /* Cada paso */
 .step-card {
-  background: var(--color-white);
-  color: var(--color-black);
+  background: #1a1a1a; /* fondo oscuro */
+  color: #fff;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
   text-align: center;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -44,14 +45,14 @@
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: #ffd700; /* dorado */
   width: 50px;
   height: 50px;
   line-height: 50px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--color-gray) 0%, var(--color-light) 100%);
+  background: linear-gradient(135deg, #6b5b95, #0a84ff); /* violeta a azul */
   margin-bottom: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   animation: pulse 2s infinite alternate;
 }
 
@@ -59,10 +60,13 @@
 .step-card h3 {
   font-size: 1.4rem;
   margin-bottom: 12px;
+  color: #9b59b6; /* lila/violeta */
 }
+
 .step-card p {
   font-size: 1rem;
   line-height: 1.5;
+  color: #e5e5e5;
 }
 
 /* Animación fade-up */
@@ -74,14 +78,14 @@
 /* Hover suave */
 .step-card:hover {
   transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 12px 24px rgba(10,132,255,0.12);
+  box-shadow: 0 12px 24px rgba(10,132,255,0.25);
 }
 
 /* Flechas lineales entre pasos */
 .step-arrow {
   display: block;
   height: 4px;
-  background: linear-gradient(90deg, var(--color-gray), var(--color-primary));
+  background: linear-gradient(90deg, #6b5b95, #ffd700);
   margin: 20px auto 0 auto;
   border-radius: 2px;
   width: 60px;

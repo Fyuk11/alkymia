@@ -6,18 +6,20 @@
 @import "nav.css";          /* NAV y burger */
 @import "hero-alkymia.css"; /* HERO ALKYMIA */
 @import "pain.css"; /* PAIN */
-@import "resources.css"; /* RESOURCS */
 @import "benefits.css";     /* BENEFITS */
 @import "section-divider.css"; /* SECTION DIVIDER */
 @import "steps.css";        /* STEPS */
+@import "services.css"; /* SERVICES */
+@import "testimonials.css"; /* TESTIMONIALS */
 @import "about.css";        /* ABOUT alk */
 @import "portfolio.css"; /* PORTFOLIO alk */
-@import "works.css"; /* works */
+@import "final-cta.css"; /* CTA FINAL */
+
 @import "downloads.css"; /* downloads */
 @import "faqs.css"; /* FAQS */
-@import "testimonials.css"; /* TESTIMONIALS */
+
 @import "cta-video.css";    /* CTA VIDEO */
-@import "contact.css";      /* CONTACT */
+
 @import "footer.css";       /* FOOTER */
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"; /* Font Awesome */
 

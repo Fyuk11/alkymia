@@ -53,94 +53,20 @@ sections:
 
 
   - type: pain
-    title: "¿Tu negocio aún no vende online?"
-    subtitle: "Muchos negocios pierden ventas por no tener presencia digital profesional"
-    items:
-      - title: "No tenés tienda online"
-        text: "Tus clientes no pueden comprar tus productos fuera de tu local."
-        icon: "/assets/icons/no-store.svg"
-      - title: "Landing poco profesional"
-        text: "Tus servicios no se muestran de manera atractiva ni clara."
-        icon: "/assets/icons/bad-landing.svg"
-      - title: "Difícil de actualizar"
-        text: "Tu página es complicada de modificar y te hace perder tiempo."
-        icon: "/assets/icons/hard-update.svg"
-
-
-
-  - type: portfolio
-    title: Nuestro trabajo
-    subtitle: Algunos de los proyectos destacados que hemos creado para nuestros clientes.
-    projects:
-     - title: Proyecto A
-       category: Branding
-       image: /assets/images/portfolio/proyecto-a.jpg
-     - title: Proyecto B
-       category: Diseño Web
-       image: /assets/images/portfolio/proyecto-b.jpg
-     - title: Proyecto C
-       category: E-commerce
-       image: /assets/images/portfolio/proyecto-c.jpg
-     - title: Proyecto D
-       category: App Móvil
-       image: /assets/images/portfolio/proyecto-d.jpg
-     - title: Proyecto E
-       category: Estrategia Digital
-       image: /assets/images/portfolio/proyecto-e.jpg
-     - title: Proyecto F
-       category: UI/UX
-       image: /assets/images/portfolio/proyecto-f.jpg
-
-
-  - type: about
-    badge: Sobre nosotros
-    title: Creamos experiencias digitales memorables
-    description: Nuestro equipo combina diseño, tecnología y estrategia para dar vida a proyectos digitales que impactan. Creemos en el poder de las ideas y en la ejecución impecable.
-    image: /assets/images/about/about-placeholder.jpg
-    floating:
-      number: +50
-      label: Proyectos entregados
-    benefits:
-      - Diseños modernos y funcionales
-      - Desarrollo ágil y optimizado
-      - Estrategias que generan resultados
-    cta:
-     text: Conversemos sobre tu proyecto
-     url: "#contact"
-
-  - type: pain
     title: "¿Te sientes identificado con alguno de estos problemas?"
     subtitle: "No estás solo. Muchos emprendedores y marketers pasan por esto antes de encontrar una solución definitiva."
     cta_text: "Pero existe una forma más fácil de hacer las cosas."
     cta_button: "Quiero conocer la solución"
-    cta_link: "#solution" # Puede ser un anchor link a la siguiente sección o un link directo
+    cta_link: "#solution"
     points:
-    - title: "Inviertes tiempo y dinero en una landing page que no convierte"
-      description: "Diseños poco atractivos, mensajes confusos y una estructura que no guía al usuario hacia la acción."
-    - title: "Tu tasa de conversión es más baja de lo que esperabas"
-      description: "El tráfico llega, pero se va sin dejar sus datos o comprar tu producto. Es como llenar un balde con un agujero."
-    - title: "Dependes de un desarrollador para cada pequeño cambio"
-      description: "Cada vez que quieres actualizar un texto, un precio o una imagen, tienes que pedir favores, pagar caro y esperar días."
-    - title: "No tienes claridad sobre qué está funcionando y qué no"
-      description: "Te falta data y pruebas A/B para optimizar tu página y mejorar tus resultados de forma consistente."
-
-  - type: resources
-    title: Recursos digitales
-    subtitle: Guías prácticas para potenciar tu negocio online.
-    items:
-      - title: Guía de primeros pasos en Tiendanube
-        description: Aprende a montar tu tienda en menos de una semana.
-        image: /assets/images/resources/tiendanube-guide.png
-        gumroad_url: https://alkymia.gumroad.com/l/primeros-pasos
-        cta_text: Comprar ahora
-
-      - title: Checklist para tu landing page
-        description: Una lista rápida para que no te olvides de nada al lanzar.
-        image: /assets/images/resources/checklist-landing.png
-        download_url: /assets/pdfs/checklist-landing.pdf
-        cta_text: Descargar gratis
-
-
+      - title: "Inviertes tiempo y dinero en una landing page que no convierte"
+        description: "Diseños poco atractivos, mensajes confusos y una estructura que no guía al usuario hacia la acción."
+      - title: "Tu tasa de conversión es más baja de lo que esperabas"
+        description: "El tráfico llega, pero se va sin dejar sus datos o comprar tu producto. Es como llenar un balde con un agujero."
+      - title: "Dependes de un desarrollador para cada pequeño cambio"
+        description: "Cada vez que quieres actualizar un texto, un precio o una imagen, tienes que pedir favores, pagar caro y esperar días."
+      - title: "No tienes claridad sobre qué está funcionando y qué no"
+        description: "Te falta data y pruebas A/B para optimizar tu página y mejorar tus resultados de forma consistente."
 
   - type: steps
     title: Proceso claro y humano
@@ -158,6 +84,124 @@ sections:
         title: Entregamos
         text: Lista para usar, sin estrés ni complicaciones y te enseñamos a gestionarla fácilmente.
 
+
+  - type: services
+    title: "Nuestros Servicios"
+    subtitle: "Transformamos tu negocio en digital"
+    services:
+      - title: "Landing Pages"
+        description: "Creamos páginas atractivas y efectivas que venden desde el primer día."
+        icon: "/assets/icons/landing.svg"
+      - title: "E-commerce"
+        description: "Tiendas online rápidas y optimizadas con planes según la cantidad de productos."
+        icon: "/assets/icons/ecommerce.svg"
+        plans:
+         - name: "Start"
+           details: "Ideal para pequeños catálogos"
+           products: 15
+         - name: "Pro"
+           details: "Para crecer tu negocio con más productos"
+           products: 111
+         - name: "Premium"
+           details: "Amplio catálogo y funcionalidades avanzadas"
+           products: 300
+         - name: "+500"
+           details: "Para grandes tiendas y proyectos ambiciosos"
+           products: 500
+
+
+  - type: portfolio
+    title: "Nuestro Trabajo"
+    subtitle: "Algunos de los proyectos destacados que hemos creado para nuestros clientes"
+    projects:
+     - title: "Proyecto A"
+       category: "Branding"
+       image: "/assets/images/portfolio/proyecto-a.jpg"
+     - title: "Proyecto B"
+       category: "Diseño Web"
+       image: "/assets/images/portfolio/proyecto-b.jpg"
+     - title: "Proyecto C"
+       category: "E-commerce"
+       image: "/assets/images/portfolio/proyecto-c.jpg"
+     - title: "Proyecto D"
+       category: "App Móvil"
+       image: "/assets/images/portfolio/proyecto-d.jpg"
+     - title: "Proyecto E"
+       category: "Estrategia Digital"
+       image: "/assets/images/portfolio/proyecto-e.jpg"
+     - title: "Proyecto F"
+       category: "UI/UX"
+       image: "/assets/images/portfolio/proyecto-f.jpg"
+
+
+  - type: testimonials
+    title: "Lo que dicen nuestros clientes"
+    subtitle: "Historias de éxito y confianza"
+    testimonials:
+     - name: "María Pérez"
+       role: "CEO - Startup X"
+       avatar: "/assets/images/testimonials/maria.jpg"
+       text: "Alkymia transformó nuestra idea en una landing increíble, rápida y fácil de gestionar."
+     - name: "Juan Rodríguez"
+       role: "Founder - Proyecto Y"
+       avatar: "/assets/images/testimonials/juan.jpg"
+       text: "Gracias al equipo de Alkymia, nuestra tienda online está vendiendo más que nunca."
+     - name: "Lucía Gómez"
+       role: "Marketing Manager"
+       avatar: "/assets/images/testimonials/lucia.jpg"
+       text: "Profesionales, claros y muy atentos. Recomiendo Alkymia para cualquier proyecto digital."
+
+
+
+  - type: about
+    badge: "Sobre nosotros"
+    title: "Creamos experiencias digitales memorables"
+    description: "Nuestro equipo combina diseño, tecnología y estrategia para dar vida a proyectos digitales que impactan. Creemos en el poder de las ideas y en la ejecución impecable."
+    image: "/assets/images/about/about-placeholder.jpg"
+    floating:
+      number: "+50"
+      label: "Proyectos entregados"
+    benefits:
+     - "Diseños modernos y funcionales"
+     - "Desarrollo ágil y optimizado"
+     - "Estrategias que generan resultados"
+    cta:
+     text: "Conversemos sobre tu proyecto"
+     url: "#contact"
+
+
+  - type: downloads
+    title: "Recursos Digitales"
+    subtitle: "Guías, PDFs y herramientas para tu camino alquímico"
+    items:
+      - title: "Guía de Introducción a la Alquimia"
+        description: "Un PDF con fundamentos básicos."
+        gumroad_url: "https://alkymia.gumroad.com/l/guia-alquimia"
+        cta_text: "Comprar en Gumroad"
+
+      - title: "Rituales Digitales"
+        description: "Manual práctico con ejercicios."
+        gumroad_url: "https://alkymia.gumroad.com/l/rituales"
+        cta_text: "Comprar en Gumroad"
+
+      - title: "Checklist para tu landing page"
+        description: "Una lista rápida para que no te olvides de nada al lanzar."
+        download_url: "/assets/pdfs/checklist-landing.pdf"
+        cta_text: "Descargar gratis"
+
+      - title: "Guía de primeros pasos en Tiendanube"
+        description: "Aprende a montar tu tienda en menos de una semana."
+        image: "/assets/images/resources/tiendanube-guide.png"
+        gumroad_url: "https://alkymia.gumroad.com/l/primeros-pasos"
+        cta_text: "Comprar ahora"
+
+  - type: final-cta
+    whatsapp_number: "5491123456789"
+    cta_title: "¿Listo para tu proyecto digital?"
+    cta_subtitle: "Transformemos tu idea en una experiencia única y profesional."
+    cta_button_text: "Escribinos por WhatsApp"
+
+
   - type: section-divider
     invert: true
     gradient:
@@ -167,32 +211,6 @@ sections:
       - offset: 100%
         color: "#ff8a72"
         opacity: 0.6
-
-
-  - type: works
-    title: "Nuestros Trabajos"
-    subtitle: "Transformamos ideas en experiencias digitales"
-    items:
-      - title: "Landing Energía Escalar"
-        description: "Sitio con animaciones y diseño minimalista."
-        image: /assets/images/work1.jpg
-      - title: "Academia Online"
-        description: "Plataforma educativa con pagos integrados."
-        image: /assets/images/work2.jpg
-
-
-
-  - type: downloads
-    title: "Recursos Descargables"
-    subtitle: "Guías y herramientas para tu camino alquímico"
-    files:
-      - title: "Guía de Introducción a la Alquimia"
-        description: "Un PDF con fundamentos básicos."
-        url: "https://alkymia.gumroad.com/l/guia-alquimia" # Link Gumroad
-      - title: "Rituales Digitales"
-        description: "Manual práctico con ejercicios."
-        url: "https://alkymia.gumroad.com/l/rituales"
-
 
 
   - type: faqs
@@ -207,6 +225,7 @@ sections:
       - question: "¿La optimización SEO está incluida?"
         answer: "Sí, entregamos tu página lista para indexarse en Google y con métricas conectadas a Search Console."
 
+
   - type: cta-video
     title: Mostrá tu negocio como tus clientes lo esperan
     subtitle: Tu página ya está lista para atraer y enamorar visitantes.
@@ -214,13 +233,10 @@ sections:
       - text: Quiero mi página
         url: https://wa.me/5491121652703
 
-  - type: contact
-    title: Pedí tu landing hoy
-    text: Completá el formulario y te contactamos para empezar cuanto antes.
 
   - type: footer
-    text: © 2025 Landing Demo. Todos los derechos reservados.
-    email: traduccioncreativadigital@gmail.com
+    text: "© 2025 Alkymia. Todos los derechos reservados."
+    email: "contacto@alkymia.digital"
     links:
       - text: Inicio
         url: "#hero"
@@ -228,11 +244,14 @@ sections:
         url: "#benefits"
       - text: Nosotros
         url: "#about"
+      - text: Portfolio
+        url: "#portfolio"
       - text: Contacto
-        url: "#contact"
+        url: "#final-cta"
     social:
       - type: instagram
-        url: https://instagram.com/demo
+        url: "https://instagram.com/alkymia"
       - type: whatsapp
-        url: https://wa.me/5491121652703
+        url: "https://wa.me/5491123456789"
+
 ---

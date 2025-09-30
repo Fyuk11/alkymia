@@ -1,0 +1,36 @@
+/* =========================
+   CTA FINAL
+   ========================= */
+.final-cta {
+  padding: 6rem 1.5rem;
+  background: linear-gradient(135deg, #9b59b6, #0a84ff);
+  text-align: center;
+  color: #fff;
+}
+
+.final-cta h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
+}
+
+.final-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  padding: 0.8rem 2.2rem;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  background: #25D366; /* verde WhatsApp */
+  color: #fff;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-whatsapp:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
