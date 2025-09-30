@@ -23,21 +23,16 @@ nav:
     url: https://wa.me/5491121652703
     external: true
 sections:
-  - type: hero
-    title: Damos vida digital a tu marca
-    subtitle: Sitios donde tu trabajo se luzca. Creamos landing pages profesionales, rápidas y optimizadas para que vendas más desde el primer día.
-    background: /assets/images/placeholder.jpg
-    ctas:
-      - text: Quiero mi página
-        url: "#contact"
 
   - type: hero-alkymia
-    title: "Alkymia: Transformamos Ideas en Realidad"
+    title: "Alkymia: Transformamos Ideas en <span>Realidad</span>"
     subtitle: "Un enfoque sobrio, claro y orientado a resultados."
     background: "/assets/images/hero-alkymia.jpg"
+    media: "/assets/mockup-hero.png"
     ctas:
-      - text: "Descúbrenos"
-        url: "/contacto"
+      - text: "Hablá con nosotros en WhatsApp"
+        url: "https://wa.me/549XXXXXXXXXX"
+
 
   - type: portfolio
     title: Nuestro trabajo

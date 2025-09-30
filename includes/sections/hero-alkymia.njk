@@ -1,77 +1,24 @@
-<section class="hero" id="hero">
-  <!-- Background con imagen y overlay -->
-  <div class="hero__background">
-    <img 
-      src="{{ section_data.background | default('/assets/images/hero-bg.jpg') }}" 
-      alt="{{ section_data.background_alt | default('Hero background') }}" 
-      class="hero__bg-image"
-      loading="eager"
-    >
-    <div class="hero__overlay"></div>
-  </div>
-  
-  <!-- Partículas animadas -->
-  <div class="hero__particles">
-    <div class="hero__particle hero__particle--accent"></div>
-    <div class="hero__particle hero__particle--secondary"></div>
-    <div class="hero__particle hero__particle--accent"></div>
-    <div class="hero__particle hero__particle--secondary"></div>
-  </div>
+<section id="hero" class="hero-alkymia" style="background-image: url('{{ section_data.background }}');">
+  <div class="hero-container">
+    <!-- Texto -->
+    <div class="hero-text">
+      <h1>{{ section_data.title | safe }}</h1>
+      <p>{{ section_data.subtitle }}</p>
 
-  <!-- Contenido principal -->
-  <div class="hero__content container">
-    <!-- Badge -->
-    {% if section_data.badge %}
-    <div class="hero__badge">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M12 3l1.912 5.813a1 1 0 00.951.69h6.137l-4.963 3.608a1 1 0 00-.364 1.118l1.912 5.813-4.963-3.608a1 1 0 00-1.176 0l-4.963 3.608 1.912-5.813a1 1 0 00-.364-1.118L2.088 9.503h6.137a1 1 0 00.951-.69L12 3z"/>
-      </svg>
-      <span>{{ section_data.badge }}</span>
-    </div>
-    {% endif %}
-
-    <!-- Título principal -->
-    <h1 class="hero__title">
-      {{ section_data.title | safe }}
-      {% if section_data.title_highlight %}
-        <span class="hero__title--gradient">{{ section_data.title_highlight }}</span>
+      {% if section_data.ctas %}
+        <div class="hero-ctas">
+          {% for cta in section_data.ctas %}
+            <a href="{{ cta.url }}" class="btn-cta" target="_blank">{{ cta.text }}</a>
+          {% endfor %}
+        </div>
       {% endif %}
-    </h1>
-
-    <!-- Subtítulo -->
-    {% if section_data.subtitle %}
-      <p class="hero__subtitle">{{ section_data.subtitle }}</p>
-    {% endif %}
-
-    <!-- CTAs -->
-    {% if section_data.ctas %}
-    <div class="hero__cta">
-      {% for cta in section_data.ctas %}
-        <a href="{{ cta.url }}" class="btn {% if cta.style == 'outline' %}btn--outline-light{% else %}btn--hero{% endif %}">
-          {{ cta.text }}
-          {% if cta.icon %}
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="{{ cta.icon }}"/>
-            </svg>
-          {% endif %}
-        </a>
-      {% endfor %}
     </div>
-    {% endif %}
 
-    <!-- Estadísticas -->
-    {% if section_data.stats %}
-    <div class="hero__stats">
-      {% for stat in section_data.stats %}
-      <div class="hero__stat">
-        <div class="hero__stat-number">{{ stat.number }}</div>
-        <div class="hero__stat-label">{{ stat.label }}</div>
-      </div>
-      {% endfor %}
+    <!-- Placeholder para media si querés agregar imagen/video -->
+    <div class="hero-media">
+      {% if section_data.media %}
+        <img src="{{ section_data.media }}" alt="Media Hero" />
+      {% endif %}
     </div>
-    {% endif %}
   </div>
-
-  <!-- Fade bottom -->
-  <div class="hero__fade"></div>
 </section>
