@@ -34,6 +34,40 @@ sections:
         url: "https://wa.me/549XXXXXXXXXX"
 
 
+  - type: benefits
+    title: "Por qué elegir Alkymia"
+    subtitle: "Impulsamos tu negocio con soluciones digitales premium"
+    items:
+     - title: "Ventas online"
+       text: "Tus productos disponibles 24/7 en una tienda profesional."
+       icon: "/assets/icons/sales.svg"
+     - title: "Landing pages que convierten"
+       text: "Diseños claros y atractivos que generan más leads."
+       icon: "/assets/icons/landing.svg"
+     - title: "Fácil de gestionar"
+       text: "Podés actualizar tu contenido sin complicaciones."
+       icon: "/assets/icons/easy.svg"
+     - title: "Soporte y acompañamiento"
+       text: "Estamos siempre disponibles para ayudarte a crecer."
+       icon: "/assets/icons/support.svg"
+
+
+  - type: pain
+    title: "¿Tu negocio aún no vende online?"
+    subtitle: "Muchos negocios pierden ventas por no tener presencia digital profesional"
+    items:
+      - title: "No tenés tienda online"
+        text: "Tus clientes no pueden comprar tus productos fuera de tu local."
+        icon: "/assets/icons/no-store.svg"
+      - title: "Landing poco profesional"
+        text: "Tus servicios no se muestran de manera atractiva ni clara."
+        icon: "/assets/icons/bad-landing.svg"
+      - title: "Difícil de actualizar"
+        text: "Tu página es complicada de modificar y te hace perder tiempo."
+        icon: "/assets/icons/hard-update.svg"
+
+
+
   - type: portfolio
     title: Nuestro trabajo
     subtitle: Algunos de los proyectos destacados que hemos creado para nuestros clientes.
@@ -89,19 +123,6 @@ sections:
       description: "Cada vez que quieres actualizar un texto, un precio o una imagen, tienes que pedir favores, pagar caro y esperar días."
     - title: "No tienes claridad sobre qué está funcionando y qué no"
       description: "Te falta data y pruebas A/B para optimizar tu página y mejorar tus resultados de forma consistente."
-
-  - type: benefits
-    title: Más que una landing, tu identidad digital
-    items:
-      - icon: /assets/images/svg1.png
-        title: Diseño a medida
-        text: Cada página nace de vos.
-      - icon: /assets/images/svg2.png
-        title: Optimización total
-        text: Rápida, segura y visible en Google.
-      - icon: /assets/images/svg3.png
-        title: Conexión inmediata
-        text: Tu página habla por vos y enamora a tu audiencia.
 
   - type: resources
     title: Recursos digitales

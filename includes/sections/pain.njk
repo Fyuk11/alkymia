@@ -1,32 +1,18 @@
-<section id="pain" class="pain section">
+<section id="pain" class="pain">
   <div class="container">
-    <div class="section-header">
-      <h2>{{ section.title }}</h2>
-      <p>{{ section.subtitle }}</p>
-    </div>
+    <h2>{{ section_data.title }}</h2>
+    <p class="subtitle">{{ section_data.subtitle }}</p>
 
-    <div class="pain-points">
-      {% for point in section.points %}
-      <div class="pain-point">
-        <div class="pain-point-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
+    <div class="pain-items">
+      {% for item in section_data.items %}
+        <div class="pain-card">
+          {% if item.icon %}
+            <img src="{{ item.icon }}" alt="{{ item.title }} icon" class="pain-icon">
+          {% endif %}
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
         </div>
-        <div class="pain-point-content">
-          <h3>{{ point.title }}</h3>
-          <p>{{ point.description }}</p>
-        </div>
-      </div>
       {% endfor %}
-    </div>
-
-    <div class="pain-cta">
-      <p><strong>{{ section.cta_text }}</strong></p>
-      <a href="{{ section.cta_link }}" class="btn">
-        {{ section.cta_button }}
-      </a>
     </div>
   </div>
 </section>
