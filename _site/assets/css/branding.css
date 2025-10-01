@@ -1,82 +1,405 @@
 /* ============================
-   Branding Alkymia
+   BRANDING ALKYMIA - PREMIUM
+   Versión Elegante & Orientada a Ventas
    ============================ */
 
-/* Tipografías */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Cormorant+Garamond:wght@500;700&display=swap');
+/* Tipografías Premium */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
+/* ===== PALETA DE COLORES PREMIUM ===== */
 :root {
-  /* Paleta Alkymia */
-  --color-primary: #6B21A8;   /* Violeta alquímico */
-  --color-secondary: #EAB308; /* Dorado alquímico */
-  --color-dark: #0F172A;      /* Azul profundo */
-  --color-light: #F9FAFB;     /* Casi blanco */
-  --color-gray: #9CA3AF;
-
-  --font-heading: 'Poppins', sans-serif;
-  --font-alt: 'Cormorant Garamond', serif;
-  --font-body: 'Poppins', sans-serif;
+  /* Colores Principales - Gold Elegante */
+  --gold-primary: #D4AF37;
+  --gold-secondary: #F4E4A6;
+  --gold-dark: #B8860B;
+  --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #F4E4A6 100%);
+  --gold-gradient-subtle: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(244, 228, 166, 0.05) 100%);
+  
+  /* Escala de Negros Elegantes */
+  --black-rich: #000000;
+  --black-dark: #0A0A0A;
+  --black-medium: #1A1A1A;
+  --black-light: #2A2A2A;
+  
+  /* Escala de Grises Sofisticados */
+  --gray-dark: #404040;
+  --gray-medium: #666666;
+  --gray-light: #8C8C8C;
+  --gray-pale: #E5E5E5;
+  
+  /* Blancos y Off-whites */
+  --white-pure: #FFFFFF;
+  --white-off: #FAFAFA;
+  --white-cream: #F8F8F8;
+  
+  /* Estados y Acentos */
+  --success: #10B981;
+  --error: #EF4444;
+  --warning: #F59E0B;
+  
+  /* ===== TIPOGRAFÍA ===== */
+  --font-display: 'Cormorant Garamond', serif;    /* Títulos premium */
+  --font-heading: 'Inter', sans-serif;            /* Subtítulos */
+  --font-body: 'Inter', sans-serif;               /* Texto cuerpo */
+  
+  /* ===== ESCALA TIPOGRÁFICA ===== */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+  --text-6xl: 3.75rem;     /* 60px */
+  
+  /* ===== ESPACIADO ===== */
+  --space-xs: 0.5rem;      /* 8px */
+  --space-sm: 1rem;        /* 16px */
+  --space-md: 1.5rem;      /* 24px */
+  --space-lg: 2rem;        /* 32px */
+  --space-xl: 3rem;        /* 48px */
+  --space-2xl: 4rem;       /* 64px */
+  --space-3xl: 6rem;       /* 96px */
+  
+  /* ===== BORDES Y SOMBRAS ===== */
+  --radius-sm: 0.25rem;    /* 4px */
+  --radius-md: 0.5rem;     /* 8px */
+  --radius-lg: 0.75rem;    /* 12px */
+  --radius-xl: 1rem;       /* 16px */
+  --radius-full: 9999px;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-gold: 0 10px 30px -5px rgba(212, 175, 55, 0.3);
+  
+  /* ===== TRANSICIONES ===== */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
 }
 
-/* Reset */
-body {
+/* ===== RESET Y BASE ELEGANTE ===== */
+* {
   margin: 0;
-  font-family: var(--font-body);
-  color: var(--color-dark);
-  background-color: var(--color-light);
-  line-height: 1.6;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
-  font-family: var(--font-heading);
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--gray-medium);
+  background-color: var(--white-off);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ===== JERARQUÍA TIPOGRÁFICA PREMIUM ===== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--black-medium);
+  margin-bottom: var(--space-md);
+}
+
+h1 {
+  font-size: var(--text-5xl);
   font-weight: 700;
-  margin-bottom: 0.5em;
-  color: var(--color-dark);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: var(--text-4xl);
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: var(--text-3xl);
+  font-family: var(--font-heading);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+  font-family: var(--font-heading);
+}
+
+h5 {
+  font-size: var(--text-xl);
+  font-family: var(--font-heading);
+}
+
+h6 {
+  font-size: var(--text-lg);
+  font-family: var(--font-heading);
 }
 
 p {
   font-family: var(--font-body);
-  color: var(--color-gray);
+  color: var(--gray-medium);
+  line-height: 1.7;
+  margin-bottom: var(--space-md);
 }
 
-/* Secciones */
+.lead {
+  font-size: var(--text-xl);
+  color: var(--gray-dark);
+  font-weight: 300;
+}
+
+/* ===== COMPONENTES DE TEXTO ===== */
+.text-gold {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-accent {
+  color: var(--gold-primary);
+}
+
+.text-rich {
+  color: var(--black-medium);
+}
+
+.text-muted {
+  color: var(--gray-light);
+}
+
+/* ===== ESTRUCTURA DE SECCIONES ===== */
 section {
-  padding: 80px 20px;
+  padding: var(--space-3xl) var(--space-md);
+  position: relative;
+}
+
+.section-dark {
+  background: var(--black-dark);
+  color: var(--white-off);
+}
+
+.section-dark h1,
+.section-dark h2,
+.section-dark h3,
+.section-dark h4,
+.section-dark h5,
+.section-dark h6 {
+  color: var(--white-pure);
+}
+
+.section-dark p {
+  color: var(--gray-pale);
+}
+
+.section-gold {
+  background: var(--gold-gradient-subtle);
 }
 
 .container {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 var(--space-md);
 }
 
-/* Titulares de sección */
-.section-title {
-  font-size: 2.5rem;
+.container-narrow {
+  max-width: 800px;
+}
+
+/* ===== COMPONENTES DE SECCIÓN ===== */
+.section-header {
   text-align: center;
-  margin-bottom: 15px;
-  color: var(--color-primary);
+  margin-bottom: var(--space-2xl);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: var(--text-4xl);
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: var(--gold-gradient);
 }
 
 .section-subtitle {
-  font-size: 1.2rem;
-  text-align: center;
-  margin-bottom: 50px;
-  color: var(--color-dark);
+  font-size: var(--text-lg);
+  color: var(--gray-medium);
+  font-weight: 300;
+  line-height: 1.6;
 }
 
-/* Botón principal */
-.btn-primary {
-  display: inline-block;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-weight: 600;
+/* ===== SISTEMA DE BOTONES PREMIUM ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-xl);
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  font-weight: 500;
   text-decoration: none;
-  color: #fff;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-  transition: all 0.3s ease;
+  text-align: center;
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  line-height: 1;
 }
 
-.btn-primary:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.6s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+/* Botón Primario - Gold Elegante */
+.btn--primary {
+  background: var(--gold-gradient);
+  color: var(--black-rich);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl), var(--shadow-gold);
+}
+
+/* Botón Secundario - Outline Sofisticado */
+.btn--secondary {
+  background: transparent;
+  color: var(--black-medium);
+  border: 2px solid var(--gray-pale);
+  font-weight: 500;
+}
+
+.btn--secondary:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+  transform: translateY(-2px);
+}
+
+/* Botón Dark - Para fondos oscuros */
+.btn--dark {
+  background: var(--black-medium);
+  color: var(--white-pure);
+  border: 2px solid var(--black-medium);
+}
+
+.btn--dark:hover {
+  background: var(--black-rich);
+  transform: translateY(-2px);
+}
+
+/* Variantes de Tamaño */
+.btn--small {
+  padding: var(--space-xs) var(--space-lg);
+  font-size: var(--text-sm);
+}
+
+.btn--large {
+  padding: var(--space-md) var(--space-2xl);
+  font-size: var(--text-lg);
+  font-weight: 600;
+}
+
+/* ===== UTILIDADES ===== */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mb-md { margin-bottom: var(--space-md); }
+.mb-lg { margin-bottom: var(--space-lg); }
+.mb-xl { margin-bottom: var(--space-xl); }
+
+.mt-0 { margin-top: 0; }
+.mt-sm { margin-top: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mt-xl { margin-top: var(--space-xl); }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  :root {
+    --text-5xl: 2.5rem;
+    --text-4xl: 2rem;
+    --text-3xl: 1.75rem;
+    --text-2xl: 1.5rem;
+    --text-xl: 1.25rem;
+    --text-lg: 1.125rem;
+  }
+  
+  section {
+    padding: var(--space-2xl) var(--space-sm);
+  }
+  
+  .container {
+    padding: 0 var(--space-sm);
+  }
+}
+
+/* ===== ANIMACIONES SUTILES ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
 }

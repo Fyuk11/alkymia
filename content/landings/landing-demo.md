@@ -25,12 +25,12 @@ nav:
 sections:
 
   - type: hero-alkymia
-    title: "Alkymia: Transformamos Ideas en <span>Realidad</span>"
-    subtitle: "Un enfoque sobrio, claro y orientado a resultados."
-    background: "/assets/images/hero-alkymia.jpg"
-    media: "/assets/mockup-hero.png"
+    title: "Alkymia: Transformamos Ideas en <span>Realidad Digital</span>"
+    subtitle: "Soluciones de e-commerce y landing pages premium que generan resultados medibles y ROI garantizado."
+    background: "/assets/images/hero-bg-dark.jpg"
+    media: "/assets/mockup-dashboard.png"
     ctas:
-      - text: "Hablá con nosotros en WhatsApp"
+      - text: "Iniciar Proyecto con Nosotros"
         url: "https://wa.me/549XXXXXXXXXX"
 
 
