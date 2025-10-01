@@ -66,4 +66,3 @@ export function initGlobalUtils() {
     
     return new IntersectionObserver(callback, { ...defaultOptions, ...options });
   };
-}
