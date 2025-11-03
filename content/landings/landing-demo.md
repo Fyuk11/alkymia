@@ -28,7 +28,7 @@ sections:
     title: "Alkymia: Transformamos Ideas en <span>Realidad Digital</span>"
     subtitle: "Soluciones de e-commerce y landing pages premium que generan resultados medibles y ROI garantizado."
     background: "/assets/images/hero-bg-dark.jpg"
-    media: "/assets/mockup-dashboard.png"
+    media: "/assets/images/about/googlesearch.webp"
     ctas:
       - text: "Iniciar Proyecto con Nosotros"
         url: "https://wa.me/549XXXXXXXXXX"
