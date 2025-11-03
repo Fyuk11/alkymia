@@ -1,80 +1,89 @@
 // /assets/js/modules/faqs.js
-// Sistema de FAQs - Versión optimizada
+// Sistema de FAQs - Versión robusta y confiable
 
 export function initFaqs() {
-  const faqSection = document.querySelector('.faqs');
-  if (!faqSection) return;
-
-  initFaqAccordion();
+  console.log('🔧 Inicializando sistema de FAQs...');
+  
+  // Esperar a que el DOM esté completamente listo
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupFaqs);
+  } else {
+    setupFaqs();
+  }
 }
 
-function initFaqAccordion() {
-  const faqCards = document.querySelectorAll('.faq-card');
+function setupFaqs() {
+  const faqSection = document.getElementById('faqs');
   
-  console.log(`🔍 Encontradas ${faqCards.length} FAQs`); // Debug
-  
+  if (!faqSection) {
+    console.warn('❌ No se encontró la sección de FAQs');
+    return;
+  }
+
+  const faqCards = faqSection.querySelectorAll('.faq-card');
+  console.log(`📚 Se encontraron ${faqCards.length} preguntas frecuentes`);
+
+  if (faqCards.length === 0) {
+    console.warn('⚠️ No hay FAQs para inicializar');
+    return;
+  }
+
+  // Inicializar cada FAQ card
   faqCards.forEach((card, index) => {
-    const question = card.querySelector('.faq-question');
-    
-    if (!question) {
-      console.warn(`⚠️ No se encontró .faq-question en la FAQ ${index}`);
-      return;
-    }
-    
-    question.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      
-      console.log(`🎯 FAQ ${index} clickeada`); // Debug
-      
-      // Cerrar otras FAQs abiertas
-      faqCards.forEach(otherCard => {
-        if (otherCard !== card && otherCard.classList.contains('active')) {
-          otherCard.classList.remove('active');
-          console.log(`📕 Cerrada otra FAQ`);
-        }
-      });
-      
-      // Alternar FAQ actual
-      const wasActive = card.classList.contains('active');
-      card.classList.toggle('active');
-      
-      console.log(`📖 FAQ ${index} ${wasActive ? 'cerrada' : 'abierta'}`);
-    });
+    initFaqCard(card, index);
   });
 
-  // Cerrar FAQ al hacer click fuera
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.faq-card')) {
-      let closedCount = 0;
-      faqCards.forEach(card => {
-        if (card.classList.contains('active')) {
-          card.classList.remove('active');
-          closedCount++;
-        }
-      });
-      if (closedCount > 0) {
-        console.log(`📕 Cerradas ${closedCount} FAQs (click fuera)`);
-      }
-    }
-  });
-
-  // Cerrar con Escape key
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      let closedCount = 0;
-      faqCards.forEach(card => {
-        if (card.classList.contains('active')) {
-          card.classList.remove('active');
-          closedCount++;
-        }
-      });
-      if (closedCount > 0) {
-        console.log(`📕 Cerradas ${closedCount} FAQs (Escape)`);
-      }
-    }
-  });
-
-  // Debug: Verificar que todo esté conectado
-  console.log('✅ FAQ system initialized');
+  console.log('✅ Sistema de FAQs inicializado correctamente');
 }
+
+function initFaqCard(card, index) {
+  const question = card.querySelector('.faq-question');
+  const answer = card.querySelector('.faq-answer');
+  
+  if (!question || !answer) {
+    console.warn(`⚠️ FAQ ${index} no tiene la estructura correcta`);
+    return;
+  }
+
+  // Agregar event listener al question
+  question.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    handleFaqClick(card, index);
+  });
+
+  // También hacer que toda la card sea clickeable
+  card.style.cursor = 'pointer';
+  card.addEventListener('click', (e) => {
+    // Solo activar si el click no fue en un enlace dentro de la respuesta
+    if (!e.target.closest('a')) {
+      e.preventDefault();
+      handleFaqClick(card, index);
+    }
+  });
+}
+
+function handleFaqCard(card, index) {
+  const isCurrentlyActive = card.classList.contains('active');
+  
+  console.log(`🎯 FAQ ${index} ${isCurrentlyActive ? 'cerrada' : 'abierta'}`);
+  
+  // Cerrar todas las demás FAQs
+  document.querySelectorAll('.faq-card.active').forEach(otherCard => {
+    if (otherCard !== card) {
+      otherCard.classList.remove('active');
+    }
+  });
+  
+  // Alternar estado de la FAQ actual
+  card.classList.toggle('active');
+  
+  // Opcional: Scroll suave si se abre
+  if (!isCurrentlyActive) {
+    setTimeout(() => {
+      card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 300);
+  }
+}
+

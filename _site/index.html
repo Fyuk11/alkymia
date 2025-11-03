@@ -702,7 +702,7 @@
     
     <div class="faqs-grid">
       
-      <div class="faq-card">
+      <div class="faq-card" onclick="toggleFAQ(this)">
         <div class="faq-question">
           <h3>¿Puedo editar mi landing yo mismo?</h3>
           <span class="toggle">+</span>
@@ -712,7 +712,7 @@
         </div>
       </div>
       
-      <div class="faq-card">
+      <div class="faq-card" onclick="toggleFAQ(this)">
         <div class="faq-question">
           <h3>¿Cuánto tarda la entrega?</h3>
           <span class="toggle">+</span>
@@ -722,7 +722,7 @@
         </div>
       </div>
       
-      <div class="faq-card">
+      <div class="faq-card" onclick="toggleFAQ(this)">
         <div class="faq-question">
           <h3>¿Se ve bien en celular?</h3>
           <span class="toggle">+</span>
@@ -732,7 +732,7 @@
         </div>
       </div>
       
-      <div class="faq-card">
+      <div class="faq-card" onclick="toggleFAQ(this)">
         <div class="faq-question">
           <h3>¿La optimización SEO está incluida?</h3>
           <span class="toggle">+</span>
@@ -742,7 +742,7 @@
         </div>
       </div>
       
-      <div class="faq-card">
+      <div class="faq-card" onclick="toggleFAQ(this)">
         <div class="faq-question">
           <h3>¿Tengo que saber de tecnología?</h3>
           <span class="toggle">+</span>
@@ -752,7 +752,7 @@
         </div>
       </div>
       
-      <div class="faq-card">
+      <div class="faq-card" onclick="toggleFAQ(this)">
         <div class="faq-question">
           <h3>¿Qué necesito para empezar?</h3>
           <span class="toggle">+</span>
@@ -765,6 +765,53 @@
     </div>
   </div>
 </section>
+
+<script>
+// Función global mejorada
+function toggleFAQ(card) {
+  // Cerrar otras FAQs
+  const allCards = document.querySelectorAll('.faq-card');
+  allCards.forEach(otherCard => {
+    if (otherCard !== card && otherCard.classList.contains('active')) {
+      otherCard.classList.remove('active');
+    }
+  });
+  
+  // Alternar esta FAQ
+  card.classList.toggle('active');
+  
+  // Scroll suave si se abre
+  if (card.classList.contains('active')) {
+    setTimeout(() => {
+      card.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'nearest',
+        inline: 'nearest'
+      });
+    }, 300);
+  }
+}
+
+// Mejorar accesibilidad con teclado
+document.addEventListener('DOMContentLoaded', function() {
+  const faqCards = document.querySelectorAll('.faq-card');
+  
+  faqCards.forEach(card => {
+    // Hacer focusable para teclado
+    card.setAttribute('tabindex', '0');
+    
+    // Agregar evento de teclado
+    card.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleFAQ(this);
+      }
+    });
+  });
+  
+  console.log('✅ FAQs elegantes inicializadas');
+});
+</script>
 
     
 

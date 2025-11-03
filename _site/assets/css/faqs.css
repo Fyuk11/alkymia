@@ -1,11 +1,22 @@
 /* ============================
-   FAQS SECTION - ALKYMIA BRANDING
+   FAQS - VERSIÓN ELEGANTE Y FUNCIONAL
    ============================ */
 .faqs {
   padding: 100px 0;
   background: #000;
   color: #fff;
-  font-family: "Inter", sans-serif;
+  position: relative;
+}
+
+.faqs::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 70%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .faqs .section-title {
@@ -15,42 +26,76 @@
   text-align: center;
   margin-bottom: 60px;
   line-height: 1.2;
+  position: relative;
+  z-index: 2;
 }
 
-/* Grid Mobile First */
 .faqs-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   max-width: 1000px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
+/* FAQ Card - Con hover effects */
 .faq-card {
   background: #1a1a1a;
   border-left: 4px solid #d4af37;
-  border-radius: 12px;
-  padding: 25px 30px;
-  transition: all 0.3s ease;
+  border-radius: 16px;
+  padding: 30px;
   border: 1px solid #333;
-  cursor: pointer; /* Añadir cursor pointer */
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.faq-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .faq-card:hover {
-  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   border-color: #d4af37;
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.15);
 }
 
+.faq-card:hover::before {
+  opacity: 1;
+}
+
+/* Estado activo con más énfasis */
+.faq-card.active {
+  background: #1f1f1f;
+  border-color: #d4af37;
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+  transform: translateY(-5px);
+}
+
+.faq-card.active::before {
+  opacity: 1;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+}
+
+/* Pregunta */
 .faq-question {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
+  align-items: flex-start;
   gap: 20px;
-  /* Asegurar que todo el área sea clickeable */
-  margin: -25px -30px;
-  padding: 25px 30px;
+  position: relative;
+  z-index: 2;
 }
 
 .faq-question h3 {
@@ -60,16 +105,26 @@
   color: #fff;
   line-height: 1.4;
   flex: 1;
-  pointer-events: none; /* Evitar que el texto interfiera con el click */
+  transition: color 0.3s ease;
 }
 
+.faq-card:hover .faq-question h3 {
+  color: #d4af37;
+}
+
+.faq-card.active .faq-question h3 {
+  color: #d4af37;
+}
+
+/* Toggle Icon con animación suave */
 .faq-question .toggle {
   font-size: 1.5rem;
-  font-weight: 300;
   color: #d4af37;
-  transition: all 0.3s ease;
   flex-shrink: 0;
-  pointer-events: none; /* Evitar que el toggle interfiera */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 300;
+  line-height: 1;
+  margin-top: 2px;
 }
 
 .faq-card.active .faq-question .toggle {
@@ -77,32 +132,44 @@
   font-weight: 700;
 }
 
+/* Respuesta con animación elegante */
 .faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, margin-top 0.4s ease, opacity 0.4s ease;
-  margin-top: 0;
-  opacity: 0;
+  display: none;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
   color: #ccc;
   line-height: 1.6;
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 0.4s ease-out;
 }
 
 .faq-card.active .faq-answer {
-  max-height: 500px;
-  opacity: 1;
-  margin-top: 20px;
+  display: block;
 }
 
 .faq-answer p {
   margin: 0;
   font-size: 1rem;
   font-weight: 300;
-  pointer-events: none;
 }
 
-/* ====== Responsive ====== */
+/* Animación para cuando aparece la respuesta */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-/* Tablets */
+/* ===== RESPONSIVE ===== */
+
+/* Tablets - 2 columnas */
 @media (min-width: 768px) {
   .faqs-grid { 
     grid-template-columns: repeat(2, 1fr);
@@ -113,18 +180,13 @@
     padding: 30px;
   }
   
-  .faq-question {
-    margin: -30px;
-    padding: 30px;
-  }
-  
   .faq-question h3 {
     font-size: 1.25rem;
   }
 }
 
-/* Desktop grande */
-@media (min-width: 1200px) {
+/* Desktop Grande */
+@media (min-width: 1024px) {
   .faqs-grid {
     gap: 30px;
   }
@@ -133,29 +195,27 @@
     padding: 35px 40px;
   }
   
-  .faq-question {
-    margin: -35px -40px;
-    padding: 35px 40px;
-  }
-  
   .faq-question h3 {
     font-size: 1.375rem;
   }
+  
+  .faq-answer p {
+    font-size: 1.0625rem;
+  }
 }
 
-/* Mobile pequeño */
+/* Mobile Pequeño */
 @media (max-width: 480px) {
   .faqs {
     padding: 80px 0;
   }
   
   .faq-card {
-    padding: 20px 25px;
+    padding: 25px;
   }
   
   .faq-question {
-    margin: -20px -25px;
-    padding: 20px 25px;
+    gap: 15px;
   }
   
   .faq-question h3 {
@@ -165,4 +225,19 @@
   .faq-question .toggle {
     font-size: 1.25rem;
   }
+  
+  .faq-answer {
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+}
+
+/* Efecto de acordeón suave para múltiples */
+.faq-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Mejorar el contraste en estado activo */
+.faq-card.active {
+  background: linear-gradient(135deg, #1f1f1f 0%, #2a2a2a 100%);
 }

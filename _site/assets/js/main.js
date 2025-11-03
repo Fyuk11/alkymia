@@ -5,7 +5,7 @@
 import { initNav } from './modules/navigation.js';
 import { initScrollAnimations } from './modules/animations.js';
 import { initSlideshow } from "./modules/slideshow.js";
-import { initFaqs } from './modules/faqs.js';
+
 import { initContactForm } from "./modules/forms.js";
 import { initHeroAlkymia } from './modules/hero-alkymia.js';
 import { initGlobalUtils } from './utils/global.js';
@@ -37,7 +37,7 @@ class AlkymiaApp {
       { name: 'Hero', init: initHeroAlkymia },
       { name: 'Scroll Animations', init: initScrollAnimations },
       { name: 'Slideshow', init: initSlideshow },
-      { name: 'FAQs', init: initFaqs },
+
       { name: 'Contact Form', init: initContactForm }
     ];
 
@@ -62,3 +62,5 @@ class AlkymiaApp {
 document.addEventListener('DOMContentLoaded', () => {
   window.alkymiaApp = new AlkymiaApp();
 });
+
+
