@@ -1,0 +1,104 @@
+/* ============================
+   PROBLEMÁTICA SECTION
+   ============================ */
+.problematica {
+  padding: var(--space-4xl) 0;
+  background: var(--black-medium);
+  color: var(--white-pure);
+}
+
+.problematica__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.problematica__title {
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  color: var(--white-pure);
+}
+
+.problematica__subtitle {
+  font-size: var(--text-lg);
+  color: var(--gray-light);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.problematica__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.problem-card {
+  background: var(--black-dark);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-dark);
+  transition: all var(--transition-normal);
+  text-align: center;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.problem-card__icon {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-md);
+}
+
+.problem-card__title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  color: var(--white-pure);
+}
+
+.problem-card__desc {
+  color: var(--gray-light);
+  line-height: 1.6;
+  font-size: var(--text-md);
+}
+
+.problematica__cta {
+  text-align: center;
+  padding: var(--space-xl);
+  background: linear-gradient(135deg, var(--black-dark) 0%, var(--black-medium) 100%);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gold-primary);
+}
+
+.message-text {
+  font-size: var(--text-lg);
+  color: var(--gray-light);
+  margin-bottom: var(--space-sm);
+}
+
+.message-highlight {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--gold-primary);
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .problematica__title {
+    font-size: var(--text-2xl);
+  }
+  
+  .problematica__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .problem-card {
+    padding: var(--space-lg);
+  }
+}

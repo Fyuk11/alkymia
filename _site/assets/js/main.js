@@ -1,35 +1,64 @@
-import { initNav } from './nav.js';
-import { initScrollAnimations, initAboutAnimations, initContactParticles } from './animations.js';
-import { initSlideshow } from "./slideshow.js";
-import { initFaqs } from './faqs.js';
-import { initContactForm } from "./form.js";
-import { initHeroAlkymia } from './hero-alkymia.js';
+// /assets/js/main.js
+// Punto de entrada principal - Alkymia Digital
 
+// Importaciones de módulos
+import { initNav } from './modules/navigation.js';
+import { initScrollAnimations } from './modules/animations.js';
+import { initSlideshow } from "./modules/slideshow.js";
+import { initFaqs } from './modules/faqs.js';
+import { initContactForm } from "./modules/forms.js";
+import { initHeroAlkymia } from './modules/hero-alkymia.js';
+import { initGlobalUtils } from './utils/global.js';
 
-document.addEventListener("DOMContentLoaded", () => {
-  initNav();
-  initScrollAnimations();
-  initSlideshow();
-  initAboutAnimations();   // <-- 💡 acá la llamamos
-  initFaqs();
-  initContactParticles();
-  initContactForm();
-  initHeroAlkymia();   // <-- 🚀 acá lo llamás
+// Sistema de inicialización con manejo de errores
+class AlkymiaApp {
+  constructor() {
+    this.modules = [];
+    this.init();
+  }
 
+  async init() {
+    try {
+      // Inicializar utils globales primero
+      initGlobalUtils();
+      
+      // Inicializar módulos en orden de prioridad
+      await this.initModules();
+      
+      console.log('🎯 Alkymia Digital - Landing cargada correctamente');
+    } catch (error) {
+      console.error('❌ Error inicializando la aplicación:', error);
+    }
+  }
 
-  console.log("Landing loaded ✅");
-});
+  async initModules() {
+    const moduleInitializers = [
+      { name: 'Navigation', init: initNav },
+      { name: 'Hero', init: initHeroAlkymia },
+      { name: 'Scroll Animations', init: initScrollAnimations },
+      { name: 'Slideshow', init: initSlideshow },
+      { name: 'FAQs', init: initFaqs },
+      { name: 'Contact Form', init: initContactForm }
+    ];
 
-// main.js
-// main.js
-// Asegura que siempre al recargar se vaya al inicio
-window.addEventListener("beforeunload", () => {
-  window.scrollTo(0, 0);
-});
+    for (const module of moduleInitializers) {
+      try {
+        await module.init();
+        this.modules.push(module.name);
+        console.log(`✅ ${module.name} inicializado`);
+      } catch (error) {
+        console.warn(`⚠️ ${module.name} no se pudo inicializar:`, error);
+      }
+    }
+  }
 
-// También por si se carga normalmente
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    window.scrollTo(0, 0);
-  }, 0);
+  // Para debugging
+  getInitializedModules() {
+    return this.modules;
+  }
+}
+
+// Inicializar la aplicación
+document.addEventListener('DOMContentLoaded', () => {
+  window.alkymiaApp = new AlkymiaApp();
 });
