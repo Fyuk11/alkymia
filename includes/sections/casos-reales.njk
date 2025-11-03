@@ -1,0 +1,33 @@
+<!-- sections/casos-reales.njk -->
+<section id="casos-reales" class="casos-reales">
+  <div class="container">
+    <div class="casos-reales__header">
+      <h2 class="casos-reales__title">{{ section_data.title }}</h2>
+      <p class="casos-reales__subtitle">{{ section_data.subtitle }}</p>
+    </div>
+
+    <div class="casos-reales__grid">
+      {% for caso in section_data.casos %}
+      <div class="caso-card">
+        <div class="caso-card__image">
+          <img src="{{ caso.imagen }}" alt="{{ caso.nombre }}" class="caso-image">
+          <div class="caso-card__overlay">
+            <span class="caso-category">{{ caso.categoria }}</span>
+          </div>
+        </div>
+        
+        <div class="caso-card__content">
+          <h3 class="caso-card__title">{{ caso.nombre }}</h3>
+          <span class="caso-card__type">{{ caso.tipo }}</span>
+          <p class="caso-card__desc">{{ caso.descripcion }}</p>
+          
+          <div class="caso-card__result">
+            <span class="result-label">Resultado:</span>
+            <span class="result-text">{{ caso.resultado }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

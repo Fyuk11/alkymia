@@ -1,37 +1,45 @@
-/* ====== FAQs Section Elegante ====== */
+/* ============================
+   FAQS SECTION - ALKYMIA BRANDING
+   ============================ */
 .faqs {
-  padding: 60px 15px;
-  background-color: #0d0d0d;
-  color: #f5f5f5;
+  padding: 100px 0;
+  background: #000;
+  color: #fff;
   font-family: "Inter", sans-serif;
 }
 
 .faqs .section-title {
-  font-size: 1.8rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 700;
-  color: #ffd700;
+  color: #d4af37;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+  line-height: 1.2;
 }
 
 /* Grid Mobile First */
 .faqs-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .faq-card {
-  background-color: #1a1a1a;
-  border-left: 4px solid #ffd700;
-  border-radius: 0.5rem;
-  padding: 1.5rem 1.8rem;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background: #1a1a1a;
+  border-left: 4px solid #d4af37;
+  border-radius: 12px;
+  padding: 25px 30px;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+  cursor: pointer; /* Añadir cursor pointer */
 }
 
 .faq-card:hover {
-  box-shadow: 0 8px 20px rgba(255,215,0,0.25);
-  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+  transform: translateY(-5px);
+  border-color: #d4af37;
 }
 
 .faq-question {
@@ -39,74 +47,122 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  gap: 20px;
+  /* Asegurar que todo el área sea clickeable */
+  margin: -25px -30px;
+  padding: 25px 30px;
 }
 
 .faq-question h3 {
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin: 0;
   font-weight: 600;
-  color: #f5f5f5;
+  color: #fff;
+  line-height: 1.4;
+  flex: 1;
+  pointer-events: none; /* Evitar que el texto interfiera con el click */
 }
 
 .faq-question .toggle {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #ffd700;
-  transition: transform 0.3s ease;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #d4af37;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  pointer-events: none; /* Evitar que el toggle interfiera */
 }
 
 .faq-card.active .faq-question .toggle {
   transform: rotate(45deg);
+  font-weight: 700;
 }
 
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-  margin-top: 1rem;
+  transition: max-height 0.4s ease, margin-top 0.4s ease, opacity 0.4s ease;
+  margin-top: 0;
   opacity: 0;
-  color: #e0e0e0;
+  color: #ccc;
   line-height: 1.6;
 }
 
 .faq-card.active .faq-answer {
   max-height: 500px;
   opacity: 1;
+  margin-top: 20px;
+}
+
+.faq-answer p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  pointer-events: none;
 }
 
 /* ====== Responsive ====== */
 
 /* Tablets */
-@media (min-width: 481px) {
-  .faqs .section-title { font-size: 2rem; margin-bottom: 50px; }
-  .faq-card { padding: 1.6rem 2rem; }
-  .faq-question h3 { font-size: 1.1rem; }
-  .faq-question .toggle { font-size: 1.4rem; }
-}
-
-/* Desktop estándar - 2 columnas */
 @media (min-width: 768px) {
   .faqs-grid { 
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 25px;
   }
-  .faqs .section-title { font-size: 2.5rem; margin-bottom: 60px; }
-  .faq-card { padding: 1.8rem 2rem; }
-  .faq-question h3 { font-size: 1.25rem; }
-  .faq-question .toggle { font-size: 1.5rem; }
+  
+  .faq-card {
+    padding: 30px;
+  }
+  
+  .faq-question {
+    margin: -30px;
+    padding: 30px;
+  }
+  
+  .faq-question h3 {
+    font-size: 1.25rem;
+  }
 }
 
-/* Monitores grandes / ultrawide */
+/* Desktop grande */
 @media (min-width: 1200px) {
-  .faqs .section-title { font-size: 2.8rem; margin-bottom: 70px; }
-  .faq-card { padding: 2rem 2.2rem; }
-  .faq-question h3 { font-size: 1.3rem; }
-  .faq-question .toggle { font-size: 1.6rem; }
+  .faqs-grid {
+    gap: 30px;
+  }
+  
+  .faq-card {
+    padding: 35px 40px;
+  }
+  
+  .faq-question {
+    margin: -35px -40px;
+    padding: 35px 40px;
+  }
+  
+  .faq-question h3 {
+    font-size: 1.375rem;
+  }
 }
 
-@media (min-width: 1920px) {
-  .faqs .section-title { font-size: 3rem; margin-bottom: 80px; }
-  .faq-card { padding: 2.2rem 2.5rem; }
-  .faq-question h3 { font-size: 1.35rem; }
-  .faq-question .toggle { font-size: 1.75rem; }
+/* Mobile pequeño */
+@media (max-width: 480px) {
+  .faqs {
+    padding: 80px 0;
+  }
+  
+  .faq-card {
+    padding: 20px 25px;
+  }
+  
+  .faq-question {
+    margin: -20px -25px;
+    padding: 20px 25px;
+  }
+  
+  .faq-question h3 {
+    font-size: 1rem;
+  }
+  
+  .faq-question .toggle {
+    font-size: 1.25rem;
+  }
 }

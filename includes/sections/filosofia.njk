@@ -1,0 +1,45 @@
+<!-- sections/filosofia.njk -->
+<section id="filosofia" class="filosofia">
+  <div class="container">
+    <div class="filosofia__content">
+      <!-- Text Content -->
+      <div class="filosofia__text">
+        <span class="filosofia__badge">{{ section_data.badge }}</span>
+        <h2 class="filosofia__title">{{ section_data.title }}</h2>
+        <p class="filosofia__description">{{ section_data.description }}</p>
+        
+        <!-- Features List -->
+        <div class="filosofia__features">
+          {% for feature in section_data.features %}
+          <div class="feature-item">
+            <div class="feature-icon">⚡</div>
+            <span class="feature-text">{{ feature }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        
+        <!-- CTA -->
+        {% if section_data.cta %}
+        <div class="filosofia__actions">
+          <a href="{{ section_data.cta.url }}" class="btn btn--primary" target="_blank">
+            <span>{{ section_data.cta.text }}</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </a>
+        </div>
+        {% endif %}
+      </div>
+      
+      <!-- Image -->
+      <div class="filosofia__media">
+        {% if section_data.image %}
+        <div class="filosofia-image__container">
+          <img src="{{ section_data.image }}" alt="Filosofía Alkymia" class="filosofia-image">
+          <div class="filosofia-image__overlay"></div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

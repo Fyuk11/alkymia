@@ -34,6 +34,189 @@ sections:
         url: "https://wa.me/549XXXXXXXXXX"
 
 
+  - type: problematica
+    title: "¿Sentís que tu marca tiene potencial, pero..."
+    subtitle: "No estás solo. Muchos emprendedores pasan por esto antes de encontrar la solución definitiva."
+    problems:
+      - icon: "📱"
+        title: "Vendés solo por Instagram o WhatsApp?"
+        description: "Dependés de redes sociales que cambian sus algoritmos constantemente."
+      - icon: "🌐"
+        title: "Tu web/tienda está abandonada o ni existe?"
+        description: "Tu presencia digital no refleja el valor real de tu marca."
+      - icon: "⏰"
+        title: "Perdés tiempo respondiendo consultas manuales?"
+        description: "Horas valiosas que podrías usar para crecer tu negocio."
+      - icon: "📉"
+        title: "Las ventas no son constantes?"
+        description: "Picos de actividad seguidos de silencio absoluto."
+    cta:
+      text: "👉 Si esto te pasa, no es tu culpa."
+      highlight: "Las reglas del juego cambiaron: hoy vender online no es opcional, es esencial."
+
+
+  - type: servicios
+    title: "Qué hacemos en ALKYMIA"
+    subtitle: "Ayudamos a emprendedores, marcas y negocios a transformar sus ideas en sistemas de venta reales"
+    servicios:
+      - icon: "🛍️"
+        title: "Tiendas online listas para vender en 21 días"
+        description: "E-commerce completos optimizados para conversión"
+      - icon: "⚙️"
+        title: "Automatizaciones que hacen el trabajo por vos"
+        description: "Flujos automatizados de ventas y atención al cliente"
+      - icon: "📈"
+        title: "Publicidad con estrategia para llegar al cliente correcto"
+        description: "Campañas segmentadas que generan ROI real"
+      - icon: "🌐"
+        title: "Webs y portafolios que muestran quién sos"
+        description: "Presencia digital premium que comunica tu valor"
+      - icon: "🔒"
+        title: "Sistemas de venta de productos digitales"
+        description: "Entregas seguras, PDFs cifrados, cursos online"
+      - icon: "🎯"
+        title: "Sistema completo que libera tiempo y multiplica resultados"
+        description: "No solo armamos tu web, armamos tu ecosistema digital"
+
+
+
+  - type: filosofia
+    badge: "Nuestra filosofía"
+    title: "Alquimia es transformación"
+    description: "Y en Alkymia creemos que la verdadera transformación hoy es pasar de vender de manera improvisada, a tener un sistema de ventas online sólido, escalable y humano."
+    image: "/assets/images/filosofia-placeholder.jpg"
+    features:
+      - "De la improvisación a la estrategia"
+      - "Del esfuerzo manual a la automatización inteligente" 
+      - "De la incertidumbre a los resultados medibles"
+      - "De lo temporal a lo sostenible"
+    cta:
+      text: "Comenzá tu transformación hoy"
+      url: "https://wa.me/5491121652703"
+
+
+
+  - type: casos-reales
+    title: "Casos reales de transformación"
+    subtitle: "Historias de éxito de emprendedores que confiaron en Alkymia"
+    casos:
+      - nombre: "Rubicon Soluciones"
+        tipo: "Landing + Sistema Automatizado"
+        descripcion: "Landing + sistema automatizado en Systeme + Zapier para vender su 'Manual de Excelencia Operacional', con cifrado y contraseña única para cada comprador."
+        resultado: "Sistema de ventas automatizado 24/7"
+        categoria: "Productos Digitales"
+        imagen: "/assets/images/casos/rubicon.jpg"
+        
+      - nombre: "Noelia Viski"
+        tipo: "Sitio Web Completo"
+        descripcion: "Sitio web completo con talleres digitales, guías y automatización de servicios online."
+        resultado: "Presencia digital profesional consolidada"
+        categoria: "Web + Automatización"
+        imagen: "/assets/images/casos/noelia.jpg"
+        
+      - nombre: "TERAPIALMA"
+        tipo: "Programa Online"
+        descripcion: "Desarrollo de 'Mapa del Alma', un programa online basado en constelaciones familiares, con automatización de cursos y ventas."
+        resultado: "Plataforma de cursos escalable"
+        categoria: "Cursos Online"
+        imagen: "/assets/images/casos/terapialma.jpg"
+        
+      - nombre: "Uniformes Prímula"
+        tipo: "E-commerce Completo"
+        descripcion: "Tienda online con +1000 productos de uniformes escolares para 8 colegios."
+        resultado: "Ventas centralizadas y organizadas"
+        categoria: "E-commerce"
+        imagen: "/assets/images/casos/primula.jpg"
+        
+      - nombre: "Dos Palabras Librería"
+        tipo: "Tienda Online"
+        descripcion: "Tienda online con catálogo completo, SEO y Google Shopping."
+        resultado: "Presencia online profesional"
+        categoria: "E-commerce"
+        imagen: "/assets/images/casos/libreria.jpg"
+        
+      - nombre: "Radent AR"
+        tipo: "Optimización de Tienda"
+        descripcion: "Optimización y rediseño de tienda de insumos odontológicos."
+        resultado: "Mejora en conversión y UX"
+        categoria: "E-commerce"
+        imagen: "/assets/images/casos/radent.jpg"      
+
+
+  - type: portfolio
+    title: "Nuestro Trabajo"
+    subtitle: "Algunos de los proyectos destacados que hemos creado para nuestros clientes"
+    projects:
+      - title: "Rubicon Soluciones"
+        category: "Sistema Automatizado"
+        image: "/assets/images/portfolio/rubicon.jpg"
+      - title: "Noelia Viski"
+        category: "Web Profesional" 
+        image: "/assets/images/portfolio/noelia.jpg"
+      - title: "TERAPIALMA"
+        category: "Plataforma Online"
+        image: "/assets/images/portfolio/terapialma.jpg"
+      - title: "Uniformes Prímula"
+        category: "E-commerce"
+        image: "/assets/images/portfolio/primula.jpg"
+      - title: "Dos Palabras Librería"
+        category: "Tienda Online"
+        image: "/assets/images/portfolio/libreria.jpg"
+      - title: "Radent AR"
+        category: "Optimización E-commerce"
+        image: "/assets/images/portfolio/radent.jpg"
+
+
+
+  - type: para-quien-es
+    title: "Es para vos si querés..."
+    subtitle: "Identificá si Alkymia es la solución que estás buscando"
+    puntos:
+      - icon: "🕒"
+        titulo: "Tener tu negocio abierto las 24 horas, todos los días"
+        descripcion: "Vendé incluso mientras dormís, sin límites de horario"
+        
+      - icon: "⚡"
+        titulo: "Automatizar procesos para ganar libertad"
+        descripcion: "Dejá de repetir tareas manuales y enfocate en lo importante"
+        
+      - icon: "🌍"
+        titulo: "Llegar a clientes más allá de tu barrio o ciudad"
+        descripcion: "Expandí tu alcance sin límites geográficos"
+        
+      - icon: "💰"
+        titulo: "Vender productos físicos, digitales o servicios sin fricción"
+        descripcion: "Sistema integrado para cualquier tipo de venta"
+        
+      - icon: "📊"
+        titulo: "Tomar decisiones basadas en datos reales"
+        descripcion: "Métricas claras para saber qué está funcionando"
+        
+      - icon: "🚀"
+        titulo: "Escalar sin aumentar tu carga de trabajo"
+        descripcion: "Crecé sin quemarte en el proceso"
+
+
+        
+
+
+  - type: faqs
+    title: "Preguntas frecuentes"
+    items:
+      - question: "¿Puedo editar mi landing yo mismo?"
+        answer: "Sí. Con nuestro CMS podés actualizar textos, imágenes y secciones sin conocimientos técnicos."
+      - question: "¿Cuánto tarda la entrega?"
+        answer: "En promedio entre 3 y 5 días hábiles, con SEO básico incluido. Si necesitás urgencia, podemos agilizar el proceso."
+      - question: "¿Se ve bien en celular?"
+        answer: "Sí, todas las landings son 100% responsivas, adaptadas a cualquier dispositivo."
+      - question: "¿La optimización SEO está incluida?"
+        answer: "Sí, entregamos tu página lista para indexarse en Google y con métricas conectadas a Search Console."
+      - question: "¿Tengo que saber de tecnología?"
+        answer: "No. Nos ocupamos de todo el desarrollo técnico. Vos solo necesitás concentrarte en tu negocio."
+      - question: "¿Qué necesito para empezar?"
+        answer: "Logo, catálogo de productos/servicios y las ganas de escalar tu negocio. Del resto nos ocupamos nosotros."
+
+---
   - type: benefits
     title: "Por qué elegir Alkymia"
     subtitle: "Impulsamos tu negocio con soluciones digitales premium"

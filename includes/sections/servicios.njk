@@ -1,0 +1,19 @@
+<!-- sections/servicios.njk -->
+<section id="servicios" class="servicios">
+  <div class="container">
+    <div class="servicios__header">
+      <h2 class="servicios__title">{{ section_data.title }}</h2>
+      <p class="servicios__subtitle">{{ section_data.subtitle }}</p>
+    </div>
+
+    <div class="servicios__grid">
+      {% for servicio in section_data.servicios %}
+      <div class="servicio-card">
+        <div class="servicio-card__icon">{{ servicio.icon }}</div>
+        <h3 class="servicio-card__title">{{ servicio.title }}</h3>
+        <p class="servicio-card__desc">{{ servicio.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

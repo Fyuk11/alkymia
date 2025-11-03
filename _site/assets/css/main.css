@@ -6,6 +6,15 @@
 @import "nav.css";          /* NAV y burger */
 @import "hero-alkymia.css"; /* HERO ALKYMIA */
 @import "problematica.css"; /* PROBLEMÁTICA */
+@import "servicios.css"; /* SERVICIOS */
+@import "filosofia.css"; /* FILOSOFÍA */
+@import "casos-reales.css"; /* CASOS REALES */
+@import "portfolio.css"; /* PORTFOLIO alk */
+@import "para-quien-es.css"; /* PARA QUIEN ES */
+
+
+@import "faqs.css"; /* FAQS */
+
 
 @import "pain.css"; /* PAIN */
 @import "benefits.css";     /* BENEFITS */
@@ -14,11 +23,11 @@
 @import "services.css"; /* SERVICES */
 @import "testimonials.css"; /* TESTIMONIALS */
 @import "about.css";        /* ABOUT alk */
-@import "portfolio.css"; /* PORTFOLIO alk */
+
 @import "final-cta.css"; /* CTA FINAL */
 
 @import "downloads.css"; /* downloads */
-@import "faqs.css"; /* FAQS */
+
 
 @import "cta-video.css";    /* CTA VIDEO */
 

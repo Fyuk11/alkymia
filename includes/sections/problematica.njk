@@ -1,40 +1,25 @@
+<!-- sections/problematica.njk -->
 <section id="problematica" class="problematica">
   <div class="container">
     <div class="problematica__header">
-      <h2 class="problematica__title">¿Sentís que tu marca tiene potencial, pero...</h2>
-      <p class="problematica__subtitle">No estás solo. Muchos emprendedores pasan por esto antes de encontrar la solución definitiva.</p>
+      <h2 class="problematica__title">{{ section_data.title }}</h2>
+      <p class="problematica__subtitle">{{ section_data.subtitle }}</p>
     </div>
 
     <div class="problematica__grid">
+      {% for problem in section_data.problems %}
       <div class="problem-card">
-        <div class="problem-card__icon">📱</div>
-        <h3 class="problem-card__title">Vendés solo por Instagram o WhatsApp?</h3>
-        <p class="problem-card__desc">Dependés de redes sociales que cambian sus algoritmos constantemente.</p>
+        <div class="problem-card__icon">{{ problem.icon }}</div>
+        <h3 class="problem-card__title">{{ problem.title }}</h3>
+        <p class="problem-card__desc">{{ problem.description }}</p>
       </div>
-
-      <div class="problem-card">
-        <div class="problem-card__icon">🌐</div>
-        <h3 class="problem-card__title">Tu web/tienda está abandonada o ni existe?</h3>
-        <p class="problem-card__desc">Tu presencia digital no refleja el valor real de tu marca.</p>
-      </div>
-
-      <div class="problem-card">
-        <div class="problem-card__icon">⏰</div>
-        <h3 class="problem-card__title">Perdés tiempo respondiendo consultas manuales?</h3>
-        <p class="problem-card__desc">Horas valiosas que podrías usar para crecer tu negocio.</p>
-      </div>
-
-      <div class="problem-card">
-        <div class="problem-card__icon">📉</div>
-        <h3 class="problem-card__title">Las ventas no son constantes?</h3>
-        <p class="problem-card__desc">Picos de actividad seguidos de silencio absoluto.</p>
-      </div>
+      {% endfor %}
     </div>
 
     <div class="problematica__cta">
       <div class="problematica__message">
-        <p class="message-text">👉 Si esto te pasa, no es tu culpa.</p>
-        <p class="message-highlight">Las reglas del juego cambiaron: hoy vender online no es opcional, es esencial.</p>
+        <p class="message-text">{{ section_data.cta.text }}</p>
+        <p class="message-highlight">{{ section_data.cta.highlight }}</p>
       </div>
     </div>
   </div>
