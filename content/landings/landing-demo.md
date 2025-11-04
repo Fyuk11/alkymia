@@ -192,6 +192,13 @@ sections:
         categoria: "E-commerce"
         imagen: "/assets/images/cases6.webp"      
 
+      - nombre: "Ser Energía Escalar"
+        tipo: "Landing page"
+        descripcion: "Landing page personalizada con equipos detallados."
+        resultado: "Identidad digital"
+        categoria: "Landing page"
+        imagen: "/assets/images/cases7.webp"              
+
 
   - type: portfolio
     title: "Nuestro Trabajo"
