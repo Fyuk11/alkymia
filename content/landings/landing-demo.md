@@ -330,7 +330,7 @@ sections:
   - type: footer
     logo_text: "ALKYMIA"
     tagline: "Transformamos ideas en sistemas de venta reales"
-    description: "Especialistas en e-commerce, landing pages y automatización para emprendedores que quieren escalar su negocio online."
+    description: "Especialistas en e-commerce, landing pages y automatización para emprendedores que quieren escalar."
     links:
       - grupo: "Navegación"
         items:
@@ -342,56 +342,28 @@ sections:
             url: "#proceso"
           - text: "Portfolio"
             url: "#portfolio"
-          - text: "Contacto"
-            url: "#cta-final"
-      
-      - grupo: "Servicios"
-        items:
-          - text: "Tiendas Online"
-            url: "#servicios-detallados"
-          - text: "Landing Pages"
-            url: "#servicios-detallados" 
-          - text: "Portfolios"
-            url: "#servicios-detallados"
-          - text: "Automatización"
-            url: "#servicios-detallados"
-      
-      - grupo: "Recursos"
-        items:
           - text: "Casos de Éxito"
             url: "#casos-reales"
-          - text: "Preguntas Frecuentes"
+          - text: "FAQs"
             url: "#faqs"
-          - text: "Descargas"
-            url: "#downloads"
-          - text: "Blog"
-            url: "#"
-
+            
     contact:
       email: "hola@alkymia.digital"
       whatsapp: "+54 9 11 2165-2703"
-      ubicacion: "Buenos Aires, Argentina"
 
     social:
       - plataforma: "whatsapp"
         url: "https://wa.me/5491121652703"
         icon: "fab fa-whatsapp"
-      - plataforma: "instagram" 
-        url: "https://instagram.com/alkymia"
-        icon: "fab fa-instagram"
       - plataforma: "linkedin"
         url: "https://linkedin.com/company/alkymia"
         icon: "fab fa-linkedin"
+      - plataforma: "instagram" 
+        url: "https://instagram.com/alkymia"
+        icon: "fab fa-instagram"
 
     legal:
       copyright: "© 2024 Alkymia Digital. Todos los derechos reservados."
-      links:
-        - text: "Política de Privacidad"
-          url: "/privacy"
-        - text: "Términos de Servicio"
-          url: "/terms"
-
-        
 
 
 ---

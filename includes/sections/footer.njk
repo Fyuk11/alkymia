@@ -39,33 +39,24 @@
 
       <!-- Contact Column -->
       <div class="footer__contact">
-        <h4 class="footer__column-title">Contacto</h4>
+        <h4 class="footer__column-title">¿Listo para comenzar?</h4>
         <div class="contact-info">
           <div class="contact-item">
             <i class="fas fa-envelope contact-icon"></i>
-            <div class="contact-details">
-              <span class="contact-label">Email</span>
-              <a href="mailto:{{ section_data.contact.email }}" class="contact-value">{{ section_data.contact.email }}</a>
-            </div>
+            <a href="mailto:{{ section_data.contact.email }}" class="contact-value">{{ section_data.contact.email }}</a>
           </div>
           
           <div class="contact-item">
             <i class="fab fa-whatsapp contact-icon"></i>
-            <div class="contact-details">
-              <span class="contact-label">WhatsApp</span>
-              <a href="https://wa.me/{{ section_data.contact.whatsapp | replace(' ', '') | replace('+', '') | replace('-', '') }}" 
-                 class="contact-value" target="_blank">{{ section_data.contact.whatsapp }}</a>
-            </div>
-          </div>
-          
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt contact-icon"></i>
-            <div class="contact-details">
-              <span class="contact-label">Ubicación</span>
-              <span class="contact-value">{{ section_data.contact.ubicacion }}</span>
-            </div>
+            <a href="https://wa.me/5491121652703" class="contact-value" target="_blank">{{ section_data.contact.whatsapp }}</a>
           </div>
         </div>
+        
+        <!-- CTA pequeño -->
+        <a href="https://wa.me/5491121652703" class="footer-cta" target="_blank">
+          <span>Consulta gratuita</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
       </div>
     </div>
 
@@ -73,11 +64,6 @@
     <div class="footer__bottom">
       <div class="footer__legal">
         <p class="footer__copyright">{{ section_data.legal.copyright }}</p>
-        <div class="footer__legal-links">
-          {% for link in section_data.legal.links %}
-          <a href="{{ link.url }}" class="legal-link">{{ link.text }}</a>
-          {% endfor %}
-        </div>
       </div>
     </div>
   </div>
