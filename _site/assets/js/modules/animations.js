@@ -2,11 +2,32 @@
 // Animaciones globales - Versión optimizada
 
 export function initScrollAnimations() {
+  // Reset scroll al top al iniciar
+  initScrollReset();
+  
   // Scroll suave para todos los links internos
   initSmoothScroll();
   
   // Animaciones al hacer scroll
   initScrollTriggeredAnimations();
+}
+
+// Nueva función para resetear scroll
+function initScrollReset() {
+  // Scroll al top inmediatamente al cargar
+  window.scrollTo(0, 0);
+  
+  // Prevenir restore scroll del navegador (scroll restoration)
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  
+  // Scroll al top también antes de recargar
+  window.addEventListener('beforeunload', () => {
+    window.scrollTo(0, 0);
+  });
+  
+  console.log('🔝 Scroll reset inicializado');
 }
 
 function initSmoothScroll() {
@@ -49,6 +70,3 @@ function initScrollTriggeredAnimations() {
   
   elementsToAnimate.forEach(el => observer.observe(el));
 }
-
-// Función removida - initAboutAnimations ya no existe
-// Función removida - initContactParticles ya no existe
