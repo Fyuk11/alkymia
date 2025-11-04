@@ -359,7 +359,7 @@ sections:
         url: "https://linkedin.com/company/alkymia"
         icon: "fab fa-linkedin"
       - plataforma: "instagram" 
-        url: "https://instagram.com/alkymia"
+        url: "https://www.instagram.com/alkymiaacademia/"
         icon: "fab fa-instagram"
 
     legal:
