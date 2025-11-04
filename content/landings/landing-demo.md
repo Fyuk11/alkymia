@@ -216,6 +216,54 @@ sections:
       - question: "¿Qué necesito para empezar?"
         answer: "Logo, catálogo de productos/servicios y las ganas de escalar tu negocio. Del resto nos ocupamos nosotros."
 
+
+
+  - type: downloads
+    title: "Recursos y Productos Digitales"
+    subtitle: "Herramientas y recursos para potenciar tu negocio online"
+    items:
+      - title: "Checklist para lanzar tu landing page"
+        description: "Una lista rápida para que no te olvides de nada al lanzar tu página"
+        image: "/assets/images/resources/checklist-landing.jpg"
+        download_url: "/assets/pdfs/checklist-landing.pdf"
+        cta_text: "Descargar gratis"
+        tipo: "gratuito"
+        
+      - title: "Guía de primeros pasos en Tiendanube"
+        description: "Aprende a montar tu tienda en menos de una semana"
+        image: "/assets/images/resources/tiendanube-guide.jpg" 
+        gumroad_url: "https://alkymia.gumroad.com/l/primeros-pasos"
+        cta_text: "Comprar ahora"
+        tipo: "premium"
+        
+      - title: "Plantilla de Flujos de Automatización"
+        description: "Estructuras probadas para automatizar tus ventas y atención al cliente"
+        image: "/assets/images/resources/flujos-automatizacion.jpg"
+        gumroad_url: "https://alkymia.gumroad.com/l/flujos-automatizacion"
+        cta_text: "Obtener plantilla"
+        tipo: "premium"
+        
+      - title: "Kit de SEO para E-commerce"
+        description: "Checklist completo de optimización SEO para tu tienda online"
+        image: "/assets/images/resources/seo-ecommerce.jpg"
+        download_url: "/assets/pdfs/kit-seo-ecommerce.pdf"
+        cta_text: "Descargar gratis"
+        tipo: "gratuito"
+
+
+
+  - type: cta-final
+    title: "Tu próxima venta puede llegar mientras lees esto"
+    subtitle: "No es magia, es Alkymia"
+    whatsapp_number: "5491121652703"
+    cta_button: "Activá tu Alkymia ahora"
+    nota: "Consultá por nuestros planes personalizados"
+
+
+
+    
+
+
 ---
   - type: benefits
     title: "Por qué elegir Alkymia"

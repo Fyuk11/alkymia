@@ -1,20 +1,28 @@
+<!-- sections/downloads.njk -->
 <section class="downloads" id="downloads">
   <div class="container">
-    <h2 class="section-title animate-on-scroll">{{ section_data.title or "Recursos Digitales" }}</h2>
-    <p class="section-subtitle animate-on-scroll">{{ section_data.subtitle or "Guías, PDFs y herramientas para tu camino alquímico" }}</p>
+    <h2 class="section-title">{{ section_data.title }}</h2>
+    <p class="section-subtitle">{{ section_data.subtitle }}</p>
 
     <div class="downloads-grid">
-      {% for file in section_data.items or [] %}
-        <div class="download-card fade-up animate-on-scroll">
+      {% for file in section_data.items %}
+        <div class="download-card">
           {% if file.image %}
             <img src="{{ file.image }}" alt="{{ file.title }}" class="download-card__image">
           {% endif %}
+          
+          {% if file.tipo == "premium" %}
+          <div class="download-badge">Premium</div>
+          {% else %}
+          <div class="download-badge download-badge--free">Gratuito</div>
+          {% endif %}
+          
           <h3>{{ file.title }}</h3>
           <p>{{ file.description }}</p>
 
           {% if file.gumroad_url %}
             <a href="{{ file.gumroad_url }}" class="btn btn-primary" target="_blank">
-              {{ file.cta_text or "Comprar en Gumroad" }}
+              {{ file.cta_text or "Comprar" }}
             </a>
           {% elseif file.download_url %}
             <a href="{{ file.download_url }}" class="btn btn-secondary" download>

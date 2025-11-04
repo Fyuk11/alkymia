@@ -1,0 +1,24 @@
+<!-- sections/cta-final.njk -->
+<section id="cta-final" class="cta-final">
+  <div class="container">
+    <div class="cta-final__content">
+      <h2 class="cta-final__title">{{ section_data.title }}</h2>
+      <p class="cta-final__subtitle">{{ section_data.subtitle }}</p>
+      
+      <div class="cta-final__actions">
+        <a href="https://wa.me/{{ section_data.whatsapp_number }}" 
+           class="btn btn--primary btn--large" 
+           target="_blank">
+          <span>{{ section_data.cta_button }}</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </a>
+      </div>
+      
+      {% if section_data.nota %}
+      <p class="cta-final__note">{{ section_data.nota }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>

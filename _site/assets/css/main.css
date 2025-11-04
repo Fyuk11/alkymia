@@ -14,6 +14,11 @@
 
 
 @import "faqs.css"; /* FAQS */
+@import "downloads.css"; /* downloads */
+@import "cta-final.css"; /* CTA FINAL */
+
+
+
 
 
 @import "pain.css"; /* PAIN */
@@ -26,7 +31,7 @@
 
 @import "final-cta.css"; /* CTA FINAL */
 
-@import "downloads.css"; /* downloads */
+
 
 
 @import "cta-video.css";    /* CTA VIDEO */
