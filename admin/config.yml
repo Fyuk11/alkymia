@@ -7,106 +7,185 @@ public_folder: "/assets/uploads"
 
 collections:
   - name: "landing"
-    label: "Landing Demo"
+    label: "Landing Alkymia"
     files:
       - file: "content/landings/landing-demo.md"
-        label: "Landing Demo Cliente"
-        name: "landingdemo"
+        label: "Landing Alkymia"
+        name: "landingalkymia"
         fields:
-          - { name: "title", label: "Título", widget: "string" }
+          - { name: "layout", label: "Layout", widget: "hidden", default: "landing.njk" }
+          - { name: "title", label: "Título Principal", widget: "string" }
           - { name: "description", label: "Descripción", widget: "text" }
+          - { name: "permalink", label: "Permalink", widget: "hidden", default: "index.html" }
+          - { name: "logo", label: "Logo del Nav", widget: "image" }
 
           - label: "SEO"
             name: "seo"
             widget: "object"
             fields:
-              - { name: "canonical", label: "Canonical", widget: "string" }
+              - { name: "canonical", label: "Canonical URL", widget: "string" }
               - { name: "og_title", label: "OG Title", widget: "string" }
               - { name: "og_description", label: "OG Description", widget: "text" }
               - { name: "og_image", label: "OG Image", widget: "image" }
               - { name: "twitter_title", label: "Twitter Title", widget: "string" }
               - { name: "twitter_description", label: "Twitter Description", widget: "text" }
 
-          - label: "Menú de navegación"
+          - label: "Menú de Navegación"
             name: "nav"
             widget: "list"
             fields:
               - { name: "text", label: "Texto", widget: "string" }
               - { name: "url", label: "URL", widget: "string" }
-              - { name: "external", label: "¿Enlace externo?", widget: "boolean", required: false }
+              - { name: "external", label: "¿Enlace externo?", widget: "boolean", required: false, default: false }
 
           - label: "Secciones"
             name: "sections"
             widget: "list"
             types:
-              - label: "Hero"
-                name: "hero"
+              - label: "Hero Alkymia"
+                name: "hero-alkymia"
                 widget: "object"
                 fields:
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "hero-alkymia" }
                   - { name: "title", label: "Título", widget: "string" }
                   - { name: "subtitle", label: "Subtítulo", widget: "text" }
-                  - { name: "background", label: "Fondo", widget: "image" }
-                  - label: "CTAs"
+                  - { name: "background", label: "Imagen de Fondo", widget: "image" }
+                  - { name: "media", label: "Imagen Principal", widget: "image" }
+                  - label: "Botones CTA"
                     name: "ctas"
                     widget: "list"
+                    fields:
+                      - { name: "text", label: "Texto del Botón", widget: "string" }
+                      - { name: "url", label: "URL", widget: "string" }
+                      - { name: "external", label: "¿Enlace externo?", widget: "boolean", required: false, default: true }
+
+              - label: "Identificación"
+                name: "identificacion"
+                widget: "object"
+                fields:
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "identificacion" }
+                  - { name: "title", label: "Título", widget: "string" }
+                  - { name: "subtitle", label: "Subtítulo", widget: "text" }
+                  - label: "Escenarios"
+                    name: "escenarios"
+                    widget: "list"
+                    fields:
+                      - { name: "icono", label: "Ícono", widget: "string" }
+                      - { name: "titulo", label: "Título del Escenario", widget: "string" }
+                      - { name: "problema_principal", label: "Problema Principal", widget: "text" }
+                      - label: "Síntomas"
+                        name: "sintomas"
+                        widget: "list"
+                        fields:
+                          - { name: "sintoma", label: "Síntoma", widget: "string" }
+                      - { name: "solucion", label: "Solución", widget: "string" }
+                      - { name: "resultado", label: "Resultado", widget: "string" }
+
+              - label: "Proceso Alquímico"
+                name: "proceso-alquimico"
+                widget: "object"
+                fields:
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "proceso-alquimico" }
+                  - { name: "title", label: "Título", widget: "string" }
+                  - { name: "subtitle", label: "Subtítulo", widget: "text" }
+                  - label: "Pasos"
+                    name: "pasos"
+                    widget: "list"
+                    fields:
+                      - { name: "numero", label: "Número", widget: "string" }
+                      - { name: "titulo", label: "Título", widget: "string" }
+                      - { name: "descripcion", label: "Descripción", widget: "text" }
+                      - label: "Detalles"
+                        name: "detalles"
+                        widget: "list"
+                        fields:
+                          - { name: "detalle", label: "Detalle", widget: "string" }
+                      - { name: "icono", label: "Ícono", widget: "string" }
+                      - { name: "color", label: "Color", widget: "color" }
+
+              - label: "Filosofía"
+                name: "filosofia"
+                widget: "object"
+                fields:
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "filosofia" }
+                  - { name: "badge", label: "Badge", widget: "string" }
+                  - { name: "title", label: "Título", widget: "string" }
+                  - { name: "description", label: "Descripción", widget: "text" }
+                  - { name: "image", label: "Imagen", widget: "image" }
+                  - label: "Características"
+                    name: "features"
+                    widget: "list"
+                    fields:
+                      - { name: "feature", label: "Característica", widget: "string" }
+                  - label: "Call to Action"
+                    name: "cta"
+                    widget: "object"
                     fields:
                       - { name: "text", label: "Texto", widget: "string" }
                       - { name: "url", label: "URL", widget: "string" }
 
-              - label: "Beneficios"
-                name: "benefits"
+              - label: "Casos Reales"
+                name: "casos-reales"
                 widget: "object"
                 fields:
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "casos-reales" }
                   - { name: "title", label: "Título", widget: "string" }
-                  - label: "Items"
-                    name: "items"
+                  - { name: "subtitle", label: "Subtítulo", widget: "text" }
+                  - label: "Casos"
+                    name: "casos"
                     widget: "list"
                     fields:
-                      - { name: "icon", label: "Ícono", widget: "image" }
-                      - { name: "title", label: "Título", widget: "string" }
-                      - { name: "text", label: "Texto", widget: "text" }
+                      - { name: "nombre", label: "Nombre del Cliente", widget: "string" }
+                      - { name: "tipo", label: "Tipo de Proyecto", widget: "string" }
+                      - { name: "descripcion", label: "Descripción", widget: "text" }
+                      - { name: "resultado", label: "Resultado", widget: "string" }
+                      - { name: "categoria", label: "Categoría", widget: "string" }
+                      - { name: "imagen", label: "Imagen", widget: "image" }
 
-              - label: "Steps"
-                name: "steps"
+              - label: "Portfolio"
+                name: "portfolio"
                 widget: "object"
                 fields:
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "portfolio" }
                   - { name: "title", label: "Título", widget: "string" }
-                  - label: "Pasos"
-                    name: "steps"
+                  - { name: "subtitle", label: "Subtítulo", widget: "text" }
+                  - label: "Proyectos"
+                    name: "projects"
                     widget: "list"
                     fields:
-                      - { name: "number", label: "Número", widget: "number" }
-                      - { name: "title", label: "Título", widget: "string" }
-                      - { name: "text", label: "Texto", widget: "text" }
+                      - { name: "title", label: "Título del Proyecto", widget: "string" }
+                      - { name: "category", label: "Categoría", widget: "string" }
+                      - { name: "image", label: "Imagen", widget: "image" }
+                      - { name: "url", label: "URL del Proyecto", widget: "string" }
 
-              - label: "Divider"
-                name: "section-divider"
+              - label: "Servicios Detallados"
+                name: "servicios-detallados"
                 widget: "object"
                 fields:
-                  - { name: "fill", label: "Color de fondo", widget: "string", required: false }
-                  - label: "Gradiente"
-                    name: "gradient"
-                    widget: "list"
-                    required: false
-                    fields:
-                      - { name: "offset", label: "Offset", widget: "string" }
-                      - { name: "color", label: "Color", widget: "string" }
-                      - { name: "opacity", label: "Opacidad", widget: "number", required: false }
-                  - { name: "invert", label: "Invertir", widget: "boolean", required: false }
-
-              - label: "About"
-                name: "about"
-                widget: "object"
-                fields:
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "servicios-detallados" }
                   - { name: "title", label: "Título", widget: "string" }
-                  - { name: "text", label: "Texto", widget: "text" }
-                  - { name: "extra_text", label: "Texto Extra", widget: "text", required: false }
-                  - { name: "images", label: "Imágenes", widget: "list", field: { name: "image", label: "Imagen", widget: "image" } }
+                  - { name: "subtitle", label: "Subtítulo", widget: "text" }
+                  - label: "Servicios"
+                    name: "servicios"
+                    widget: "list"
+                    fields:
+                      - { name: "icon", label: "Ícono", widget: "string" }
+                      - { name: "title", label: "Título del Servicio", widget: "string" }
+                      - { name: "platform", label: "Plataforma", widget: "string" }
+                      - { name: "description", label: "Descripción", widget: "text" }
+                      - label: "Características"
+                        name: "features"
+                        widget: "list"
+                        fields:
+                          - { name: "feature", label: "Característica", widget: "string" }
+                      - { name: "tiempo", label: "Tiempo de Entrega", widget: "string" }
+                      - { name: "precio", label: "Precio", widget: "string" }
 
               - label: "FAQs"
                 name: "faqs"
                 widget: "object"
                 fields:
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "faqs" }
                   - { name: "title", label: "Título", widget: "string" }
                   - label: "Preguntas"
                     name: "items"
@@ -115,41 +194,71 @@ collections:
                       - { name: "question", label: "Pregunta", widget: "string" }
                       - { name: "answer", label: "Respuesta", widget: "text" }
 
-              - label: "CTA Video"
-                name: "cta-video"
+              - label: "Downloads"
+                name: "downloads"
                 widget: "object"
                 fields:
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "downloads" }
                   - { name: "title", label: "Título", widget: "string" }
-                  - { name: "subtitle", label: "Subtítulo", widget: "string" }
-                  - label: "CTAs"
-                    name: "ctas"
+                  - { name: "subtitle", label: "Subtítulo", widget: "text" }
+                  - label: "Items"
+                    name: "items"
                     widget: "list"
                     fields:
-                      - { name: "text", label: "Texto", widget: "string" }
-                      - { name: "url", label: "URL", widget: "string" }
+                      - { name: "title", label: "Título del Recurso", widget: "string" }
+                      - { name: "description", label: "Descripción", widget: "text" }
+                      - { name: "image", label: "Imagen", widget: "image" }
+                      - { name: "download_url", label: "URL de Descarga", widget: "string", required: false }
+                      - { name: "gumroad_url", label: "URL de Gumroad", widget: "string", required: false }
+                      - { name: "cta_text", label: "Texto del Botón", widget: "string" }
+                      - { name: "tipo", label: "Tipo", widget: "select", options: ["gratuito", "premium"] }
 
-              - label: "Contacto"
-                name: "contact"
+              - label: "CTA Final"
+                name: "cta-final"
                 widget: "object"
                 fields:
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "cta-final" }
                   - { name: "title", label: "Título", widget: "string" }
-                  - { name: "text", label: "Texto", widget: "text" }
+                  - { name: "subtitle", label: "Subtítulo", widget: "string" }
+                  - { name: "whatsapp_number", label: "Número de WhatsApp", widget: "string" }
+                  - { name: "cta_button", label: "Texto del Botón", widget: "string" }
+                  - { name: "nota", label: "Nota", widget: "string" }
+                  - { name: "background_image", label: "Imagen de Fondo", widget: "image" }
 
               - label: "Footer"
                 name: "footer"
                 widget: "object"
                 fields:
-                  - { name: "text", label: "Texto", widget: "string" }
-                  - { name: "email", label: "Email", widget: "string" }
-                  - label: "Links"
+                  - { name: "type", label: "Tipo", widget: "hidden", default: "footer" }
+                  - { name: "logo_text", label: "Texto del Logo", widget: "string" }
+                  - { name: "tagline", label: "Tagline", widget: "string" }
+                  - { name: "description", label: "Descripción", widget: "text" }
+                  - label: "Enlaces"
                     name: "links"
                     widget: "list"
                     fields:
-                      - { name: "text", label: "Texto", widget: "string" }
-                      - { name: "url", label: "URL", widget: "string" }
+                      - { name: "grupo", label: "Grupo", widget: "string" }
+                      - label: "Items"
+                        name: "items"
+                        widget: "list"
+                        fields:
+                          - { name: "text", label: "Texto", widget: "string" }
+                          - { name: "url", label: "URL", widget: "string" }
+                  - label: "Contacto"
+                    name: "contact"
+                    widget: "object"
+                    fields:
+                      - { name: "email", label: "Email", widget: "string" }
+                      - { name: "whatsapp", label: "WhatsApp", widget: "string" }
                   - label: "Redes Sociales"
                     name: "social"
                     widget: "list"
                     fields:
-                      - { name: "network", label: "Red", widget: "string" }
+                      - { name: "plataforma", label: "Plataforma", widget: "string" }
                       - { name: "url", label: "URL", widget: "string" }
+                      - { name: "icon", label: "Ícono", widget: "string" }
+                  - label: "Legal"
+                    name: "legal"
+                    widget: "object"
+                    fields:
+                      - { name: "copyright", label: "Copyright", widget: "string" }
