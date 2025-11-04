@@ -1,24 +1,27 @@
 ---
 layout: landing.njk
-title: Landing Demo Cliente
-description: Esta es una landing de prueba para mostrar secciones dinámicas.
+title: Alkymia Digital
+description: Transformamos ideas en realidad digital. Soluciones de e-commerce y landing pages premium que generan resultados medibles.
 permalink: index.html
+logo: "/assets/images/ALKYMIA- Logo2.webp"  # Logo para el nav
 seo:
-  canonical: https://alkymiadigital.netlify.app/
-  og_title: Alkymia digital
-  og_description: Alkymia - Landing pages, ecommerce, portfolios.
-  og_image: /assets/images/placeholder.jpg
-  twitter_title: Alkymia digital
-  twitter_description: Alkymia - Landing pages, ecommerce, portfolios.
+  canonical: https://alkymiadigital.netlify.app
+  og_title: Alkymia Digital - Transformación Digital
+  og_description: Especialistas en e-commerce, landing pages y automatización para emprendedores
+  og_image: /assets/images/og-image.jpg
+  twitter_title: Alkymia Digital
+  twitter_description: Transformamos ideas en sistemas de venta reales
 nav:
   - text: Inicio
     url: "#hero"
-  - text: Beneficios
-    url: "#benefits"
-  - text: Nosotros
-    url: "#about"
+  - text: Servicios
+    url: "#servicios-detallados"
+  - text: Proceso
+    url: "#proceso"
+  - text: Portfolio
+    url: "#portfolio"
   - text: Contacto
-    url: "#contact"
+    url: "#cta-final"
   - text: WhatsApp
     url: https://wa.me/5491121652703
     external: true

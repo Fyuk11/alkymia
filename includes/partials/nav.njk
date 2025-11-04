@@ -1,13 +1,24 @@
 <!-- partials/nav.njk -->
 <nav class="nav nav--alkymia">
   <div class="nav__inner container">
-    <!-- Brand Alkymia -->
+    <!-- Brand Alkymia con Logo -->
     <a class="nav__brand" href="/">
-      <span class="nav__logo">ALKYMIA</span>
+      <div class="nav__brand-content">
+        <!-- Logo dinámico -->
+        {% if landing.logo %}
+          <img src="{{ landing.logo }}" alt="Alkymia" class="nav__logo-image">
+        {% else %}
+          <!-- Fallback temporal -->
+          <div class="nav__logo-icon">⚗️</div>
+        {% endif %}
+        <span class="nav__logo-text">ALKYMIA</span>
+      </div>
     </a>
 
-    <!-- Burger toggle (mobile) -->
+    <!-- Burger toggle (mobile) - CON 3 BARRAS -->
     <button class="nav__toggle" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
       <span></span>
     </button>
 

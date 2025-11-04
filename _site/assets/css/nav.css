@@ -220,3 +220,156 @@
     padding: 1.5rem 2rem;
   }
 }
+
+
+/* ===== BRAND CON LOGO ===== */
+.nav__brand-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.nav__logo-image {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.nav__logo-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #d4af37;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.nav__brand:hover .nav__logo-image {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.nav__brand:hover .nav__logo-text {
+  color: #ffd700;
+  text-shadow: 0 4px 8px rgba(212, 175, 55, 0.5);
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav__logo-image {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .nav__logo-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__logo-image {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .nav__logo-text {
+    font-size: 1.4rem;
+  }
+  
+  .nav__brand-content {
+    gap: 8px;
+  }
+}
+
+
+
+/* ===== BRAND CON LOGO MÁS GRANDE ===== */
+.nav__brand-content {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Más espacio entre logo y texto */
+  text-decoration: none;
+}
+
+.nav__logo-image {
+  width: 50px; /* Más grande */
+  height: 50px; /* Más grande */
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.nav__logo-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #d4af37;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Logo temporal más grande */
+.nav__logo-icon {
+  font-size: 2.5rem; /* Más grande */
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.nav__brand:hover .nav__logo-image {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.nav__brand:hover .nav__logo-icon {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.nav__brand:hover .nav__logo-text {
+  color: #ffd700;
+  text-shadow: 0 4px 8px rgba(212, 175, 55, 0.5);
+  transform: scale(1.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav__logo-image {
+    width: 45px; /* Ajustado para mobile */
+    height: 45px;
+  }
+  
+  .nav__logo-text {
+    font-size: 1.6rem;
+  }
+  
+  .nav__logo-icon {
+    font-size: 2.2rem;
+  }
+  
+  .nav__brand-content {
+    gap: 12px; /* Un poco menos de espacio en mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav__logo-image {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .nav__logo-text {
+    font-size: 1.4rem;
+  }
+  
+  .nav__logo-icon {
+    font-size: 2rem;
+  }
+  
+  .nav__brand-content {
+    gap: 10px;
+  }
+}
