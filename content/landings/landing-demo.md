@@ -261,34 +261,6 @@ sections:
 
 
 
-  - type: para-quien-es
-    title: "Es para vos si querés..."
-    subtitle: "Identificá si Alkymia es la solución que estás buscando"
-    puntos:
-      - icon: "🕒"
-        titulo: "Tener tu negocio abierto las 24 horas, todos los días"
-        descripcion: "Vendé incluso mientras dormís, sin límites de horario"
-        
-      - icon: "⚡"
-        titulo: "Automatizar procesos para ganar libertad"
-        descripcion: "Dejá de repetir tareas manuales y enfocate en lo importante"
-        
-      - icon: "🌍"
-        titulo: "Llegar a clientes más allá de tu barrio o ciudad"
-        descripcion: "Expandí tu alcance sin límites geográficos"
-        
-      - icon: "💰"
-        titulo: "Vender productos físicos, digitales o servicios sin fricción"
-        descripcion: "Sistema integrado para cualquier tipo de venta"
-        
-      - icon: "📊"
-        titulo: "Tomar decisiones basadas en datos reales"
-        descripcion: "Métricas claras para saber qué está funcionando"
-        
-      - icon: "🚀"
-        titulo: "Escalar sin aumentar tu carga de trabajo"
-        descripcion: "Crecé sin quemarte en el proceso"
-
 
         
 
@@ -356,24 +328,68 @@ sections:
 
  
   - type: footer
-    text: "© 2025 Alkymia. Todos los derechos reservados."
-    email: "contacto@alkymia.digital"
+    logo_text: "ALKYMIA"
+    tagline: "Transformamos ideas en sistemas de venta reales"
+    description: "Especialistas en e-commerce, landing pages y automatización para emprendedores que quieren escalar su negocio online."
     links:
-      - text: Inicio
-        url: "#hero"
-      - text: Beneficios
-        url: "#benefits"
-      - text: Nosotros
-        url: "#about"
-      - text: Portfolio
-        url: "#portfolio"
-      - text: Contacto
-        url: "#final-cta"
+      - grupo: "Navegación"
+        items:
+          - text: "Inicio"
+            url: "#hero"
+          - text: "Servicios" 
+            url: "#servicios-detallados"
+          - text: "Proceso"
+            url: "#proceso"
+          - text: "Portfolio"
+            url: "#portfolio"
+          - text: "Contacto"
+            url: "#cta-final"
+      
+      - grupo: "Servicios"
+        items:
+          - text: "Tiendas Online"
+            url: "#servicios-detallados"
+          - text: "Landing Pages"
+            url: "#servicios-detallados" 
+          - text: "Portfolios"
+            url: "#servicios-detallados"
+          - text: "Automatización"
+            url: "#servicios-detallados"
+      
+      - grupo: "Recursos"
+        items:
+          - text: "Casos de Éxito"
+            url: "#casos-reales"
+          - text: "Preguntas Frecuentes"
+            url: "#faqs"
+          - text: "Descargas"
+            url: "#downloads"
+          - text: "Blog"
+            url: "#"
+
+    contact:
+      email: "hola@alkymia.digital"
+      whatsapp: "+54 9 11 2165-2703"
+      ubicacion: "Buenos Aires, Argentina"
+
     social:
-      - type: instagram
+      - plataforma: "whatsapp"
+        url: "https://wa.me/5491121652703"
+        icon: "fab fa-whatsapp"
+      - plataforma: "instagram" 
         url: "https://instagram.com/alkymia"
-      - type: whatsapp
-        url: "https://wa.me/5491123456789"
+        icon: "fab fa-instagram"
+      - plataforma: "linkedin"
+        url: "https://linkedin.com/company/alkymia"
+        icon: "fab fa-linkedin"
+
+    legal:
+      copyright: "© 2024 Alkymia Digital. Todos los derechos reservados."
+      links:
+        - text: "Política de Privacidad"
+          url: "/privacy"
+        - text: "Términos de Servicio"
+          url: "/terms"
 
         
 

@@ -1,34 +1,84 @@
+<!-- sections/footer.njk -->
 <footer id="footer" class="footer">
-  <canvas id="footerParticles" class="footer-particles"></canvas>
+  <div class="container">
+    <!-- Main Footer Content -->
+    <div class="footer__main">
+      <!-- Brand Column -->
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="logo-text">{{ section_data.logo_text }}</span>
+        </div>
+        <p class="footer__tagline">{{ section_data.tagline }}</p>
+        <p class="footer__description">{{ section_data.description }}</p>
+        
+        <!-- Social Links -->
+        <div class="footer__social">
+          {% for social in section_data.social %}
+          <a href="{{ social.url }}" class="social-link" target="_blank" aria-label="{{ social.plataforma }}">
+            <i class="{{ social.icon }}"></i>
+          </a>
+          {% endfor %}
+        </div>
+      </div>
 
-  <div class="container footer__grid">
-    
-    <div class="footer__copy">
-      <p>{{ section_data.text or "© 2025 Alkymia. Todos los derechos reservados." }}</p>
-      <span class="footer__email">{{ section_data.email or "contacto@alkymia.digital" }}</span>
+      <!-- Links Columns -->
+      <div class="footer__links">
+        {% for grupo in section_data.links %}
+        <div class="footer__column">
+          <h4 class="footer__column-title">{{ grupo.grupo }}</h4>
+          <ul class="footer__links-list">
+            {% for item in grupo.items %}
+            <li class="footer__link-item">
+              <a href="{{ item.url }}" class="footer__link">{{ item.text }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Contact Column -->
+      <div class="footer__contact">
+        <h4 class="footer__column-title">Contacto</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope contact-icon"></i>
+            <div class="contact-details">
+              <span class="contact-label">Email</span>
+              <a href="mailto:{{ section_data.contact.email }}" class="contact-value">{{ section_data.contact.email }}</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fab fa-whatsapp contact-icon"></i>
+            <div class="contact-details">
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/{{ section_data.contact.whatsapp | replace(' ', '') | replace('+', '') | replace('-', '') }}" 
+                 class="contact-value" target="_blank">{{ section_data.contact.whatsapp }}</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <div class="contact-details">
+              <span class="contact-label">Ubicación</span>
+              <span class="contact-value">{{ section_data.contact.ubicacion }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <ul class="footer__menu">
-      {% for link in section_data.links %}
-        <li><a href="{{ link.url }}">{{ link.text }}</a></li>
-      {% endfor %}
-    </ul>
-
-    <div class="footer__social">
-      {% for s in section_data.social %}
-        {% if s.type == "instagram" %}
-          <a href="{{ s.url }}" target="_blank" rel="noopener" class="btn-social instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-        {% endif %}
-        {% if s.type == "whatsapp" %}
-          <a href="{{ s.url }}" target="_blank" rel="noopener" class="btn-social whatsapp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
-        {% endif %}
-      {% endfor %}
+    <!-- Footer Bottom -->
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <p class="footer__copyright">{{ section_data.legal.copyright }}</p>
+        <div class="footer__legal-links">
+          {% for link in section_data.legal.links %}
+          <a href="{{ link.url }}" class="legal-link">{{ link.text }}</a>
+          {% endfor %}
+        </div>
+      </div>
     </div>
-
   </div>
 </footer>
-
