@@ -10,7 +10,7 @@
   overflow: hidden;
   background: #000;
   color: #fff;
-  padding: 80px 0 40px;
+  padding: 80px 0 100px;
 }
 
 /* Background */
@@ -190,7 +190,6 @@
   padding: 20px;
   border-radius: 16px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-  /* En mobile no hay transformación 3D */
 }
 
 .mockup-image {
@@ -230,20 +229,33 @@
   font-size: 1rem;
 }
 
-/* Scroll Indicator */
+/* Scroll Indicator - MEJORADO */
 .scroll-indicator {
   position: absolute;
-  bottom: 20px;
+  bottom: 90px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  color: #999;
-  font-size: 0.75rem;
+  gap: 12px;
+  color: #d4af37;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   animation: bounce 2s infinite;
   z-index: 2;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-indicator .arrow {
+  width: 20px;
+  height: 20px;
+  border-right: 2px solid #d4af37;
+  border-bottom: 2px solid #d4af37;
+  transform: rotate(45deg);
+  animation: arrow-bounce 2s infinite;
 }
 
 @keyframes bounce {
@@ -251,10 +263,22 @@
     transform: translateX(-50%) translateY(0);
   }
   40% {
-    transform: translateX(-50%) translateY(-8px);
+    transform: translateX(-50%) translateY(-10px);
   }
   60% {
-    transform: translateX(-50%) translateY(-4px);
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+@keyframes arrow-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.7;
+  }
+  60% {
+    opacity: 0.9;
   }
 }
 
@@ -313,6 +337,11 @@
   
   .feature-card {
     margin: 0;
+  }
+  
+  .scroll-indicator {
+    bottom: 40px;
+    font-size: 0.9rem;
   }
 }
 
@@ -444,7 +473,7 @@
   }
   
   .scroll-indicator {
-    bottom: 40px;
+    bottom: 50px;
     font-size: 0.875rem;
   }
 }
@@ -461,6 +490,19 @@
 }
 
 /* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+  .scroll-indicator {
+    bottom: 100px;
+    font-size: 0.8rem;
+    gap: 10px;
+  }
+  
+  .scroll-indicator .arrow {
+    width: 18px;
+    height: 18px;
+  }
+}
+
 @media (max-width: 360px) {
   .hero-title {
     font-size: 2rem;
@@ -480,5 +522,16 @@
   .stat-label {
     margin-top: 0;
     text-align: left;
+  }
+  
+  .scroll-indicator {
+    bottom: 110px;
+    font-size: 0.75rem;
+    gap: 8px;
+  }
+  
+  .scroll-indicator .arrow {
+    width: 16px;
+    height: 16px;
   }
 }
