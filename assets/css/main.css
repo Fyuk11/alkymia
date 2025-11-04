@@ -5,8 +5,15 @@
 @import "branding.css"; /* BRANDING */
 @import "nav.css";          /* NAV y burger */
 @import "hero-alkymia.css"; /* HERO ALKYMIA */
+@import "identificacion.css";
+
+
 @import "problematica.css"; /* PROBLEMÁTICA */
 @import "servicios.css"; /* SERVICIOS */
+
+
+@import "proceso-alquimico.css"; 
+
 @import "filosofia.css"; /* FILOSOFÍA */
 @import "casos-reales.css"; /* CASOS REALES */
 @import "portfolio.css"; /* PORTFOLIO alk */

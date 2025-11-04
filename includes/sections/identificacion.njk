@@ -1,0 +1,61 @@
+<!-- sections/identificacion.njk -->
+<section id="identificacion" class="identificacion">
+  <div class="container">
+    <div class="identificacion__header">
+      <h2 class="identificacion__title">{{ section_data.title }}</h2>
+      <p class="identificacion__subtitle">{{ section_data.subtitle }}</p>
+    </div>
+
+    <div class="escenarios-grid">
+      {% for escenario in section_data.escenarios %}
+      <div class="escenario-card">
+        <!-- Header con icono y título -->
+        <div class="escenario-header">
+          <div class="escenario-icon">{{ escenario.icono }}</div>
+          <h3 class="escenario-titulo">{{ escenario.titulo }}</h3>
+        </div>
+        
+        <!-- Problema principal -->
+        <div class="problema-principal">
+          <div class="problema-label">Desafío principal</div>
+          <p class="problema-texto">{{ escenario.problema_principal }}</p>
+        </div>
+        
+        <!-- Síntomas -->
+        <div class="sintomas-section">
+          <h4 class="sintomas-titulo">¿Reconocés alguna de estas señales?</h4>
+          <div class="sintomas-lista">
+            {% for sintoma in escenario.sintomas %}
+            <div class="sintoma-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#d4af37" stroke-width="2"/>
+                <path d="M8 12L11 15L16 9" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>{{ sintoma }}</span>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        
+        <!-- Solución y resultado -->
+        <div class="solucion-section">
+          <div class="solucion-item">
+            <div class="solucion-icon">💡</div>
+            <div class="solucion-content">
+              <strong>Nuestra solución:</strong>
+              <span>{{ escenario.solucion }}</span>
+            </div>
+          </div>
+          <div class="solucion-item">
+            <div class="solucion-icon">🎯</div>
+            <div class="solucion-content">
+              <strong>El resultado:</strong>
+              <span>{{ escenario.resultado }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

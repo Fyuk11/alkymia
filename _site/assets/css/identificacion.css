@@ -1,0 +1,332 @@
+/* ============================
+   IDENTIFICACIÓN SECTION - 3 CARDS EN FILA
+   ============================ */
+.identificacion {
+  padding: 100px 0;
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+
+.identificacion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+}
+
+.identificacion__header {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.identificacion__title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.identificacion__subtitle {
+  font-size: 1.125rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.escenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* SIEMPRE 3 COLUMNAS EN DESKTOP */
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.escenario-card {
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 35px 30px;
+  border: 1px solid #333;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Para que todas tengan la misma altura */
+}
+
+.escenario-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.escenario-card:hover {
+  transform: translateY(-8px);
+  border-color: #d4af37;
+  box-shadow: 0 25px 50px rgba(212, 175, 55, 0.15);
+}
+
+.escenario-card:hover::before {
+  opacity: 1;
+}
+
+.escenario-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+  flex-shrink: 0; /* Evita que crezca */
+}
+
+.escenario-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.escenario-titulo {
+  font-size: 1.375rem; /* Un poco más pequeño para 3 columnas */
+  font-weight: 700;
+  color: #d4af37;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.problema-principal {
+  margin-bottom: 25px;
+  padding: 18px;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 12px;
+  border-left: 4px solid #d4af37;
+  flex-shrink: 0;
+}
+
+.problema-label {
+  font-size: 0.8rem; /* Un poco más pequeño */
+  font-weight: 600;
+  color: #d4af37;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.problema-texto {
+  color: #fff;
+  line-height: 1.4; /* Más compacto */
+  margin: 0;
+  font-size: 0.95rem; /* Un poco más pequeño */
+  font-weight: 500;
+}
+
+.sintomas-section {
+  margin-bottom: 25px;
+  flex: 1; /* Ocupa el espacio disponible */
+}
+
+.sintomas-titulo {
+  font-size: 0.9rem; /* Más pequeño */
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sintomas-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Menor gap */
+}
+
+.sintoma-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* Menor gap */
+  color: #ccc;
+  line-height: 1.4; /* Más compacto */
+  font-size: 0.875rem; /* Más pequeño */
+}
+
+.sintoma-item svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  width: 14px; /* Iconos más pequeños */
+  height: 14px;
+}
+
+.solucion-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Menor gap */
+  flex-shrink: 0; /* Fijo en la parte inferior */
+}
+
+.solucion-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* Menor gap */
+  padding: 12px; /* Padding más compacto */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.solucion-icon {
+  font-size: 1.1rem; /* Un poco más pequeño */
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.solucion-content {
+  flex: 1;
+}
+
+.solucion-content strong {
+  color: #d4af37;
+  display: block;
+  margin-bottom: 3px;
+  font-size: 0.8rem; /* Más pequeño */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.solucion-content span {
+  color: #fff;
+  line-height: 1.4; /* Más compacto */
+  font-size: 0.875rem; /* Más pequeño */
+}
+
+/* ===== RESPONSIVE ADAPTADO PARA 3 COLUMNAS ===== */
+
+/* Desktop Grande - Mantener 3 columnas */
+@media (min-width: 1200px) {
+  .escenarios-grid {
+    gap: 35px;
+  }
+  
+  .escenario-card {
+    padding: 40px 35px;
+  }
+}
+
+/* Tablet - 2 columnas */
+@media (max-width: 1199px) and (min-width: 769px) {
+  .escenarios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  
+  .escenario-card {
+    padding: 30px 25px;
+  }
+  
+  /* Ajustar tamaños para 2 columnas */
+  .escenario-titulo {
+    font-size: 1.5rem;
+  }
+  
+  .problema-texto {
+    font-size: 1.0625rem;
+  }
+  
+  .sintoma-item {
+    font-size: 0.9375rem;
+  }
+}
+
+/* Tablet Pequeña - 2 columnas más compactas */
+@media (max-width: 768px) and (min-width: 481px) {
+  .identificacion {
+    padding: 80px 0;
+  }
+  
+  .escenarios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .escenario-card {
+    padding: 25px 20px;
+  }
+  
+  .escenario-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .escenario-titulo {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile - 1 columna */
+@media (max-width: 480px) {
+  .identificacion {
+    padding: 60px 0;
+  }
+  
+  .escenarios-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .escenario-card {
+    padding: 25px 20px;
+  }
+  
+  .escenario-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .solucion-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+  
+  /* Restaurar tamaños para mobile */
+  .escenario-titulo {
+    font-size: 1.5rem;
+  }
+  
+  .problema-texto {
+    font-size: 1.0625rem;
+  }
+  
+  .sintoma-item {
+    font-size: 0.9375rem;
+  }
+}
+
+/* Ajustes para pantallas muy grandes */
+@media (min-width: 1600px) {
+  .escenarios-grid {
+    max-width: 1400px;
+    gap: 40px;
+  }
+  
+  .escenario-card {
+    padding: 45px 40px;
+  }
+}

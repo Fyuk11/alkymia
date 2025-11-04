@@ -34,6 +34,50 @@ sections:
         url: "https://wa.me/549XXXXXXXXXX"
 
 
+
+  - type: identificacion
+    title: "¿Te sentís identificado con alguno de estos escenarios?"
+    subtitle: "No estás solo. La mayoría de los emprendedores con los que trabajamos comparten estos mismos desafíos antes de encontrar su solución definitiva."
+    escenarios:
+      - icono: "🎨"
+        titulo: "El Creativo con Talento"
+        problema_principal: "Tenés habilidades increíbles pero te cuesta monetizarlas online"
+        sintomas:
+          - "Tu portfolio está desactualizado o no existe"
+          - "Dependés únicamente de recomendaciones boca a boca"
+          - "No tenés un sistema para captar clientes nuevos"
+          - "Tu talento no se refleja en tu presencia digital"
+        solucion: "Portfolio profesional + sistema de captación automática"
+        resultado: "Clientes que te encuentran y valoran tu trabajo"
+        
+      - icono: "📈"
+        titulo: "El Emprendedor Estancado"  
+        problema_principal: "Tu negocio físico funciona pero no lográs escalarlo digitalmente"
+        sintomas:
+          - "Tu Instagram tiene seguidores pero no genera ventas reales"
+          - "No tenés tienda online o la que tenés no convierte"
+          - "Perdés clientes por no tener presencia web profesional"
+          - "Tu competencia ya está vendiendo online exitosamente"
+        solucion: "E-commerce listo para vender + estrategia digital integrada"
+        resultado: "Ventas online consistentes + expansión de mercado"
+        
+      - icono: "⏰"
+        titulo: "El Profesional Ocupado"
+        problema_principal: "Sos excelente en lo que hacés pero no tenés tiempo para el marketing"
+        sintomas:
+          - "Atendés consultas manualmente todo el día"
+          - "No tenés sistemas automatizados de venta"
+          - "Tu tiempo vale más que lo que cobrás por hora"
+          - "El crecimiento te exige más horas, no más eficiencia"
+        solucion: "Automatización completa + sistemas que trabajen por vos 24/7"
+        resultado: "Liberás tu tiempo + escalás sin aumentar carga laboral"
+
+
+
+
+
+
+
   - type: problematica
     title: "¿Sentís que tu marca tiene potencial, pero..."
     subtitle: "No estás solo. Muchos emprendedores pasan por esto antes de encontrar la solución definitiva."
@@ -77,6 +121,56 @@ sections:
       - icon: "🎯"
         title: "Sistema completo que libera tiempo y multiplica resultados"
         description: "No solo armamos tu web, armamos tu ecosistema digital"
+
+
+
+
+  - type: proceso-alquimico
+    title: "El Proceso Alkymia: Transformación Garantizada"
+    subtitle: "No somos solo desarrolladores - somos arquitectos de sistemas de venta que funcionan mientras vos dormís."
+    pasos:
+      - numero: "01"
+        titulo: "Alquimia Estratégica"
+        descripcion: "Sumergimos en tu negocio para entender tus objetivos, audiencia y puntos únicos de valor."
+        detalles:
+          - "Análisis de mercado y competencia"
+          - "Definición de objetivos claros y medibles"
+          - "Arquitectura de la experiencia de usuario"
+        icono: "🔮"
+        color: "#d4af37"
+        
+      - numero: "02"
+        titulo: "Forja del Diseño"
+        descripcion: "Creamos diseños únicos que no solo se ven bien, sino que están optimizados para conversión."
+        detalles:
+          - "Diseño 100% personalizado y responsive"
+          - "Wireframes y prototipos interactivos"
+          - "Optimización para máxima conversión"
+        icono: "🎨"
+        color: "#10b981"
+        
+      - numero: "03"
+        titulo: "Código de Transformación"
+        descripcion: "Desarrollamos con tecnología de punta, asegurando velocidad, seguridad y escalabilidad."
+        detalles:
+          - "Desarrollo con las últimas tecnologías"
+          - "Integración de pasarelas de pago"
+          - "Optimización SEO desde el día 1"
+        icono: "⚡"
+        color: "#3b82f6"
+        
+      - numero: "04"
+        titulo: "Activación Alquímica"
+        descripcion: "Lanzamos tu sistema y optimizamos continuamente para maximizar resultados."
+        detalles:
+          - "Lanzamiento controlado y monitoreado"
+          - "Configuración de analytics y tracking"
+          - "Capacitación para autogestión"
+        icono: "🚀"
+        color: "#8b5cf6"
+
+
+
 
 
 
