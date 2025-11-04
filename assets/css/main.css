@@ -10,6 +10,9 @@
 @import "filosofia.css"; /* FILOSOFÍA */
 @import "casos-reales.css"; /* CASOS REALES */
 @import "portfolio.css"; /* PORTFOLIO alk */
+@import "servicios-detallados.css"; /* SERVICIOS DETALLADOS */
+
+
 @import "para-quien-es.css"; /* PARA QUIEN ES */
 
 
@@ -17,7 +20,7 @@
 @import "downloads.css"; /* downloads */
 @import "cta-final.css"; /* CTA FINAL */
 
-
+@import "para-quien-es-v2.css"; /* PARA QUIEN ES V2 */
 
 
 

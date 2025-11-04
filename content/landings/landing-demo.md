@@ -168,6 +168,52 @@ sections:
 
 
 
+  - type: servicios-detallados
+    title: "Soluciones a Medida para tu Negocio"
+    subtitle: "No solo creamos páginas, construimos sistemas de venta completos"
+    servicios:
+      - icon: "🛍️"
+        title: "Tiendas Online Premium"
+        platform: "Tiendanube"
+        description: "E-commerce completos con catálogo ilimitado, pasarelas de pago integradas y gestión de envíos."
+        features:
+          - "Hasta 500 productos incluidos"
+          - "SEO optimizado desde el día 1"
+          - "Integración con Mercado Pago, PayPal"
+          - "Sistema de cupones y promociones"
+          - "Panel de administración fácil de usar"
+        tiempo: "15-21 días"
+        precio: "Desde $299.000 ARS"
+        
+      - icon: "🚀"
+        title: "Landing Pages que Convierten"
+        platform: "Desarrollo Personalizado"
+        description: "Diseños únicos y optimizados para maximizar conversiones, con integración de CRM y analytics."
+        features:
+          - "Diseño 100% personalizado"
+          - "Optimización para conversión"
+          - "Integración con email marketing"
+          - "Formularios inteligentes"
+          - "Pruebas A/B incluidas"
+        tiempo: "7-10 días"
+        precio: "Desde $199.000 ARS"
+        
+      - icon: "🎨"
+        title: "Portfolios Profesionales"
+        platform: "Eleventy + Netlify"
+        description: "Sitios web elegantes para mostrar tu trabajo, con CMS integrado para que actualices fácilmente."
+        features:
+          - "Diseño portfolio moderno"
+          - "CMS visual para editar contenido"
+          - "Galería de proyectos"
+          - "Blog integrado"
+          - "Hosting premium incluido"
+        tiempo: "10-14 días"
+        precio: "Desde $159.000 ARS"
+
+
+
+
   - type: para-quien-es
     title: "Es para vos si querés..."
     subtitle: "Identificá si Alkymia es la solución que estás buscando"
@@ -261,7 +307,40 @@ sections:
 
 
 
-    
+  - type: para-quien-es-v2
+    title: "¿Reconocés alguno de estos perfiles?"
+    subtitle: "Identificá cuál se parece más a tu situación actual"
+    perfiles:
+      - tipo: "El Creativo con Talento"
+        descripcion: "Tenés habilidades increíbles (diseño, coaching, consultoría) pero te cuesta monetizarlas online."
+        sintomas:
+          - "Tu portfolio está desactualizado"
+          - "No tenés un sistema para captar clientes"
+          - "Dependés de recomendaciones boca a boca"
+        solucion: "Te armamos un portfolio profesional + sistema de captación automática."
+        icono: "🎨"
+        
+      - tipo: "El Emprendedor Estancado"
+        descripcion: "Tu negocio físico funciona, pero no lográs llevarlo al mundo digital efectivamente."
+        sintomas:
+          - "Tu Instagram no genera ventas reales"
+          - "No tenés tienda online o no funciona"
+          - "Perdés clientes por no tener presencia web"
+        solucion: "E-commerce listo para vender + estrategia digital integrada."
+        icono: "📈"
+        
+      - tipo: "El Profesional Ocupado"
+        descripcion: "Sos excelente en lo que hacés, pero no tenés tiempo para el marketing digital."
+        sintomas:
+          - "Atendés consultas manualmente todo el día"
+          - "No tenés sistemas automatizados"
+          - "Tu tiempo vale más que lo que cobrás por hora"
+        solucion: "Automatización completa + sistemas que trabajen por vos 24/7."
+        icono: "⏰"
+
+
+
+        
 
 
 ---

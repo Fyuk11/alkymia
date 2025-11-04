@@ -1,0 +1,53 @@
+<!-- sections/servicios-detallados.njk CORREGIDO -->
+<section id="servicios-detallados" class="servicios-detallados">
+  <div class="container">
+    <div class="servicios-detallados__header">
+      <h2 class="servicios-detallados__title">{{ section_data.title }}</h2>
+      <p class="servicios-detallados__subtitle">{{ section_data.subtitle }}</p>
+    </div>
+
+    <div class="servicios-detallados__grid">
+      {% for servicio in section_data.servicios %}
+      <div class="servicio-detallado">
+        <div class="servicio-detallado__header">
+          <div class="servicio-icon">{{ servicio.icon }}</div>
+          <div class="servicio-info">
+            <h3 class="servicio-title">{{ servicio.title }}</h3>
+            <span class="servicio-platform">{{ servicio.platform }}</span>
+          </div>
+        </div>
+        
+        <p class="servicio-description">{{ servicio.description }}</p>
+        
+        <div class="servicio-features">
+          {% for feature in servicio.features %}
+          <div class="feature-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>{{ feature }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        
+        <div class="servicio-meta">
+          <div class="meta-item">
+            <span class="meta-label">Tiempo estimado</span>
+            <span class="meta-value">{{ servicio.tiempo }}</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Inversión</span>
+            <span class="meta-value meta-value--price">{{ servicio.precio }}</span>
+          </div>
+        </div>
+        
+        <!-- URL fija sin codificación para que funcione -->
+        <a href="https://wa.me/5491121652703" 
+           class="btn btn--outline" target="_blank">
+          Consultar por {{ servicio.title }}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

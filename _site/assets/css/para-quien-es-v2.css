@@ -1,0 +1,217 @@
+/* ============================
+   PARA QUIÉN ES V2
+   ============================ */
+.para-quien-es-v2 {
+  padding: 100px 0;
+  background: #111;
+  color: #fff;
+  position: relative;
+}
+
+.para-quien-es-v2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 70% 30%, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
+}
+
+.para-quien-es-v2__header {
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.para-quien-es-v2__title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.para-quien-es-v2__subtitle {
+  font-size: 1.125rem;
+  color: #ccc;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.perfiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.perfil-card {
+  background: #1a1a1a;
+  border-radius: 20px;
+  padding: 35px 30px;
+  border: 1px solid #333;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.perfil-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.05) 0%, transparent 50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.perfil-card:hover {
+  transform: translateY(-5px);
+  border-color: #d4af37;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.perfil-card:hover::before {
+  opacity: 1;
+}
+
+.perfil-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.perfil-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.perfil-tipo {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #d4af37;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.perfil-descripcion {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-size: 1.0625rem;
+}
+
+.perfil-sintomas {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border-left: 3px solid #d4af37;
+}
+
+.sintomas-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sintomas-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sintoma-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #ccc;
+  line-height: 1.5;
+  font-size: 0.9375rem;
+}
+
+.sintoma-bullet {
+  color: #d4af37;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.perfil-solucion {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.solucion-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.solucion-content {
+  flex: 1;
+}
+
+.solucion-content strong {
+  color: #d4af37;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.solucion-content span {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .para-quien-es-v2 {
+    padding: 80px 0;
+  }
+  
+  .perfiles-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .perfil-card {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .perfil-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .perfil-solucion {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
