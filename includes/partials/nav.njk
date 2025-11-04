@@ -1,7 +1,10 @@
-<nav class="nav nav--venta">
+<!-- partials/nav.njk -->
+<nav class="nav nav--alkymia">
   <div class="nav__inner container">
-    <!-- Brand -->
-    <a class="nav__brand" href="/">{{ site.name or "Landing Pro" }}</a>
+    <!-- Brand Alkymia -->
+    <a class="nav__brand" href="/">
+      <span class="nav__logo">ALKYMIA</span>
+    </a>
 
     <!-- Burger toggle (mobile) -->
     <button class="nav__toggle" aria-label="Abrir menú">
@@ -12,21 +15,32 @@
     <ul class="nav__menu" id="navMenu">
       {% if landing.nav %}
         {% for item in landing.nav %}
-          <li>
+          <li class="nav__item">
             <a 
               href="{{ item.url }}" 
+              class="nav__link"
               {% if item.external %}target="_blank" rel="noopener"{% endif %}
             >
               {{ item.text }}
+              {% if item.external %}
+                <i class="fas fa-external-link-alt nav__external"></i>
+              {% endif %}
             </a>
           </li>
         {% endfor %}
       {% else %}
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#benefits">Beneficios</a></li>
-        <li><a href="#process">Cómo funciona</a></li>
-        <li><a href="#demo">Demo</a></li>
-        <li><a href="#contact">Contacto</a></li>
+        <!-- Fallback con las secciones de tu landing -->
+        <li class="nav__item"><a href="#hero" class="nav__link">Inicio</a></li>
+        <li class="nav__item"><a href="#servicios-detallados" class="nav__link">Servicios</a></li>
+        <li class="nav__item"><a href="#proceso-alquimico" class="nav__link">Proceso</a></li>
+        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+        <li class="nav__item"><a href="#casos-reales" class="nav__link">Casos</a></li>
+        <li class="nav__item">
+          <a href="https://wa.me/5491121652703" class="nav__link nav__link--cta" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            Contactar
+          </a>
+        </li>
       {% endif %}
     </ul>
   </div>

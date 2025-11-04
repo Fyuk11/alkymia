@@ -1,61 +1,65 @@
-// /assets/js/modules/navigation.js
-// Navegación principal - Versión optimizada
-
+// /assets/js/modules/navigation.js - VERSIÓN SUPER SIMPLE
 export function initNav() {
-  const nav = document.querySelector(".nav--venta");
   const burger = document.querySelector(".nav__toggle");
   const navMenu = document.querySelector(".nav__menu");
 
-  if (!nav || !burger || !navMenu) return;
+  if (!burger || !navMenu) {
+    console.warn('Elementos de navegación no encontrados');
+    return;
+  }
 
-  initMobileMenu(burger, navMenu, nav);
-  initNavScrollEffect(nav);
-}
+  console.log('🚀 Navigation inicializado');
 
-function initMobileMenu(burger, navMenu, nav) {
-  const toggleMenu = () => {
-    burger.classList.toggle("open");
+  // Event listener SUPER SIMPLE
+  burger.addEventListener("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    // Toggle classes
+    this.classList.toggle("open");
     navMenu.classList.toggle("active");
-    document.body.style.overflow = navMenu.classList.contains("active") ? "hidden" : "";
-  };
+    document.body.classList.toggle("menu-open");
+    
+    console.log('🍔 Menu toggled:', this.classList.contains('open'));
+  });
 
-  burger.addEventListener("click", toggleMenu);
-
-  // Cerrar menú al hacer click en un link
+  // Cerrar menú al hacer click en un link (mobile)
   navMenu.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", () => {
-      if (window.innerWidth <= 768 && navMenu.classList.contains("active")) {
-        toggleMenu();
+      if (window.innerWidth <= 768) {
+        burger.classList.remove("open");
+        navMenu.classList.remove("active");
+        document.body.classList.remove("menu-open");
       }
     });
   });
 
-  // Cerrar menú al hacer click fuera
-  document.addEventListener("click", e => {
+  // Cerrar menú al hacer click fuera (mobile)
+  document.addEventListener("click", (e) => {
     if (window.innerWidth <= 768 && 
         navMenu.classList.contains("active") && 
-        !nav.contains(e.target)) {
-      toggleMenu();
+        !navMenu.contains(e.target) && 
+        !burger.contains(e.target)) {
+      
+      burger.classList.remove("open");
+      navMenu.classList.remove("active");
+      document.body.classList.remove("menu-open");
     }
   });
 
-  // Cerrar con Escape key
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape" && navMenu.classList.contains("active")) {
-      toggleMenu();
-    }
-  });
+  // Nav scroll effect (opcional)
+  initNavScrollEffect();
 }
 
-function initNavScrollEffect(nav) {
-  const handleNavBackground = window.debounce(() => {
-    if (window.innerWidth > 768) {
-      nav.classList.toggle("scrolled", window.scrollY > 50);
-    } else {
-      nav.classList.remove("scrolled");
-    }
-  }, 10);
+function initNavScrollEffect() {
+  const nav = document.querySelector(".nav--alkymia");
+  if (!nav) return;
 
-  window.addEventListener("scroll", handleNavBackground);
-  handleNavBackground(); // Estado inicial
+  const handleNavScroll = () => {
+    const scrolled = window.scrollY > 50;
+    nav.classList.toggle("scrolled", scrolled);
+  };
+
+  window.addEventListener("scroll", handleNavScroll);
+  handleNavScroll();
 }

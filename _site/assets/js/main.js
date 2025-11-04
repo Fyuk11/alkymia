@@ -1,29 +1,65 @@
-// /assets/js/main.js
-// Punto de entrada principal - Alkymia Digital
-
-// Importaciones de módulos
+// /assets/js/main.js - VERSIÓN LIMPIA
 import { initNav } from './modules/navigation.js';
 import { initScrollAnimations } from './modules/animations.js';
-import { initSlideshow } from "./modules/slideshow.js";
 
-import { initContactForm } from "./modules/forms.js";
-import { initHeroAlkymia } from './modules/hero-alkymia.js';
-import { initGlobalUtils } from './utils/global.js';
+// Utils esenciales directamente en main.js
+function initGlobalUtils() {
+  // Helper para debounce (necesario para el nav)
+  window.debounce = (func, wait, immediate = false) => {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        timeout = null;
+        if (!immediate) func(...args);
+      };
+      const callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func(...args);
+    };
+  };
 
-// Sistema de inicialización con manejo de errores
+  // Smooth scroll helper
+  window.smoothScrollTo = (element, offset = 80) => {
+    const target = typeof element === 'string' 
+      ? document.querySelector(element) 
+      : element;
+    
+    if (target) {
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = targetPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  // Observer helper para animaciones
+  window.createIntersectionObserver = (callback, options = {}) => {
+    const defaultOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    return new IntersectionObserver(callback, { ...defaultOptions, ...options });
+  };
+}
+
+// Sistema de inicialización simplificado
 class AlkymiaApp {
   constructor() {
-    this.modules = [];
     this.init();
   }
 
-  async init() {
+  init() {
     try {
       // Inicializar utils globales primero
       initGlobalUtils();
       
-      // Inicializar módulos en orden de prioridad
-      await this.initModules();
+      // Inicializar módulos esenciales
+      this.initEssentialModules();
       
       console.log('🎯 Alkymia Digital - Landing cargada correctamente');
     } catch (error) {
@@ -31,30 +67,21 @@ class AlkymiaApp {
     }
   }
 
-  async initModules() {
-    const moduleInitializers = [
+  initEssentialModules() {
+    // Solo los módulos que realmente usás
+    const essentialModules = [
       { name: 'Navigation', init: initNav },
-      { name: 'Hero', init: initHeroAlkymia },
-      { name: 'Scroll Animations', init: initScrollAnimations },
-      { name: 'Slideshow', init: initSlideshow },
-
-      { name: 'Contact Form', init: initContactForm }
+      { name: 'Scroll Animations', init: initScrollAnimations }
     ];
 
-    for (const module of moduleInitializers) {
+    essentialModules.forEach(module => {
       try {
-        await module.init();
-        this.modules.push(module.name);
+        module.init();
         console.log(`✅ ${module.name} inicializado`);
       } catch (error) {
         console.warn(`⚠️ ${module.name} no se pudo inicializar:`, error);
       }
-    }
-  }
-
-  // Para debugging
-  getInitializedModules() {
-    return this.modules;
+    });
   }
 }
 
@@ -62,5 +89,3 @@ class AlkymiaApp {
 document.addEventListener('DOMContentLoaded', () => {
   window.alkymiaApp = new AlkymiaApp();
 });
-
-

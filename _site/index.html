@@ -47,10 +47,13 @@
 </head>
 <body>
   
-    <nav class="nav nav--venta">
+    <!-- partials/nav.njk -->
+<nav class="nav nav--alkymia">
   <div class="nav__inner container">
-    <!-- Brand -->
-    <a class="nav__brand" href="/">Landing Demo</a>
+    <!-- Brand Alkymia -->
+    <a class="nav__brand" href="/">
+      <span class="nav__logo">ALKYMIA</span>
+    </a>
 
     <!-- Burger toggle (mobile) -->
     <button class="nav__toggle" aria-label="Abrir menú">
@@ -61,48 +64,60 @@
     <ul class="nav__menu" id="navMenu">
       
         
-          <li>
+          <li class="nav__item">
             <a 
               href="#hero" 
+              class="nav__link"
               
             >
               Inicio
+              
             </a>
           </li>
         
-          <li>
+          <li class="nav__item">
             <a 
               href="#benefits" 
+              class="nav__link"
               
             >
               Beneficios
+              
             </a>
           </li>
         
-          <li>
+          <li class="nav__item">
             <a 
               href="#about" 
+              class="nav__link"
               
             >
               Nosotros
+              
             </a>
           </li>
         
-          <li>
+          <li class="nav__item">
             <a 
               href="#contact" 
+              class="nav__link"
               
             >
               Contacto
+              
             </a>
           </li>
         
-          <li>
+          <li class="nav__item">
             <a 
               href="https://wa.me/5491121652703" 
+              class="nav__link"
               target="_blank" rel="noopener"
             >
               WhatsApp
+              
+                <i class="fas fa-external-link-alt nav__external"></i>
+              
             </a>
           </li>
         
@@ -110,7 +125,6 @@
     </ul>
   </div>
 </nav>
-
   
 
   <main id="main" tabindex="-1">
