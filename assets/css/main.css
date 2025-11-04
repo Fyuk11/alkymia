@@ -1,5 +1,6 @@
 /* main.css */
 @import "branding.css"; /* BRANDING */
+@import "whatsapp-floating.css"; /* BOTON FLOTANTE DE WHATSAPP */
 @import "nav.css";          /* NAV y burger */
 @import "hero-alkymia.css"; /* HERO ALKYMIA */
 @import "identificacion.css";

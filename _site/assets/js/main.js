@@ -89,3 +89,30 @@ class AlkymiaApp {
 document.addEventListener('DOMContentLoaded', () => {
   window.alkymiaApp = new AlkymiaApp();
 });
+
+
+
+// Trackeo de clicks en botones importantes
+document.addEventListener('DOMContentLoaded', function() {
+  // Trackear clicks en CTAs principales
+  document.querySelectorAll('a[href*="wa.me"], .btn-primary, .btn-secondary').forEach(button => {
+    button.addEventListener('click', function(e) {
+      gtag('event', 'click', {
+        'event_category': 'CTA',
+        'event_label': this.textContent.trim() || this.href,
+        'value': 1
+      });
+    });
+  });
+
+  // Trackear clicks en secciones específicas
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function() {
+      gtag('event', 'nav_click', {
+        'event_category': 'Navigation',
+        'event_label': this.textContent.trim() + ' -> ' + this.getAttribute('href'),
+        'value': 1
+      });
+    });
+  });
+});
