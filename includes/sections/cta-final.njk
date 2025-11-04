@@ -1,5 +1,12 @@
 <!-- sections/cta-final.njk -->
-<section id="cta-final" class="cta-final">
+<section id="cta-final" class="cta-final" 
+  {% if section_data.background_image %}
+    style="background-image: url('{{ section_data.background_image }}')"
+  {% endif %}>
+  
+  <!-- Overlay para mantener la legibilidad -->
+  <div class="cta-final__overlay"></div>
+  
   <div class="container">
     <div class="cta-final__content">
       <h2 class="cta-final__title">{{ section_data.title }}</h2>

@@ -1,3 +1,4 @@
+<!-- sections/portfolio.njk -->
 <section class="portfolio" id="portfolio">
   <div class="container">
     <header class="portfolio__header">
@@ -8,6 +9,10 @@
     <div class="portfolio__grid">
       {% for project in section_data.projects %}
         <article class="portfolio__card">
+          {% if project.url %}
+            <a href="{{ project.url }}" class="portfolio__link" target="_blank" rel="noopener">
+          {% endif %}
+          
           <div class="portfolio__image-wrapper">
             <img src="{{ project.image }}" alt="{{ project.title }}" class="portfolio__image">
           </div>
@@ -15,8 +20,18 @@
             <div>
               <span class="portfolio__category">{{ project.category }}</span>
               <h3 class="portfolio__project-title">{{ project.title }}</h3>
+              {% if project.url %}
+                <div class="portfolio__link-indicator">
+                  <i class="fas fa-external-link-alt"></i>
+                  <span>Visitar sitio</span>
+                </div>
+              {% endif %}
             </div>
           </div>
+          
+          {% if project.url %}
+            </a>
+          {% endif %}
         </article>
       {% endfor %}
     </div>

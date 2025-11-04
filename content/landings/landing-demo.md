@@ -4,12 +4,12 @@ title: Landing Demo Cliente
 description: Esta es una landing de prueba para mostrar secciones dinámicas.
 permalink: index.html
 seo:
-  canonical: https://startland.netlify.app
-  og_title: Startland landing page
-  og_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
+  canonical: https://alkymiadigital.netlify.app/
+  og_title: Alkymia digital
+  og_description: Alkymia - Landing pages, ecommerce, portfolios.
   og_image: /assets/images/placeholder.jpg
-  twitter_title: Startland Landing Demo 
-  twitter_description: Startland prueba de landing dinámica con 11ty y Netlify CMS
+  twitter_title: Alkymia digital
+  twitter_description: Alkymia - Landing pages, ecommerce, portfolios.
 nav:
   - text: Inicio
     url: "#hero"
@@ -27,7 +27,7 @@ sections:
   - type: hero-alkymia
     title: "Alkymia: Transformamos Ideas en <span>Realidad Digital</span>"
     subtitle: "Soluciones de e-commerce y landing pages premium que generan resultados medibles y ROI garantizado."
-    background: "/assets/images/about"
+    background: "/assets/images/texture2.webp"
     media: "/assets/images/about/googlesearch.webp"
     ctas:
       - text: "Iniciar Proyecto con Nosotros"
@@ -131,7 +131,7 @@ sections:
     badge: "Nuestra filosofía"
     title: "Alquimia es transformación"
     description: "Y en Alkymia creemos que la verdadera transformación hoy es pasar de vender de manera improvisada, a tener un sistema de ventas online sólido, escalable y humano."
-    image: "/assets/images/filosofia-placeholder.jpg"
+    image: "/assets/images/texture3.webp"
     features:
       - "De la improvisación a la estrategia"
       - "Del esfuerzo manual a la automatización inteligente" 
@@ -152,42 +152,42 @@ sections:
         descripcion: "Landing + sistema automatizado en Systeme + Zapier para vender su 'Manual de Excelencia Operacional', con cifrado y contraseña única para cada comprador."
         resultado: "Sistema de ventas automatizado 24/7"
         categoria: "Productos Digitales"
-        imagen: "/assets/images/casos/rubicon.jpg"
+        imagen: "/assets/images/cases1.webp"
         
       - nombre: "Noelia Viski"
         tipo: "Sitio Web Completo"
         descripcion: "Sitio web completo con talleres digitales, guías y automatización de servicios online."
         resultado: "Presencia digital profesional consolidada"
         categoria: "Web + Automatización"
-        imagen: "/assets/images/casos/noelia.jpg"
+        imagen: "/assets/images/cases2.webp"
         
       - nombre: "TERAPIALMA"
         tipo: "Programa Online"
         descripcion: "Desarrollo de 'Mapa del Alma', un programa online basado en constelaciones familiares, con automatización de cursos y ventas."
         resultado: "Plataforma de cursos escalable"
         categoria: "Cursos Online"
-        imagen: "/assets/images/casos/terapialma.jpg"
+        imagen: "/assets/images/cases3.webp"
         
       - nombre: "Uniformes Prímula"
         tipo: "E-commerce Completo"
         descripcion: "Tienda online con +1000 productos de uniformes escolares para 8 colegios."
         resultado: "Ventas centralizadas y organizadas"
         categoria: "E-commerce"
-        imagen: "/assets/images/casos/primula.jpg"
+        imagen: "/assets/images/cases4.webp"
         
       - nombre: "Dos Palabras Librería"
         tipo: "Tienda Online"
         descripcion: "Tienda online con catálogo completo, SEO y Google Shopping."
         resultado: "Presencia online profesional"
         categoria: "E-commerce"
-        imagen: "/assets/images/casos/libreria.jpg"
+        imagen: "/assets/images/cases5.webp"
         
       - nombre: "Radent AR"
         tipo: "Optimización de Tienda"
         descripcion: "Optimización y rediseño de tienda de insumos odontológicos."
         resultado: "Mejora en conversión y UX"
         categoria: "E-commerce"
-        imagen: "/assets/images/casos/radent.jpg"      
+        imagen: "/assets/images/cases6.webp"      
 
 
   - type: portfolio
@@ -196,22 +196,28 @@ sections:
     projects:
       - title: "Rubicon Soluciones"
         category: "Sistema Automatizado"
-        image: "/assets/images/portfolio/rubicon.jpg"
+        image: "/assets/images/cases1.webp"
+        url: "https://rubiconsoluciones.com"
       - title: "Noelia Viski"
-        category: "Web Profesional" 
-        image: "/assets/images/portfolio/noelia.jpg"
+        category: "Web Profesional"
+        image: "/assets/images/cases2.webp"
+        url: "https://noeliaviski.com"
       - title: "TERAPIALMA"
         category: "Plataforma Online"
-        image: "/assets/images/portfolio/terapialma.jpg"
+        image: "/assets/images/cases3.webp"
+        url: "https://terapialma.com"
       - title: "Uniformes Prímula"
         category: "E-commerce"
-        image: "/assets/images/portfolio/primula.jpg"
+        image: "/assets/images/cases4.webp"
+        url: "https://uniformesprimula.com"
       - title: "Dos Palabras Librería"
         category: "Tienda Online"
-        image: "/assets/images/portfolio/libreria.jpg"
+        image: "/assets/images/cases5.webp"
+        url: "https://dospalabraslibreria.com"
       - title: "Radent AR"
         category: "Optimización E-commerce"
-        image: "/assets/images/portfolio/radent.jpg"
+        image: "/assets/images/cases6.webp"
+        url: "https://radent.com.ar"
 
 
 
@@ -290,7 +296,7 @@ sections:
       - title: "Checklist para lanzar tu landing page"
         description: "Una lista rápida para que no te olvides de nada al lanzar tu página"
         image: "/assets/images/resources/checklist-landing.jpg"
-        download_url: "/assets/pdfs/checklist-landing.pdf"
+        download_url: "/assets/pdfs/z - Conceptos clave - glosario.pdf"
         cta_text: "Descargar gratis"
         tipo: "gratuito"
         
@@ -323,6 +329,7 @@ sections:
     whatsapp_number: "5491121652703"
     cta_button: "Activá tu Alkymia ahora"
     nota: "Consultá por nuestros planes personalizados"
+    background_image: "/assets/images/ctabackg.webp"  # Agregar esta línea
 
 
 
