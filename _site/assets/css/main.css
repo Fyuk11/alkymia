@@ -1,52 +1,19 @@
-/* main.css *
-@import "variables.css";    /* VARIABLES *
-@import "reset.css";        /* RESET / BASE 
-@import "container.css";    /* CONTAINER */
+/* main.css */
 @import "branding.css"; /* BRANDING */
 @import "nav.css";          /* NAV y burger */
 @import "hero-alkymia.css"; /* HERO ALKYMIA */
 @import "identificacion.css";
-
-
-@import "problematica.css"; /* PROBLEMÁTICA */
-@import "servicios.css"; /* SERVICIOS */
-
-
 @import "proceso-alquimico.css"; 
-
 @import "filosofia.css"; /* FILOSOFÍA */
 @import "casos-reales.css"; /* CASOS REALES */
 @import "portfolio.css"; /* PORTFOLIO alk */
 @import "servicios-detallados.css"; /* SERVICIOS DETALLADOS */
-
-
 @import "para-quien-es.css"; /* PARA QUIEN ES */
-
-
 @import "faqs.css"; /* FAQS */
 @import "downloads.css"; /* downloads */
 @import "cta-final.css"; /* CTA FINAL */
-
-@import "para-quien-es-v2.css"; /* PARA QUIEN ES V2 */
-
-
-
-@import "pain.css"; /* PAIN */
-@import "benefits.css";     /* BENEFITS */
-@import "section-divider.css"; /* SECTION DIVIDER */
-@import "steps.css";        /* STEPS */
-@import "services.css"; /* SERVICES */
-@import "testimonials.css"; /* TESTIMONIALS */
-@import "about.css";        /* ABOUT alk */
-
-@import "final-cta.css"; /* CTA FINAL */
-
-
-
-
-@import "cta-video.css";    /* CTA VIDEO */
-
 @import "footer.css";       /* FOOTER */
+
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.min.css"; /* Font Awesome */
 
 

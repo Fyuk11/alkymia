@@ -78,53 +78,6 @@ sections:
 
 
 
-  - type: problematica
-    title: "¿Sentís que tu marca tiene potencial, pero..."
-    subtitle: "No estás solo. Muchos emprendedores pasan por esto antes de encontrar la solución definitiva."
-    problems:
-      - icon: "📱"
-        title: "Vendés solo por Instagram o WhatsApp?"
-        description: "Dependés de redes sociales que cambian sus algoritmos constantemente."
-      - icon: "🌐"
-        title: "Tu web/tienda está abandonada o ni existe?"
-        description: "Tu presencia digital no refleja el valor real de tu marca."
-      - icon: "⏰"
-        title: "Perdés tiempo respondiendo consultas manuales?"
-        description: "Horas valiosas que podrías usar para crecer tu negocio."
-      - icon: "📉"
-        title: "Las ventas no son constantes?"
-        description: "Picos de actividad seguidos de silencio absoluto."
-    cta:
-      text: "👉 Si esto te pasa, no es tu culpa."
-      highlight: "Las reglas del juego cambiaron: hoy vender online no es opcional, es esencial."
-
-
-  - type: servicios
-    title: "Qué hacemos en ALKYMIA"
-    subtitle: "Ayudamos a emprendedores, marcas y negocios a transformar sus ideas en sistemas de venta reales"
-    servicios:
-      - icon: "🛍️"
-        title: "Tiendas online listas para vender en 21 días"
-        description: "E-commerce completos optimizados para conversión"
-      - icon: "⚙️"
-        title: "Automatizaciones que hacen el trabajo por vos"
-        description: "Flujos automatizados de ventas y atención al cliente"
-      - icon: "📈"
-        title: "Publicidad con estrategia para llegar al cliente correcto"
-        description: "Campañas segmentadas que generan ROI real"
-      - icon: "🌐"
-        title: "Webs y portafolios que muestran quién sos"
-        description: "Presencia digital premium que comunica tu valor"
-      - icon: "🔒"
-        title: "Sistemas de venta de productos digitales"
-        description: "Entregas seguras, PDFs cifrados, cursos online"
-      - icon: "🎯"
-        title: "Sistema completo que libera tiempo y multiplica resultados"
-        description: "No solo armamos tu web, armamos tu ecosistema digital"
-
-
-
-
   - type: proceso-alquimico
     title: "El Proceso Alkymia: Transformación Garantizada"
     subtitle: "No somos solo desarrolladores - somos arquitectos de sistemas de venta que funcionan mientras vos dormís."
@@ -401,38 +354,26 @@ sections:
 
 
 
-  - type: para-quien-es-v2
-    title: "¿Reconocés alguno de estos perfiles?"
-    subtitle: "Identificá cuál se parece más a tu situación actual"
-    perfiles:
-      - tipo: "El Creativo con Talento"
-        descripcion: "Tenés habilidades increíbles (diseño, coaching, consultoría) pero te cuesta monetizarlas online."
-        sintomas:
-          - "Tu portfolio está desactualizado"
-          - "No tenés un sistema para captar clientes"
-          - "Dependés de recomendaciones boca a boca"
-        solucion: "Te armamos un portfolio profesional + sistema de captación automática."
-        icono: "🎨"
-        
-      - tipo: "El Emprendedor Estancado"
-        descripcion: "Tu negocio físico funciona, pero no lográs llevarlo al mundo digital efectivamente."
-        sintomas:
-          - "Tu Instagram no genera ventas reales"
-          - "No tenés tienda online o no funciona"
-          - "Perdés clientes por no tener presencia web"
-        solucion: "E-commerce listo para vender + estrategia digital integrada."
-        icono: "📈"
-        
-      - tipo: "El Profesional Ocupado"
-        descripcion: "Sos excelente en lo que hacés, pero no tenés tiempo para el marketing digital."
-        sintomas:
-          - "Atendés consultas manualmente todo el día"
-          - "No tenés sistemas automatizados"
-          - "Tu tiempo vale más que lo que cobrás por hora"
-        solucion: "Automatización completa + sistemas que trabajen por vos 24/7."
-        icono: "⏰"
-
-
+ 
+  - type: footer
+    text: "© 2025 Alkymia. Todos los derechos reservados."
+    email: "contacto@alkymia.digital"
+    links:
+      - text: Inicio
+        url: "#hero"
+      - text: Beneficios
+        url: "#benefits"
+      - text: Nosotros
+        url: "#about"
+      - text: Portfolio
+        url: "#portfolio"
+      - text: Contacto
+        url: "#final-cta"
+    social:
+      - type: instagram
+        url: "https://instagram.com/alkymia"
+      - type: whatsapp
+        url: "https://wa.me/5491123456789"
 
         
 
