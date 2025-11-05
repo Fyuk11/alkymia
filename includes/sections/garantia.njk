@@ -1,0 +1,19 @@
+<!-- sections/garantia.njk -->
+<section {% if section_data.id %}id="{{ section_data.id }}"{% endif %} class="garantia">
+  <div class="container">
+    <div class="garantia-content">
+      <div class="garantia-icon">🛡️</div>
+      <h2 class="garantia-title">{{ section_data.title }}</h2>
+      <p class="garantia-text">{{ section_data.texto }}</p>
+      {% if section_data.cta %}
+      <div class="garantia-cta">
+        <a href="{{ section_data.cta.url }}" 
+           class="btn btn-primary"
+           {% if section_data.cta.external %}target="_blank" rel="noopener"{% endif %}>
+          {{ section_data.cta.text }}
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>

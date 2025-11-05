@@ -3,12 +3,18 @@
 @import "whatsapp-floating.css"; /* BOTON FLOTANTE DE WHATSAPP */
 @import "nav.css";          /* NAV y burger */
 @import "hero-alkymia.css"; /* HERO ALKYMIA */
+
+@import "servicios-detallados.css"; /* SERVICIOS DETALLADOS */
+@import "garantia.css"; /* GARANTÍA */
+@import "proceso-alquimico.css"; /* PROCESO */
+
+
 @import "identificacion.css";
-@import "proceso-alquimico.css"; 
+
 @import "filosofia.css"; /* FILOSOFÍA */
 @import "casos-reales.css"; /* CASOS REALES */
 @import "portfolio.css"; /* PORTFOLIO alk */
-@import "servicios-detallados.css"; /* SERVICIOS DETALLADOS */
+
 @import "para-quien-es.css"; /* PARA QUIEN ES */
 @import "faqs.css"; /* FAQS */
 @import "downloads.css"; /* downloads */

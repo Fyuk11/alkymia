@@ -1,0 +1,71 @@
+/* sections/garantia.css */
+.garantia {
+  padding: 80px 0;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(0, 0, 0, 0.9) 100%);
+  text-align: center;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.garantia-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.garantia-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.garantia-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d4af37;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.garantia-text {
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.garantia-cta {
+  margin-top: 30px;
+}
+
+.garantia-cta .btn {
+  padding: 16px 32px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .garantia {
+    padding: 60px 0;
+  }
+  
+  .garantia-icon {
+    font-size: 3rem;
+  }
+  
+  .garantia-title {
+    font-size: 2rem;
+  }
+  
+  .garantia-text {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .garantia-title {
+    font-size: 1.75rem;
+  }
+  
+  .garantia-text {
+    font-size: 1rem;
+  }
+}

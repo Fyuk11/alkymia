@@ -1,4 +1,4 @@
-<!-- sections/downloads.njk -->
+<!-- sections/downloads.njk MEJORADO -->
 <section class="downloads" id="downloads">
   <div class="container">
     <h2 class="section-title">{{ section_data.title }}</h2>
@@ -21,16 +21,72 @@
           <p>{{ file.description }}</p>
 
           {% if file.gumroad_url %}
+            <!-- Premium: Link directo a Gumroad -->
             <a href="{{ file.gumroad_url }}" class="btn btn-primary" target="_blank">
               {{ file.cta_text or "Comprar" }}
             </a>
           {% elseif file.download_url %}
-            <a href="{{ file.download_url }}" class="btn btn-secondary" download>
+            <!-- Gratuito: Abre modal para captar email -->
+            <button class="btn btn-secondary btn-descargar-gratis" 
+                    data-recurso-title="{{ file.title }}"
+                    data-recurso-url="{{ file.download_url }}"
+                    data-recurso-tipo="{{ file.tipo }}">
               {{ file.cta_text or "Descargar gratis" }}
-            </a>
+            </button>
           {% endif %}
         </div>
       {% endfor %}
+    </div>
+  </div>
+
+  <!-- Modal para captura de email (solo recursos gratuitos) -->
+  <div id="modal-download" class="modal-download">
+    <div class="modal-download__content">
+      <span class="modal-download__close">&times;</span>
+      
+      <div class="modal-download__header">
+        <h3 id="modal-download-title">¡Genial! Descargá tu recurso gratuito</h3>
+        <p id="modal-download-desc">Completá tus datos y recibilo al instante en tu email</p>
+      </div>
+      
+      <form id="form-download" class="modal-download__form" name="descarga-recurso" netlify>
+        <input type="hidden" id="recurso-title" name="recurso_title">
+        <input type="hidden" id="recurso-url" name="recurso_url">
+        
+        <div class="form-group">
+          <label for="download-nombre">Nombre completo *</label>
+          <input type="text" id="download-nombre" name="nombre" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="download-email">Email *</label>
+          <input type="email" id="download-email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="download-negocio">¿Qué tipo de negocio tenés?</label>
+          <select id="download-negocio" name="tipo_negocio">
+            <option value="">Seleccioná una opción</option>
+            <option value="ecommerce">E-commerce / Tienda online</option>
+            <option value="servicios">Servicios profesionales</option>
+            <option value="consultoria">Consultoría / Coaching</option>
+            <option value="creativo">Creativo / Freelance</option>
+            <option value="otros">Otros</option>
+          </select>
+        </div>
+        
+        <div class="form-checkbox">
+          <input type="checkbox" id="download-newsletter" name="newsletter" checked>
+          <label for="download-newsletter">Quiero recibir recursos gratuitos y consejos para hacer crecer mi negocio</label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-block">
+          <span id="btn-download-text">📥 Enviar recurso a mi email</span>
+          <span id="btn-download-loading" style="display: none;">Enviando...</span>
+        </button>
+        
+        <p class="form-note">Al enviar, aceptás nuestra <a href="/politica-privacidad">Política de Privacidad</a>. Podés darte de baja cuando quieras.</p>
+      </form>
     </div>
   </div>
 </section>

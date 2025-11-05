@@ -54,6 +54,146 @@ sections:
 
 
 
+  - type: servicios-detallados
+    id: "servicios"
+    title: "Soluciones con Precios Claros"
+    subtitle: "Elegí lo que mejor se adapte a tu negocio. Sin sorpresas, con entrega garantizada."
+    servicios:
+      - icon: "🛍️"
+        title: "Tienda Online Premium"
+        platform: "Tiendanube"
+        description: "Tu negocio físico ahora también digital. Vendé 24/7 sin límites."
+        features:
+          - "Hasta 100 productos incluidos"
+          - "Pasarelas de pago (Mercado Pago, PayPal)"
+          - "Gestión de envíos integrada"
+          - "SEO + Google Shopping"
+          - "Panel administración fácil"
+        tiempo: "7-10 días"
+        precio: "$333 USD"
+        cta_text: "Consultar por Tiendas Online"
+        cta_url: "https://wa.me/5491121652703"
+        
+      - icon: "🚀"
+        title: "Landing Page Conversora"
+        platform: "Desarrollo Personalizado"
+        description: "Perfecta para captar clientes y mostrar tu servicio profesionalmente."
+        features:
+          - "Diseño 100% personalizado"
+          - "Optimizada para conversión"
+          - "SEO básico incluido"
+          - "Formularios inteligentes"
+          - "100% responsive"
+        tiempo: "5-7 días"
+        precio: "$444 USD"
+        cta_text: "Consultar por Landing Page"
+        cta_url: "https://wa.me/5491121652703"
+        
+      - icon: "🎨"
+        title: "Portfolio Profesional"
+        platform: "Eleventy + Netlify"
+        description: "Muestra tu trabajo y diferénciate de la competencia."
+        features:
+          - "Galería de proyectos con filtros"
+          - "CMS para actualizar fácil"
+          - "Blog integrado (opcional)"
+          - "Hosting premium incluido"
+          - "Optimización velocidad"
+        tiempo: "5-7 días"
+        precio: "$444 USD"
+        cta_text: "Consultar por Portfolio"
+        cta_url: "https://wa.me/5491121652703"
+
+
+  - type: garantia
+    id: "garantia"
+    title: "Garantía de Satisfacción Total"
+    texto: "Si en 7 días no estás 100% conforme con el resultado, te devolvemos el 100% de tu inversión. Sin preguntas, sin vueltas, sin drama."
+    cta:
+      text: "📅 Agenda tu consultoría gratuita"
+      url: "https://wa.me/5491121652703"
+      external: true
+
+
+  - type: proceso-alquimico
+    title: "Tu proyecto listo en 7 días, paso a paso"
+    subtitle: "Proceso probado con +47 proyectos. Transparente, rápido y sin sorpresas."
+    pasos:
+      - numero: "01"
+        titulo: "Estrategia y Descubrimiento"
+        descripcion: "Comenzamos con una llamada de 30 minutos donde entendemos tu negocio, objetivos y audiencia. Te mostramos exactamente qué necesitás para vender más."
+        detalles:
+          - "Análisis de tu competencia y mercado"
+          - "Definición de objetivos claros y medibles"
+          - "Plan de acción personalizado para tu negocio"
+        icono: "🎯"
+        color: "#d4af37"
+        
+      - numero: "02"
+        titulo: "Diseño y Aprobación"
+        descripcion: "En 48 horas tenés el diseño completo para revisar. Cambios ilimitados hasta que quedes 100% conforme con el resultado."
+        detalles:
+          - "Diseño 100% personalizado para tu marca"
+          - "Prototipo interactivo para que veas cómo funciona"
+          - "Optimizado para máxima conversión desde el día 1"
+        icono: "🎨"
+        color: "#10b981"
+        
+      - numero: "03"
+        titulo: "Desarrollo Rápido"
+        descripcion: "Construimos tu sitio con tecnología de punta. Configuramos todo para que funcione perfecto: pagos, envíos, analytics."
+        detalles:
+          - "Desarrollo con las mejores tecnologías del mercado"
+          - "Integración de pasarelas de pago (Mercado Pago, PayPal)"
+          - "SEO básico incluido para aparecer en Google"
+        icono: "⚡"
+        color: "#3b82f6"
+        
+      - numero: "04"
+        titulo: "Lanzamiento y Capacitación"
+        descripcion: "¡A vender! Te damos acceso completo y te enseñamos a manejar todo. Soporte incluido por 30 días."
+        detalles:
+          - "Lanzamiento controlado y monitoreado"
+          - "Capacitación personalizada de 60 minutos"
+          - "Soporte por WhatsApp durante 30 días"
+        icono: "🚀"
+        color: "#8b5cf6"
+
+
+
+  - type: downloads
+    title: "Recursos Gratuitos para Hacer Crecer tu Negocio"
+    subtitle: "Descargá nuestras guías y checklists probados con +47 proyectos reales"
+    items:
+      - title: "Checklist Pre-Lanzamiento"
+        description: "21 puntos críticos que revisamos en cada proyecto antes de publicar"
+        image: "/assets/images/resources/checklist-landing.jpg"
+        download_url: "/assets/pdfs/checklist-pre-lanzamiento.pdf"  # → Modal + email
+        cta_text: "Descargar gratis"
+        tipo: "gratuito"
+        
+      - title: "Guía TiendaNube Express"
+        description: "Cómo montar tu tienda online en 7 días (paso a paso con screenshots)"
+        image: "/assets/images/resources/tiendanube-guide.jpg"
+        gumroad_url: "https://alkymia.gumroad.com/l/primeros-pasos"  # → Directo a compra
+        cta_text: "Comprar ahora"
+        tipo: "premium"
+        
+      - title: "Templates de Automatización"
+        description: "10 flujos de WhatsApp probados para ventas y atención al cliente"
+        image: "/assets/images/resources/flujos-automatizacion.jpg"
+        gumroad_url: "https://alkymia.gumroad.com/l/flujos-automatizacion"  # → Directo a compra
+        cta_text: "Obtener plantilla"
+        tipo: "premium"
+        
+      - title: "Kit SEO para E-commerce"
+        description: "Checklist completo de optimización para aparecer primero en Google"
+        image: "/assets/images/resources/seo-ecommerce.jpg"
+        download_url: "/assets/pdfs/kit-seo-ecommerce.pdf"  # → Modal + email
+        cta_text: "Descargar gratis"
+        tipo: "gratuito"
+
+
 
   - type: identificacion
     title: "¿Te sentís identificado con alguno de estos escenarios?"
@@ -98,49 +238,6 @@ sections:
 
 
 
-  - type: proceso-alquimico
-    title: "El Proceso Alkymia: Transformación Garantizada"
-    subtitle: "No somos solo desarrolladores - somos arquitectos de sistemas de venta que funcionan mientras vos dormís."
-    pasos:
-      - numero: "01"
-        titulo: "Alquimia Estratégica"
-        descripcion: "Sumergimos en tu negocio para entender tus objetivos, audiencia y puntos únicos de valor."
-        detalles:
-          - "Análisis de mercado y competencia"
-          - "Definición de objetivos claros y medibles"
-          - "Arquitectura de la experiencia de usuario"
-        icono: "🔮"
-        color: "#d4af37"
-        
-      - numero: "02"
-        titulo: "Forja del Diseño"
-        descripcion: "Creamos diseños únicos que no solo se ven bien, sino que están optimizados para conversión."
-        detalles:
-          - "Diseño 100% personalizado y responsive"
-          - "Wireframes y prototipos interactivos"
-          - "Optimización para máxima conversión"
-        icono: "🎨"
-        color: "#10b981"
-        
-      - numero: "03"
-        titulo: "Código de Transformación"
-        descripcion: "Desarrollamos con tecnología de punta, asegurando velocidad, seguridad y escalabilidad."
-        detalles:
-          - "Desarrollo con las últimas tecnologías"
-          - "Integración de pasarelas de pago"
-          - "Optimización SEO desde el día 1"
-        icono: "⚡"
-        color: "#3b82f6"
-        
-      - numero: "04"
-        titulo: "Activación Alquímica"
-        descripcion: "Lanzamos tu sistema y optimizamos continuamente para maximizar resultados."
-        detalles:
-          - "Lanzamiento controlado y monitoreado"
-          - "Configuración de analytics y tracking"
-          - "Capacitación para autogestión"
-        icono: "🚀"
-        color: "#8b5cf6"
 
 
 
@@ -252,57 +349,6 @@ sections:
 
 
 
-  - type: servicios-detallados
-    id: "servicios"
-    title: "Soluciones con Precios Claros"
-    subtitle: "Elegí lo que mejor se adapte a tu negocio. Sin sorpresas, con entrega garantizada."
-    servicios:
-      - icon: "🛍️"
-        title: "Tienda Online Premium"
-        platform: "Tiendanube"
-        description: "Tu negocio físico ahora también digital. Vendé 24/7 sin límites."
-        features:
-          - "Hasta 100 productos incluidos"
-          - "Pasarelas de pago (Mercado Pago, PayPal)"
-          - "Gestión de envíos integrada"
-          - "SEO + Google Shopping"
-          - "Panel administración fácil"
-        tiempo: "7-10 días"
-        precio: "$333 USD"
-        cta_text: "Consultar por Tiendas Online"
-        cta_url: "https://wa.me/5491121652703"
-        
-      - icon: "🚀"
-        title: "Landing Page Conversora"
-        platform: "Desarrollo Personalizado"
-        description: "Perfecta para captar clientes y mostrar tu servicio profesionalmente."
-        features:
-          - "Diseño 100% personalizado"
-          - "Optimizada para conversión"
-          - "SEO básico incluido"
-          - "Formularios inteligentes"
-          - "100% responsive"
-        tiempo: "5-7 días"
-        precio: "$444 USD"
-        cta_text: "Consultar por Landing Page"
-        cta_url: "https://wa.me/5491121652703"
-        
-      - icon: "🎨"
-        title: "Portfolio Profesional"
-        platform: "Eleventy + Netlify"
-        description: "Muestra tu trabajo y diferénciate de la competencia."
-        features:
-          - "Galería de proyectos con filtros"
-          - "CMS para actualizar fácil"
-          - "Blog integrado (opcional)"
-          - "Hosting premium incluido"
-          - "Optimización velocidad"
-        tiempo: "5-7 días"
-        precio: "$444 USD"
-        cta_text: "Consultar por Portfolio"
-        cta_url: "https://wa.me/5491121652703"
-
-
 
 
         
@@ -326,37 +372,6 @@ sections:
 
 
 
-  - type: downloads
-    title: "Recursos y Productos Digitales"
-    subtitle: "Herramientas y recursos para potenciar tu negocio online"
-    items:
-      - title: "Checklist para lanzar tu landing page"
-        description: "Una lista rápida para que no te olvides de nada al lanzar tu página"
-        image: "/assets/images/resources/checklist-landing.jpg"
-        download_url: "/assets/pdfs/z - Conceptos clave - glosario.pdf"
-        cta_text: "Descargar gratis"
-        tipo: "gratuito"
-        
-      - title: "Guía de primeros pasos en Tiendanube"
-        description: "Aprende a montar tu tienda en menos de una semana"
-        image: "/assets/images/resources/tiendanube-guide.jpg" 
-        gumroad_url: "https://alkymia.gumroad.com/l/primeros-pasos"
-        cta_text: "Comprar ahora"
-        tipo: "premium"
-        
-      - title: "Plantilla de Flujos de Automatización"
-        description: "Estructuras probadas para automatizar tus ventas y atención al cliente"
-        image: "/assets/images/resources/flujos-automatizacion.jpg"
-        gumroad_url: "https://alkymia.gumroad.com/l/flujos-automatizacion"
-        cta_text: "Obtener plantilla"
-        tipo: "premium"
-        
-      - title: "Kit de SEO para E-commerce"
-        description: "Checklist completo de optimización SEO para tu tienda online"
-        image: "/assets/images/resources/seo-ecommerce.jpg"
-        download_url: "/assets/pdfs/kit-seo-ecommerce.pdf"
-        cta_text: "Descargar gratis"
-        tipo: "gratuito"
 
 
 
