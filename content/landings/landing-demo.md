@@ -345,7 +345,7 @@ sections:
       - title: "Ser Energía Escalar"
         category: "Landing page personalizada"
         image: "/assets/images/cases7.webp"
-        url: "https://radent.com.ar"  
+        url: "https://serenergiaescalar.com/"  
 
 
 
