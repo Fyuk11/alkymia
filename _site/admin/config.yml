@@ -51,13 +51,25 @@ collections:
                   - { name: "subtitle", label: "Subtítulo", widget: "text" }
                   - { name: "background", label: "Imagen de Fondo", widget: "image" }
                   - { name: "media", label: "Imagen Principal", widget: "image" }
+                  - label: "Estadísticas"
+                    name: "stats"
+                    widget: "list"
+                    fields:
+                      - { name: "number", label: "Número", widget: "string" }
+                      - { name: "label", label: "Etiqueta", widget: "string" }
                   - label: "Botones CTA"
                     name: "ctas"
                     widget: "list"
                     fields:
                       - { name: "text", label: "Texto del Botón", widget: "string" }
                       - { name: "url", label: "URL", widget: "string" }
-                      - { name: "external", label: "¿Enlace externo?", widget: "boolean", required: false, default: true }
+                      - { name: "external", label: "¿Enlace externo?", widget: "boolean", required: false, default: false }
+                  - label: "Características Flotantes"
+                    name: "features"
+                    widget: "list"
+                    fields:
+                      - { name: "icon", label: "Ícono", widget: "string" }
+                      - { name: "text", label: "Texto", widget: "string" }
 
               - label: "Identificación"
                 name: "identificacion"

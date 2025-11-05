@@ -13,67 +13,65 @@
       <!-- Text Content -->
       <div class="hero-text">
         <h1 class="hero-title">
-          De tu marca a un <span class="text-gold">sistema de ventas real</span>, funcionando 24/7
+          {{ section_data.title | safe }}
         </h1>
         
         <p class="hero-subtitle">
-          Tu negocio no necesita más likes, necesita un sistema que venda.
+          {{ section_data.subtitle }}
         </p>
 
-        <!-- Stats -->
+        <!-- Stats - Ahora dinámicos desde el .md -->
+        {% if section_data.stats %}
         <div class="hero-stats">
+          {% for stat in section_data.stats %}
           <div class="stat">
-            <div class="stat-number">+50</div>
-            <div class="stat-label">Proyectos</div>
+            <div class="stat-number">{{ stat.number }}</div>
+            <div class="stat-label">{{ stat.label }}</div>
           </div>
-          <div class="stat">
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">Sistema Activo</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number">21</div>
-            <div class="stat-label">Días de Entrega</div>
-          </div>
+          {% endfor %}
         </div>
+        {% endif %}
 
-        <!-- CTAs -->
+        <!-- CTAs - Dinámicos desde el .md -->
         <div class="hero-actions">
-          <a href="https://wa.me/5491121652703" class="btn btn-primary" target="_blank">
-            <span>Activá tu ALKYMIA hoy</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
-            </svg>
-          </a>
-          
-          <a href="#problematica" class="btn btn-secondary">
-            <span>¿Te sentís identificado?</span>
-          </a>
+          {% if section_data.ctas %}
+            {% for cta in section_data.ctas %}
+              <a href="{{ cta.url }}" 
+                 class="btn {% if loop.first %}btn-primary{% else %}btn-secondary{% endif %}"
+                 {% if cta.external %}target="_blank" rel="noopener"{% endif %}>
+                <span>{{ cta.text }}</span>
+                {% if loop.first %}
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                {% endif %}
+              </a>
+            {% endfor %}
+          {% endif %}
         </div>
       </div>
 
-      <!-- Media Side - Completamente Separado -->
+      <!-- Media Side - Dinámico -->
       <div class="hero-media">
         <div class="media-wrapper">
           <div class="mockup-container">
-            <img src="{{ section_data.media }}" alt="Dashboard Alkymia" class="mockup-image">
+            {% if section_data.media %}
+              <img src="{{ section_data.media }}" alt="Dashboard Alkymia" class="mockup-image">
+            {% endif %}
           </div>
         </div>
         
-        <!-- Floating Cards ABSOLUTE al HERO, no al container -->
+        <!-- Floating Features - Dinámicos -->
+        {% if section_data.features %}
         <div class="floating-features">
-          <div class="feature-card feature-1">
-            <div class="feature-icon">🛍️</div>
-            <span>Tiendas en 21 días</span>
+          {% for feature in section_data.features %}
+          <div class="feature-card feature-{{ loop.index }}">
+            <div class="feature-icon">{{ feature.icon }}</div>
+            <span>{{ feature.text }}</span>
           </div>
-          <div class="feature-card feature-2">
-            <div class="feature-icon">⚡</div>
-            <span>Automatizaciones</span>
-          </div>
-          <div class="feature-card feature-3">
-            <div class="feature-icon">📈</div>
-            <span>Publicidad Estratégica</span>
-          </div>
+          {% endfor %}
         </div>
+        {% endif %}
       </div>
     </div>
   </div>

@@ -28,13 +28,30 @@ nav:
 sections:
 
   - type: hero-alkymia
-    title: "Alkymia: Transformamos Ideas en <span>Realidad Digital</span>"
-    subtitle: "Soluciones de e-commerce y landing pages premium que generan resultados medibles y ROI garantizado."
+    title: "Tu tienda online funcionando en 14 días<br><span class='text-gold'>activá tu Alkymia</span>"
+    subtitle: "Dejá de perder ventas por WhatsApp. Convertimos tu negocio en un sistema de ventas digital que trabaja 24/7 mientras vos hacés lo que mejor sabés hacer."
     background: "/assets/images/texture2.webp"
     media: "/assets/images/about/googlesearch.webp"
+    stats:
+      - number: "+47"
+        label: "Proyectos"
+      - number: "14 días"
+        label: "Promedio de entrega"
+      - number: "98%"
+        label: "Clientes satisfechos"
     ctas:
-      - text: "Iniciar Proyecto con Nosotros"
-        url: "https://wa.me/549XXXXXXXXXX"
+      - text: "📅 Agenda consultoría gratuita (30 min)"
+        url: "#contacto"
+      - text: "Ver casos de éxito →"
+        url: "#casos-reales"
+    features:
+      - icon: "🛍️"
+        text: "Tiendas en 14 días"
+      - icon: "⚡"
+        text: "Estructura estratégica"
+      - icon: "📈"
+        text: "Soporte incluido"
+
 
 
 
@@ -236,48 +253,54 @@ sections:
 
 
   - type: servicios-detallados
-    title: "Soluciones a Medida para tu Negocio"
-    subtitle: "No solo creamos páginas, construimos sistemas de venta completos"
+    id: "servicios"
+    title: "Soluciones con Precios Claros"
+    subtitle: "Elegí lo que mejor se adapte a tu negocio. Sin sorpresas, con entrega garantizada."
     servicios:
       - icon: "🛍️"
-        title: "Tiendas Online Premium"
+        title: "Tienda Online Premium"
         platform: "Tiendanube"
-        description: "E-commerce completos con catálogo ilimitado, pasarelas de pago integradas y gestión de envíos."
+        description: "Tu negocio físico ahora también digital. Vendé 24/7 sin límites."
         features:
-          - "Hasta 500 productos incluidos"
-          - "SEO optimizado desde el día 1"
-          - "Integración con Mercado Pago, PayPal"
-          - "Sistema de cupones y promociones"
-          - "Panel de administración fácil de usar"
-        tiempo: "15-21 días"
-        precio: "Desde $299.000 ARS"
+          - "Hasta 100 productos incluidos"
+          - "Pasarelas de pago (Mercado Pago, PayPal)"
+          - "Gestión de envíos integrada"
+          - "SEO + Google Shopping"
+          - "Panel administración fácil"
+        tiempo: "7-10 días"
+        precio: "$333 USD"
+        cta_text: "Consultar por Tiendas Online"
+        cta_url: "https://wa.me/5491121652703"
         
       - icon: "🚀"
-        title: "Landing Pages que Convierten"
+        title: "Landing Page Conversora"
         platform: "Desarrollo Personalizado"
-        description: "Diseños únicos y optimizados para maximizar conversiones, con integración de CRM y analytics."
+        description: "Perfecta para captar clientes y mostrar tu servicio profesionalmente."
         features:
           - "Diseño 100% personalizado"
-          - "Optimización para conversión"
-          - "Integración con email marketing"
+          - "Optimizada para conversión"
+          - "SEO básico incluido"
           - "Formularios inteligentes"
-          - "Pruebas A/B incluidas"
-        tiempo: "7-10 días"
-        precio: "Desde $199.000 ARS"
+          - "100% responsive"
+        tiempo: "5-7 días"
+        precio: "$444 USD"
+        cta_text: "Consultar por Landing Page"
+        cta_url: "https://wa.me/5491121652703"
         
       - icon: "🎨"
-        title: "Portfolios Profesionales"
+        title: "Portfolio Profesional"
         platform: "Eleventy + Netlify"
-        description: "Sitios web elegantes para mostrar tu trabajo, con CMS integrado para que actualices fácilmente."
+        description: "Muestra tu trabajo y diferénciate de la competencia."
         features:
-          - "Diseño portfolio moderno"
-          - "CMS visual para editar contenido"
-          - "Galería de proyectos"
-          - "Blog integrado"
+          - "Galería de proyectos con filtros"
+          - "CMS para actualizar fácil"
+          - "Blog integrado (opcional)"
           - "Hosting premium incluido"
-        tiempo: "10-14 días"
-        precio: "Desde $159.000 ARS"
-
+          - "Optimización velocidad"
+        tiempo: "5-7 días"
+        precio: "$444 USD"
+        cta_text: "Consultar por Portfolio"
+        cta_url: "https://wa.me/5491121652703"
 
 
 

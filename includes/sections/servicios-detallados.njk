@@ -41,10 +41,12 @@
           </div>
         </div>
         
-        <!-- URL fija sin codificación para que funcione -->
-        <a href="https://wa.me/5491121652703" 
-           class="btn btn--outline" target="_blank">
-          Consultar por {{ servicio.title }}
+        <!-- CTA dinámico usando cta_text del .md -->
+        <a href="{{ servicio.cta_url }}" 
+           class="btn btn--outline" 
+           target="_blank"
+           rel="noopener">
+          {{ servicio.cta_text }}
         </a>
       </div>
       {% endfor %}
