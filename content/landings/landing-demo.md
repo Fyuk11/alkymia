@@ -128,7 +128,7 @@ sections:
         nota: "🔹 Si el proyecto requiere carga de grandes volúmenes de imágenes, videos o material adicional (ejemplo: más de 100 fotos), se cotiza de forma personalizada según la cantidad y tipo de contenido."
 
     servicios_personalizados:
-      titulo: "💎 SERVICIOS PERSONALIZADOS"
+      titulo: "SERVICIOS PERSONALIZADOS"
       descripcion: "Además de nuestras propuestas base, desarrollamos soluciones a medida para quienes necesiten:"
       servicios:
         - icono: "🏪"
@@ -143,7 +143,7 @@ sections:
       cta_url: "https://wa.me/5491121652703"
 
     condiciones_generales:
-      titulo: "📄 CONDICIONES GENERALES"
+      titulo: "CONDICIONES GENERALES"
       condiciones:
         - icono: "💰"
           texto: "La entrega se realiza una vez recibido el 50% final."
@@ -166,46 +166,50 @@ sections:
 
 
   - type: proceso-alquimico
-    title: "Tu proyecto listo en 7 días, paso a paso"
-    subtitle: "Proceso probado con +47 proyectos. Transparente, rápido y sin sorpresas."
+    title: "Proceso de Trabajo Claro y Efectivo"
+    subtitle: "Metodología probada que garantiza resultados en tiempo récord. Transparente, profesional y sin complicaciones."
     pasos:
       - numero: "01"
-        titulo: "Estrategia y Descubrimiento"
-        descripcion: "Comenzamos con una llamada de 30 minutos donde entendemos tu negocio, objetivos y audiencia. Te mostramos exactamente qué necesitás para vender más."
+        titulo: "Brief & Descubrimiento"
+        descripcion: "Comenzamos con una reunión inicial donde profundizamos en tu negocio, objetivos y audiencia ideal. Juntos definimos el camino para maximizar tus conversiones."
         detalles:
-          - "Análisis de tu competencia y mercado"
-          - "Definición de objetivos claros y medibles"
-          - "Plan de acción personalizado para tu negocio"
+          - "Reunión inicial o formulario brief – recopilamos información clave"
+          - "Análisis de mercado y competencia relevante"
+          - "Definición de objetivos SMART y métricas de éxito"
+          - "Plan de acción personalizado para tu proyecto"
         icono: "🎯"
         color: "#d4af37"
         
       - numero: "02"
-        titulo: "Diseño y Aprobación"
-        descripcion: "En 48 horas tenés el diseño completo para revisar. Cambios ilimitados hasta que quedes 100% conforme con el resultado."
+        titulo: "Diseño Estructural & Copy"
+        descripcion: "Creamos la arquitectura visual y de contenido de tu sitio. Definimos secciones, estilo visual y tono del copy para conectar con tu audiencia."
         detalles:
-          - "Diseño 100% personalizado para tu marca"
-          - "Prototipo interactivo para que veas cómo funciona"
-          - "Optimizado para máxima conversión desde el día 1"
+          - "Diseño estructural – definición de secciones y flujo de usuario"
+          - "Prototipos interactivos"
+          - "Style guide con tu identidad visual"
+          - "Copywriting estratégico enfocado en conversión"
         icono: "🎨"
         color: "#10b981"
         
       - numero: "03"
-        titulo: "Desarrollo Rápido"
-        descripcion: "Construimos tu sitio con tecnología de punta. Configuramos todo para que funcione perfecto: pagos, envíos, analytics."
+        titulo: "Desarrollo & Implementación"
+        descripcion: "Transformamos el diseño en realidad. Desarrollamos tu sitio con las mejores tecnologías, optimizado para velocidad, SEO y experiencia de usuario."
         detalles:
-          - "Desarrollo con las mejores tecnologías del mercado"
-          - "Integración de pasarelas de pago (Mercado Pago, PayPal)"
-          - "SEO básico incluido para aparecer en Google"
+          - "Desarrollo del sitio – armado con tu contenido e identidad"
+          - "Integración de funcionalidades y automatizaciones"
+          - "Optimización SEO técnica y de contenido"
+          - "Pruebas de usabilidad y compatibilidad multiplataforma"
         icono: "⚡"
         color: "#3b82f6"
         
       - numero: "04"
-        titulo: "Lanzamiento y Capacitación"
-        descripcion: "¡A vender! Te damos acceso completo y te enseñamos a manejar todo. Soporte incluido por 30 días."
+        titulo: "Revisión & Lanzamiento"
+        descripcion: "Perfeccionamos cada detalle antes del gran día. Te capacitamos para que manejes tu sitio con confianza y te acompañamos post-lanzamiento."
         detalles:
-          - "Lanzamiento controlado y monitoreado"
-          - "Capacitación personalizada de 60 minutos"
-          - "Soporte por WhatsApp durante 30 días"
+          - "Revisión y ajustes finales – testeo exhaustivo"
+          - "Optimización de performance y velocidad"
+          - "Entrega final y capacitación express"
+          - "Soporte post-lanzamiento por 30 días incluido"
         icono: "🚀"
         color: "#8b5cf6"
 

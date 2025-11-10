@@ -4,9 +4,7 @@
 @import "nav.css";          /* NAV y burger */
 @import "hero-alkymia.css"; /* HERO ALKYMIA */
 
-@import "servicios-detallados.css"; /* SERVICIOS DETALLADOS */
-
-@import "servicios-completos.css"; 
+@import "servicios-completos.css"; /* SERVICIOS */
 
 @import "garantia.css"; /* GARANTÍA */
 @import "proceso-alquimico.css"; /* PROCESO */
