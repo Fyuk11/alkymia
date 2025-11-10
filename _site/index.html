@@ -289,227 +289,296 @@
     
     
      
-     <!-- sections/servicios-detallados.njk CORREGIDO -->
-<section id="servicios-detallados" class="servicios-detallados">
+     <!-- sections/servicios-completos.njk CORREGIDO -->
+<section class="servicios-completos" id="servicios">
   <div class="container">
-    <div class="servicios-detallados__header">
-      <h2 class="servicios-detallados__title">Soluciones con Precios Claros</h2>
-      <p class="servicios-detallados__subtitle">Elegí lo que mejor se adapte a tu negocio. Sin sorpresas, con entrega garantizada.</p>
+    <!-- Título Principal -->
+    <div class="servicios-header">
+      <h2 class="section-title">⚙️ NUESTROS SERVICIOS</h2>
+      <p class="section-subtitle">Soluciones claras con precios transparentes - Elegí la que mejor se adapte a tu proyecto</p>
     </div>
 
-    <div class="servicios-detallados__grid">
+    <!-- Grid de Servicios -->
+    <div class="servicios-grid">
       
-      <div class="servicio-detallado">
-        <div class="servicio-detallado__header">
-          <div class="servicio-icon">🛍️</div>
-          <div class="servicio-info">
-            <h3 class="servicio-title">Tienda Online Premium</h3>
-            <span class="servicio-platform">Tiendanube</span>
-          </div>
+      <div class="servicio-card ">
+        <div class="servicio-badge servicio-badge--esencial">Esencial</div>
+        <div class="servicio-header">
+          <div class="servicio-icon">🎯</div>
+          <h3 class="servicio-title">Landing Page Esencial – 3 Secciones</h3>
         </div>
+        <p class="servicio-descripcion">Ideal para quienes desean una presencia digital simple, clara y efectiva.</p>
         
-        <p class="servicio-description">Tu negocio físico ahora también digital. Vendé 24/7 sin límites.</p>
+        <!-- Opciones (solo si existen) -->
         
+
+        <!-- Características -->
         <div class="servicio-features">
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Hasta 100 productos incluidos</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Pasarelas de pago (Mercado Pago, PayPal)</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Gestión de envíos integrada</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>SEO + Google Shopping</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Panel administración fácil</span>
-          </div>
-          
+          <h4>Incluye:</h4>
+          <ul>
+            
+            <li>Diseño de 3 secciones (Hero + Contenido + Cierre CTA)</li>
+            
+            <li>Estructura optimizada para conversión</li>
+            
+            <li>Copys editables para futuras modificaciones</li>
+            
+            <li>Adaptación responsive (móvil + desktop)</li>
+            
+          </ul>
         </div>
+
+        <!-- Nota (solo si existe) -->
         
+
+        <!-- Meta información -->
         <div class="servicio-meta">
           <div class="meta-item">
-            <span class="meta-label">Tiempo estimado</span>
-            <span class="meta-value">7-10 días</span>
+            <span class="meta-label">💰 Inversión</span>
+            <span class="meta-value">150 USD</span>
           </div>
           <div class="meta-item">
-            <span class="meta-label">Inversión</span>
-            <span class="meta-value meta-value--price">$333 USD</span>
+            <span class="meta-label">📦 Entrega</span>
+            <span class="meta-value">5-7 días hábiles</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">💳 Pago</span>
+            <span class="meta-value">50% al inicio – 50% al entregar el proyecto</span>
           </div>
         </div>
-        
-        <!-- CTA dinámico usando cta_text del .md -->
+
+        <!-- CTA - SIN url_encode -->
         <a href="https://wa.me/5491121652703" 
-           class="btn btn--outline" 
-           target="_blank"
-           rel="noopener">
-          Consultar por Tiendas Online
+           class="btn btn-secondary" 
+           target="_blank">
+          Quiero mi Landing Esencial
         </a>
       </div>
       
-      <div class="servicio-detallado">
-        <div class="servicio-detallado__header">
-          <div class="servicio-icon">🚀</div>
-          <div class="servicio-info">
-            <h3 class="servicio-title">Landing Page Conversora</h3>
-            <span class="servicio-platform">Desarrollo Personalizado</span>
+      <div class="servicio-card servicio-card--destacado">
+        <div class="servicio-badge servicio-badge--premium">Premium</div>
+        <div class="servicio-header">
+          <div class="servicio-icon">💎</div>
+          <h3 class="servicio-title">Landing Page Premium – 5 Secciones</h3>
+        </div>
+        <p class="servicio-descripcion">Perfecta para proyectos que buscan profundizar en su propuesta de valor.</p>
+        
+        <!-- Opciones (solo si existen) -->
+        
+        <div class="servicio-opciones">
+          <h4>Estructuras posibles:</h4>
+          
+          <div class="opcion">
+            <strong>Opción A – Página de Ventas</strong>
+            <ul>
+              
+              <li>Hero (impacto inicial)</li>
+              
+              <li>Problemática / contexto</li>
+              
+              <li>Proceso o transformación</li>
+              
+              <li>Solución / propuesta</li>
+              
+              <li>CTA final o formulario de compra</li>
+              
+            </ul>
           </div>
+          
+          <div class="opcion">
+            <strong>Opción B – Página Informativa o de Marca</strong>
+            <ul>
+              
+              <li>Hero (presentación)</li>
+              
+              <li>Servicios o pilares</li>
+              
+              <li>Cómo trabajamos / metodología</li>
+              
+              <li>Testimonios o valores</li>
+              
+              <li>CTA final o contacto</li>
+              
+            </ul>
+          </div>
+          
         </div>
         
-        <p class="servicio-description">Perfecta para captar clientes y mostrar tu servicio profesionalmente.</p>
-        
+
+        <!-- Características -->
         <div class="servicio-features">
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Diseño 100% personalizado</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Optimizada para conversión</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>SEO básico incluido</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Formularios inteligentes</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>100% responsive</span>
-          </div>
-          
+          <h4>Incluye:</h4>
+          <ul>
+            
+            <li>Diseño y desarrollo completo (System.io u otra plataforma)</li>
+            
+            <li>Copywriting estratégico adaptado a tu marca</li>
+            
+            <li>Integración de botones de pago, automatizaciones o enlaces</li>
+            
+            <li>Versión móvil y escritorio optimizada</li>
+            
+            <li>Personalización estética según identidad visual</li>
+            
+          </ul>
         </div>
+
+        <!-- Nota (solo si existe) -->
         
+
+        <!-- Meta información -->
         <div class="servicio-meta">
           <div class="meta-item">
-            <span class="meta-label">Tiempo estimado</span>
-            <span class="meta-value">5-7 días</span>
+            <span class="meta-label">💰 Inversión</span>
+            <span class="meta-value">444 USD</span>
           </div>
           <div class="meta-item">
-            <span class="meta-label">Inversión</span>
-            <span class="meta-value meta-value--price">$444 USD</span>
+            <span class="meta-label">📦 Entrega</span>
+            <span class="meta-value">10-14 días hábiles</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">💳 Pago</span>
+            <span class="meta-value">50% al iniciar – 50% al entregar</span>
           </div>
         </div>
-        
-        <!-- CTA dinámico usando cta_text del .md -->
+
+        <!-- CTA - SIN url_encode -->
         <a href="https://wa.me/5491121652703" 
-           class="btn btn--outline" 
-           target="_blank"
-           rel="noopener">
-          Consultar por Landing Page
+           class="btn btn-primary" 
+           target="_blank">
+          Quiero mi Landing Premium
         </a>
       </div>
       
-      <div class="servicio-detallado">
-        <div class="servicio-detallado__header">
+      <div class="servicio-card ">
+        <div class="servicio-badge servicio-badge--portafolio">Portafolio</div>
+        <div class="servicio-header">
           <div class="servicio-icon">🎨</div>
-          <div class="servicio-info">
-            <h3 class="servicio-title">Portfolio Profesional</h3>
-            <span class="servicio-platform">Eleventy + Netlify</span>
-          </div>
+          <h3 class="servicio-title">Portafolio Profesional</h3>
         </div>
+        <p class="servicio-descripcion">Diseñada para mostrar tu trayectoria, trabajos o proyectos de forma estética, fluida y atractiva.</p>
         
-        <p class="servicio-description">Muestra tu trabajo y diferénciate de la competencia.</p>
+        <!-- Opciones (solo si existen) -->
         
+
+        <!-- Características -->
         <div class="servicio-features">
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Galería de proyectos con filtros</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>CMS para actualizar fácil</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Blog integrado (opcional)</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Hosting premium incluido</span>
-          </div>
-          
-          <div class="feature-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path d="M20 6L9 17L4 12" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <span>Optimización velocidad</span>
-          </div>
-          
+          <h4>Incluye:</h4>
+          <ul>
+            
+            <li>Diseño personalizado con secciones visuales</li>
+            
+            <li>Galería optimizada para carga rápida</li>
+            
+            <li>Integración de redes o contacto directo</li>
+            
+            <li>Copys y textos adaptados al estilo profesional</li>
+            
+          </ul>
+        </div>
+
+        <!-- Nota (solo si existe) -->
+        
+        <div class="servicio-nota">
+          <p>🔹 Si el proyecto requiere carga de grandes volúmenes de imágenes, videos o material adicional (ejemplo: más de 100 fotos), se cotiza de forma personalizada según la cantidad y tipo de contenido.</p>
         </div>
         
+
+        <!-- Meta información -->
         <div class="servicio-meta">
           <div class="meta-item">
-            <span class="meta-label">Tiempo estimado</span>
-            <span class="meta-value">5-7 días</span>
+            <span class="meta-label">💰 Inversión</span>
+            <span class="meta-value">444 USD</span>
           </div>
           <div class="meta-item">
-            <span class="meta-label">Inversión</span>
-            <span class="meta-value meta-value--price">$444 USD</span>
+            <span class="meta-label">📦 Entrega</span>
+            <span class="meta-value">10-14 días hábiles</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">💳 Pago</span>
+            <span class="meta-value">50% al iniciar – 50% al entregar</span>
           </div>
         </div>
-        
-        <!-- CTA dinámico usando cta_text del .md -->
+
+        <!-- CTA - SIN url_encode -->
         <a href="https://wa.me/5491121652703" 
-           class="btn btn--outline" 
-           target="_blank"
-           rel="noopener">
-          Consultar por Portfolio
+           class="btn btn-secondary" 
+           target="_blank">
+          Quiero mi Portafolio
         </a>
       </div>
       
     </div>
+
+    <!-- Servicios Personalizados -->
+    
+    <div class="servicios-personalizados">
+      <div class="personalizados-header">
+        <h3>💎 SERVICIOS PERSONALIZADOS</h3>
+        <p>Además de nuestras propuestas base, desarrollamos soluciones a medida para quienes necesiten:</p>
+      </div>
+      <div class="personalizados-grid">
+        
+        <div class="personalizado-item">
+          <span class="personalizado-icon">🏪</span>
+          <span>E-commerce o tienda online</span>
+        </div>
+        
+        <div class="personalizado-item">
+          <span class="personalizado-icon">🔄</span>
+          <span>Funnels automatizados de venta</span>
+        </div>
+        
+        <div class="personalizado-item">
+          <span class="personalizado-icon">📚</span>
+          <span>Páginas de curso o membresías</span>
+        </div>
+        
+        <div class="personalizado-item">
+          <span class="personalizado-icon">⚡</span>
+          <span>Integraciones avanzadas (Zapier, email marketing, bases de datos, etc.)</span>
+        </div>
+        
+      </div>
+      <div class="personalizados-cta">
+        <p class="cotizacion-text">🪶 Cotización personalizada según alcance del proyecto</p>
+        <a href="https://wa.me/5491121652703" 
+           class="btn btn-outline" target="_blank">
+          Consultar por proyecto personalizado
+        </a>
+      </div>
+    </div>
+    
+
+    <!-- Condiciones Generales -->
+    
+    <div class="condiciones-generales">
+      <h3>📄 CONDICIONES GENERALES</h3>
+      <div class="condiciones-lista">
+        
+        <div class="condicion-item">
+          <span class="condicion-icon">💰</span>
+          <span>La entrega se realiza una vez recibido el 50% final.</span>
+        </div>
+        
+        <div class="condicion-item">
+          <span class="condicion-icon">📦</span>
+          <span>El contenido (textos, imágenes, logo) debe ser enviado antes de iniciar el desarrollo.</span>
+        </div>
+        
+        <div class="condicion-item">
+          <span class="condicion-icon">✏️</span>
+          <span>Se incluyen 2 rondas de ajustes menores post-entrega.</span>
+        </div>
+        
+        <div class="condicion-item">
+          <span class="condicion-icon">🌐</span>
+          <span>No se incluyen hosting externo ni dominios (se pueden agregar opcionalmente).</span>
+        </div>
+        
+      </div>
+    </div>
+    
   </div>
 </section>
 
@@ -1311,26 +1380,6 @@
       
       <div class="caso-card">
         <div class="caso-card__image">
-          <img src="/assets/images/cases5.webp" alt="Dos Palabras Librería" class="caso-image">
-          <div class="caso-card__overlay">
-            <span class="caso-category">E-commerce</span>
-          </div>
-        </div>
-        
-        <div class="caso-card__content">
-          <h3 class="caso-card__title">Dos Palabras Librería</h3>
-          <span class="caso-card__type">Tienda Online</span>
-          <p class="caso-card__desc">Tienda online con catálogo completo, SEO y Google Shopping.</p>
-          
-          <div class="caso-card__result">
-            <span class="result-label">Resultado:</span>
-            <span class="result-text">Presencia online profesional</span>
-          </div>
-        </div>
-      </div>
-      
-      <div class="caso-card">
-        <div class="caso-card__image">
           <img src="/assets/images/cases6.webp" alt="Radent AR" class="caso-image">
           <div class="caso-card__overlay">
             <span class="caso-category">E-commerce</span>
@@ -1480,32 +1529,6 @@
             <div>
               <span class="portfolio__category">E-commerce</span>
               <h3 class="portfolio__project-title">Uniformes Prímula</h3>
-              
-                <div class="portfolio__link-indicator">
-                  <i class="fas fa-external-link-alt"></i>
-                  <span>Visitar sitio</span>
-                </div>
-              
-            </div>
-          </div>
-          
-          
-            </a>
-          
-        </article>
-      
-        <article class="portfolio__card">
-          
-            <a href="https://dospalabraslibreria.com" class="portfolio__link" target="_blank" rel="noopener">
-          
-          
-          <div class="portfolio__image-wrapper">
-            <img src="/assets/images/cases5.webp" alt="Dos Palabras Librería" class="portfolio__image">
-          </div>
-          <div class="portfolio__overlay">
-            <div>
-              <span class="portfolio__category">Tienda Online</span>
-              <h3 class="portfolio__project-title">Dos Palabras Librería</h3>
               
                 <div class="portfolio__link-indicator">
                   <i class="fas fa-external-link-alt"></i>

@@ -54,55 +54,105 @@ sections:
 
 
 
-  - type: servicios-detallados
+  - type: servicios-completos
     id: "servicios"
-    title: "Soluciones con Precios Claros"
-    subtitle: "Elegí lo que mejor se adapte a tu negocio. Sin sorpresas, con entrega garantizada."
+    title: "⚙️ NUESTROS SERVICIOS"
+    subtitle: "Soluciones claras con precios transparentes - Elegí la que mejor se adapte a tu proyecto"
     servicios:
-      - icon: "🛍️"
-        title: "Tienda Online Premium"
-        platform: "Tiendanube"
-        description: "Tu negocio físico ahora también digital. Vendé 24/7 sin límites."
-        features:
-          - "Hasta 100 productos incluidos"
-          - "Pasarelas de pago (Mercado Pago, PayPal)"
-          - "Gestión de envíos integrada"
-          - "SEO + Google Shopping"
-          - "Panel administración fácil"
-        tiempo: "7-10 días"
-        precio: "$333 USD"
-        cta_text: "Consultar por Tiendas Online"
+      - icon: "🎯"
+        titulo: "Landing Page Esencial – 3 Secciones"
+        descripcion: "Ideal para quienes desean una presencia digital simple, clara y efectiva."
+        badge: "Esencial"
+        destacado: false
+        caracteristicas:
+          - "Diseño de 3 secciones (Hero + Contenido + Cierre CTA)"
+          - "Estructura optimizada para conversión"
+          - "Copys editables para futuras modificaciones"
+          - "Adaptación responsive (móvil + desktop)"
+        inversion: "150 USD"
+        entrega: "5-7 días hábiles"
+        pago: "50% al inicio – 50% al entregar el proyecto"
+        cta_texto: "Quiero mi Landing Esencial"
         cta_url: "https://wa.me/5491121652703"
-        
-      - icon: "🚀"
-        title: "Landing Page Conversora"
-        platform: "Desarrollo Personalizado"
-        description: "Perfecta para captar clientes y mostrar tu servicio profesionalmente."
-        features:
-          - "Diseño 100% personalizado"
-          - "Optimizada para conversión"
-          - "SEO básico incluido"
-          - "Formularios inteligentes"
-          - "100% responsive"
-        tiempo: "5-7 días"
-        precio: "$444 USD"
-        cta_text: "Consultar por Landing Page"
+        nota: ""
+
+      - icon: "💎"
+        titulo: "Landing Page Premium – 5 Secciones"
+        descripcion: "Perfecta para proyectos que buscan profundizar en su propuesta de valor."
+        badge: "Premium"
+        destacado: true
+        opciones:
+          - titulo: "Opción A – Página de Ventas"
+            items:
+              - "Hero (impacto inicial)"
+              - "Problemática / contexto"
+              - "Proceso o transformación"
+              - "Solución / propuesta"
+              - "CTA final o formulario de compra"
+          - titulo: "Opción B – Página Informativa o de Marca"
+            items:
+              - "Hero (presentación)"
+              - "Servicios o pilares"
+              - "Cómo trabajamos / metodología"
+              - "Testimonios o valores"
+              - "CTA final o contacto"
+        caracteristicas:
+          - "Diseño y desarrollo completo (System.io u otra plataforma)"
+          - "Copywriting estratégico adaptado a tu marca"
+          - "Integración de botones de pago, automatizaciones o enlaces"
+          - "Versión móvil y escritorio optimizada"
+          - "Personalización estética según identidad visual"
+        inversion: "444 USD"
+        entrega: "10-14 días hábiles"
+        pago: "50% al iniciar – 50% al entregar"
+        cta_texto: "Quiero mi Landing Premium"
         cta_url: "https://wa.me/5491121652703"
-        
+        nota: ""
+
       - icon: "🎨"
-        title: "Portfolio Profesional"
-        platform: "Eleventy + Netlify"
-        description: "Muestra tu trabajo y diferénciate de la competencia."
-        features:
-          - "Galería de proyectos con filtros"
-          - "CMS para actualizar fácil"
-          - "Blog integrado (opcional)"
-          - "Hosting premium incluido"
-          - "Optimización velocidad"
-        tiempo: "5-7 días"
-        precio: "$444 USD"
-        cta_text: "Consultar por Portfolio"
+        titulo: "Portafolio Profesional"
+        descripcion: "Diseñada para mostrar tu trayectoria, trabajos o proyectos de forma estética, fluida y atractiva."
+        badge: "Portafolio"
+        destacado: false
+        opciones: []
+        caracteristicas:
+          - "Diseño personalizado con secciones visuales"
+          - "Galería optimizada para carga rápida"
+          - "Integración de redes o contacto directo"
+          - "Copys y textos adaptados al estilo profesional"
+        inversion: "444 USD"
+        entrega: "10-14 días hábiles"
+        pago: "50% al iniciar – 50% al entregar"
+        cta_texto: "Quiero mi Portafolio"
         cta_url: "https://wa.me/5491121652703"
+        nota: "🔹 Si el proyecto requiere carga de grandes volúmenes de imágenes, videos o material adicional (ejemplo: más de 100 fotos), se cotiza de forma personalizada según la cantidad y tipo de contenido."
+
+    servicios_personalizados:
+      titulo: "💎 SERVICIOS PERSONALIZADOS"
+      descripcion: "Además de nuestras propuestas base, desarrollamos soluciones a medida para quienes necesiten:"
+      servicios:
+        - icono: "🏪"
+          texto: "E-commerce o tienda online"
+        - icono: "🔄"
+          texto: "Funnels automatizados de venta"
+        - icono: "📚"
+          texto: "Páginas de curso o membresías"
+        - icono: "⚡"
+          texto: "Integraciones avanzadas (Zapier, email marketing, bases de datos, etc.)"
+      cta_texto: "🪶 Cotización personalizada según alcance del proyecto"
+      cta_url: "https://wa.me/5491121652703"
+
+    condiciones_generales:
+      titulo: "📄 CONDICIONES GENERALES"
+      condiciones:
+        - icono: "💰"
+          texto: "La entrega se realiza una vez recibido el 50% final."
+        - icono: "📦"
+          texto: "El contenido (textos, imágenes, logo) debe ser enviado antes de iniciar el desarrollo."
+        - icono: "✏️"
+          texto: "Se incluyen 2 rondas de ajustes menores post-entrega."
+        - icono: "🌐"
+          texto: "No se incluyen hosting externo ni dominios (se pueden agregar opcionalmente)."
 
 
   - type: garantia

@@ -1,0 +1,121 @@
+<!-- sections/servicios-completos.njk CORREGIDO -->
+<section class="servicios-completos" id="{{ section_data.id }}">
+  <div class="container">
+    <!-- Título Principal -->
+    <div class="servicios-header">
+      <h2 class="section-title">{{ section_data.title }}</h2>
+      <p class="section-subtitle">{{ section_data.subtitle }}</p>
+    </div>
+
+    <!-- Grid de Servicios -->
+    <div class="servicios-grid">
+      {% for servicio in section_data.servicios %}
+      <div class="servicio-card {% if servicio.destacado %}servicio-card--destacado{% endif %}">
+        <div class="servicio-badge servicio-badge--{{ servicio.badge | lower }}">{{ servicio.badge }}</div>
+        <div class="servicio-header">
+          <div class="servicio-icon">{{ servicio.icon }}</div>
+          <h3 class="servicio-title">{{ servicio.titulo }}</h3>
+        </div>
+        <p class="servicio-descripcion">{{ servicio.descripcion }}</p>
+        
+        <!-- Opciones (solo si existen) -->
+        {% if servicio.opciones and servicio.opciones.length %}
+        <div class="servicio-opciones">
+          <h4>Estructuras posibles:</h4>
+          {% for opcion in servicio.opciones %}
+          <div class="opcion">
+            <strong>{{ opcion.titulo }}</strong>
+            <ul>
+              {% for item in opcion.items %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- Características -->
+        <div class="servicio-features">
+          <h4>Incluye:</h4>
+          <ul>
+            {% for feature in servicio.caracteristicas %}
+            <li>{{ feature }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <!-- Nota (solo si existe) -->
+        {% if servicio.nota %}
+        <div class="servicio-nota">
+          <p>{{ servicio.nota }}</p>
+        </div>
+        {% endif %}
+
+        <!-- Meta información -->
+        <div class="servicio-meta">
+          <div class="meta-item">
+            <span class="meta-label">💰 Inversión</span>
+            <span class="meta-value">{{ servicio.inversion }}</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">📦 Entrega</span>
+            <span class="meta-value">{{ servicio.entrega }}</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">💳 Pago</span>
+            <span class="meta-value">{{ servicio.pago }}</span>
+          </div>
+        </div>
+
+        <!-- CTA - SIN url_encode -->
+        <a href="{{ servicio.cta_url }}" 
+           class="btn {% if servicio.destacado %}btn-primary{% else %}btn-secondary{% endif %}" 
+           target="_blank">
+          {{ servicio.cta_texto }}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Servicios Personalizados -->
+    {% if section_data.servicios_personalizados %}
+    <div class="servicios-personalizados">
+      <div class="personalizados-header">
+        <h3>{{ section_data.servicios_personalizados.titulo }}</h3>
+        <p>{{ section_data.servicios_personalizados.descripcion }}</p>
+      </div>
+      <div class="personalizados-grid">
+        {% for servicio in section_data.servicios_personalizados.servicios %}
+        <div class="personalizado-item">
+          <span class="personalizado-icon">{{ servicio.icono }}</span>
+          <span>{{ servicio.texto }}</span>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="personalizados-cta">
+        <p class="cotizacion-text">{{ section_data.servicios_personalizados.cta_texto }}</p>
+        <a href="{{ section_data.servicios_personalizados.cta_url }}" 
+           class="btn btn-outline" target="_blank">
+          Consultar por proyecto personalizado
+        </a>
+      </div>
+    </div>
+    {% endif %}
+
+    <!-- Condiciones Generales -->
+    {% if section_data.condiciones_generales %}
+    <div class="condiciones-generales">
+      <h3>{{ section_data.condiciones_generales.titulo }}</h3>
+      <div class="condiciones-lista">
+        {% for condicion in section_data.condiciones_generales.condiciones %}
+        <div class="condicion-item">
+          <span class="condicion-icon">{{ condicion.icono }}</span>
+          <span>{{ condicion.texto }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</section>
