@@ -1,0 +1,103 @@
+<!-- sections/portfolio-interactivo.njk -->
+<section class="portfolio-interactivo" id="portfolio">
+  <div class="container">
+    <div class="portfolio-header">
+      <h2 class="section-title">{{ section_data.title }}</h2>
+      <p class="section-subtitle">{{ section_data.subtitle }}</p>
+    </div>
+
+    <div class="portfolio-grid">
+      {% for proyecto in section_data.proyectos %}
+      <div class="proyecto-card">
+        <!-- Header compacto -->
+        <div class="proyecto-header">
+          <div class="proyecto-info">
+            <h3 class="proyecto-titulo">{{ proyecto.titulo }}</h3>
+            <span class="proyecto-categoria">{{ proyecto.categoria }}</span>
+          </div>
+          {% if proyecto.url %}
+          <a href="{{ proyecto.url }}" class="btn-visitar" target="_blank" rel="noopener" title="Visitar sitio web">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+          </a>
+          {% endif %}
+        </div>
+
+        <p class="proyecto-descripcion">{{ proyecto.descripcion_corta }}</p>
+
+        <!-- Dispositivos lado a lado más compactos -->
+        <div class="dispositivos-compactos">
+          <!-- Desktop - Más grande -->
+          <div class="dispositivo-wrapper">
+            <div class="dispositivo dispositivo-desktop">
+              <div class="dispositivo-frame">
+                <div class="dispositivo-bar"></div>
+                {% if proyecto.video_desktop %}
+                <video class="proyecto-video" muted loop playsinline>
+                  <source src="{{ proyecto.video_desktop }}" type="video/mp4">
+                </video>
+                {% endif %}
+              </div>
+            </div>
+            <span class="dispositivo-label">Versión Desktop</span>
+          </div>
+
+          <!-- Mobile - Más pequeño pero visible -->
+          <div class="dispositivo-wrapper">
+            <div class="dispositivo dispositivo-mobile">
+              <div class="dispositivo-frame">
+                <div class="dispositivo-notch"></div>
+                {% if proyecto.video_mobile %}
+                <video class="proyecto-video" muted loop playsinline>
+                  <source src="{{ proyecto.video_mobile }}" type="video/mp4">
+                </video>
+                {% endif %}
+              </div>
+            </div>
+            <span class="dispositivo-label">Versión Mobile</span>
+          </div>
+        </div>
+
+        <!-- Controles compactos -->
+        <div class="proyecto-controls">
+          <button class="btn-play-pause" aria-label="Play/Pause video">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path id="play-icon" d="M8 5v14l11-7z" style="display: block;"/>
+              <path id="pause-icon" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" style="display: none;"/>
+            </svg>
+            <span id="play-text">Reproducir</span>
+            <span id="pause-text" style="display: none;">Pausar</span>
+          </button>
+        </div>
+
+        <!-- Métricas en línea -->
+        {% if proyecto.metricas and proyecto.metricas.length %}
+        <div class="proyecto-metricas">
+          {% for metrica in proyecto.metricas %}
+          <div class="metrica">
+            <span class="metrica-icono">{{ metrica.icono }}</span>
+            <span class="metrica-valor">{{ metrica.valor }}</span>
+            <span class="metrica-label">{{ metrica.label }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <!-- Testimonio compacto -->
+        {% if proyecto.testimonio %}
+        <div class="proyecto-testimonio">
+          <div class="testimonio-icon">💬</div>
+          <div class="testimonio-content">
+            <p>"{{ proyecto.testimonio }}"</p>
+            <span class="testimonio-autor">— {{ proyecto.testimonio_autor }}</span>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

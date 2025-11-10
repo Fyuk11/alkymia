@@ -393,7 +393,74 @@ sections:
 
 
 
+  - type: portfolio-interactivo
+    id: "portfolio"
+    title: "Proyectos que Hablan por Nosotros"
+    subtitle: "No solo te contamos lo que hacemos, te lo mostramos en acción - explorá en desktop y mobile"
+    proyectos:
+      - titulo: "Rubicon Soluciones"
+        categoria: "Sistema Automatizado"
+        descripcion_corta: "Landing + funnel automatizado para venta de manuales digitales premium"
+        video_desktop: "/assets/videos/portfolio/rubicon-desktop-scroll.mp4"
+        video_mobile: "/assets/videos/portfolio/rubicon-mobile-scroll.mp4"
+        url: "https://rubiconsoluciones.com"
+        testimonio: "Pasé de vender 2 manuales al mes a 8. El sistema se paga solo, la mejor inversión del año."
+        testimonio_autor: "Juan Pérez, Rubicon Soluciones"
+        metricas:
+          - icono: "📈"
+            valor: "+300%"
+            label: "ventas online"
+          - icono: "⏰"
+            valor: "24/7"
+            label: "sistema activo"
 
+      - titulo: "Noelia Viski"
+        categoria: "Web Profesional + Automatización"
+        descripcion_corta: "Sitio web completo con talleres digitales y sistema de automatización"
+        video_desktop: "/assets/videos/portfolio/noelia-desktop-scroll.mp4"
+        video_mobile: "/assets/videos/portfolio/noelia-mobile-scroll.mp4"
+        url: "https://noeliaviski.com"
+        testimonio: "Ahora vendo mis talleres mientras duermo. Recuperé mi tiempo para crear contenido valioso."
+        testimonio_autor: "Noelia Viski"
+        metricas:
+          - icono: "🕒"
+            valor: "20h"
+            label: "tiempo recuperado/semana"
+          - icono: "🎯"
+            valor: "3x"
+            label: "más consultas"
+
+      - titulo: "TERAPIALMA"
+        categoria: "Plataforma de Cursos Online"
+        descripcion_corta: "Programa 'Mapa del Alma' con automatización completa de ventas y entrega"
+        video_desktop: "/assets/videos/portfolio/terapialma-desktop-scroll.mp4"
+        video_mobile: "/assets/videos/portfolio/terapialma-mobile-scroll.mp4"
+        url: "https://terapialma.com"
+        testimonio: "De atender consultas manualmente a tener un sistema que escala sin límites."
+        testimonio_autor: "Laura Martínez, TERAPIALMA"
+        metricas:
+          - icono: "🚀"
+            valor: "100%"
+            label: "automatizado"
+          - icono: "💫"
+            valor: "Escalable"
+            label: "sin límites"
+
+      - titulo: "Uniformes Prímula"
+        categoria: "E-commerce Completo"
+        descripcion_corta: "Tienda online con +1000 productos y gestión centralizada para 8 colegios"
+        video_desktop: "/assets/videos/portfolio/primula-desktop-scroll.mp4"
+        video_mobile: "/assets/videos/portfolio/primula-mobile-scroll.mp4"
+        url: "https://uniformesprimula.com"
+        testimonio: "Ahorramos 15 horas semanales en toma de pedidos. Los padres compran online y nosotros solo despachamos."
+        testimonio_autor: "María González, Uniformes Prímula"
+        metricas:
+          - icono: "⏱️"
+            valor: "15h"
+            label: "ahorradas/semana"
+          - icono: "🛒"
+            valor: "1000+"
+            label: "productos online"
 
         
 

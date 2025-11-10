@@ -2,6 +2,7 @@
 import { initNav } from './modules/navigation.js';
 import { initScrollAnimations } from './modules/animations.js';
 import { initDownloadsModal } from './modules/downloads-modal.js';
+import { initPortfolioVideos } from './modules/portfolio-videos.js';
 
 // Utils esenciales directamente en main.js
 function initGlobalUtils() {
@@ -98,6 +99,17 @@ class AlkymiaApp {
         name: 'Downloads Modal', 
         init: initDownloadsModal,
         check: () => document.getElementById('modal-download') 
+
+        { 
+      name: 'Downloads Modal', 
+      init: initDownloadsModal,
+      check: () => document.getElementById('modal-download') 
+    },
+    { 
+      name: 'Portfolio Videos', 
+      init: initPortfolioVideos,
+      check: () => document.querySelector('.portfolio-interactivo') 
+    }
       }
     ];
 
@@ -111,7 +123,10 @@ class AlkymiaApp {
         console.warn(`⚠️ ${module.name} no se pudo inicializar:`, error);
       }
     });
+
   }
+
+
 
   initAnalyticsTracking() {
     // Trackeo de clicks en botones importantes

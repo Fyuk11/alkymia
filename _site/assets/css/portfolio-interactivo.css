@@ -1,0 +1,346 @@
+/* sections/portfolio-interactivo.css */
+.portfolio-interactivo {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  color: #fff;
+}
+
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.proyecto-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 20px;
+  padding: 35px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.proyecto-card:hover {
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+}
+
+/* Header compacto */
+.proyecto-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.proyecto-info {
+  flex: 1;
+}
+
+.proyecto-titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.proyecto-categoria {
+  background: rgba(212, 175, 55, 0.15);
+  color: #d4af37;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-visitar {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 10px;
+  padding: 10px;
+  color: #d4af37;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.btn-visitar:hover {
+  background: rgba(212, 175, 55, 0.2);
+  transform: scale(1.1);
+}
+
+.proyecto-descripcion {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Dispositivos compactos lado a lado */
+.dispositivos-compactos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  margin-bottom: 20px;
+  align-items: start;
+}
+
+.dispositivo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Desktop más prominente */
+.dispositivo-desktop .dispositivo-frame {
+  width: 100%;
+  max-width: 600px;
+  background: #000;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.dispositivo-desktop .dispositivo-bar {
+  height: 16px;
+  background: #333;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.dispositivo-desktop .dispositivo-bar:before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background: #ff5f57;
+  border-radius: 50%;
+  box-shadow: 14px 0 0 #ffbd2e, 28px 0 0 #28ca42;
+}
+
+/* Mobile más compacto pero visible */
+.dispositivo-mobile .dispositivo-frame {
+  width: 180px;
+  height: 320px;
+  background: #000;
+  border-radius: 20px;
+  padding: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  position: relative;
+  border: 2px solid #333;
+}
+
+.dispositivo-mobile .dispositivo-notch {
+  position: absolute;
+  top: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 16px;
+  background: #000;
+  border-radius: 0 0 8px 8px;
+  z-index: 2;
+}
+
+/* Videos */
+.proyecto-video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+}
+
+.dispositivo-mobile .proyecto-video {
+  height: 100%;
+  object-fit: cover;
+}
+
+.dispositivo-label {
+  color: #999;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Controles compactos */
+.proyecto-controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn-play-pause {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 25px;
+  padding: 10px 20px;
+  color: #d4af37;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.btn-play-pause:hover {
+  background: rgba(212, 175, 55, 0.2);
+  transform: scale(1.05);
+}
+
+/* Métricas en línea */
+.proyecto-metricas {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(212, 175, 55, 0.05);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.metrica {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.metrica-icono {
+  font-size: 1.2rem;
+}
+
+.metrica-valor {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #d4af37;
+}
+
+.metrica-label {
+  font-size: 0.75rem;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Testimonio compacto */
+.proyecto-testimonio {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  padding: 20px;
+  border-left: 3px solid #d4af37;
+}
+
+.testimonio-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.testimonio-content {
+  flex: 1;
+}
+
+.testimonio-content p {
+  color: #fff;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0 0 8px 0;
+  font-size: 0.95rem;
+}
+
+.testimonio-autor {
+  color: #d4af37;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .dispositivos-compactos {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+  }
+  
+  .dispositivo-mobile .dispositivo-frame {
+    width: 150px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-interactivo {
+    padding: 60px 0;
+  }
+  
+  .proyecto-card {
+    padding: 25px 20px;
+  }
+  
+  .dispositivos-compactos {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .dispositivo-mobile .dispositivo-frame {
+    width: 180px;
+    height: 320px;
+  }
+  
+  .proyecto-metricas {
+    gap: 20px;
+  }
+  
+  .proyecto-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .btn-visitar {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .proyecto-metricas {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .dispositivo-mobile .dispositivo-frame {
+    width: 140px;
+    height: 250px;
+  }
+  
+  .proyecto-testimonio {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
