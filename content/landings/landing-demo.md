@@ -300,16 +300,17 @@ sections:
 
   - type: filosofia
     badge: "Nuestra filosofía"
-    title: "Alquimia es transformación"
-    description: "Y en Alkymia creemos que la verdadera transformación hoy es pasar de vender de manera improvisada, a tener un sistema de ventas online sólido, escalable y humano."
+    title: "ALKYMIA"
+    description: "Transformamos visitantes en clientes. Combinamos diseño que convierte, copy que vende y tecnología que automatiza para crear sistemas de venta que funcionan 24/7."
     image: "/assets/images/texture3.webp"
     features:
-      - "De la improvisación a la estrategia"
-      - "Del esfuerzo manual a la automatización inteligente" 
-      - "De la incertidumbre a los resultados medibles"
-      - "De lo temporal a lo sostenible"
+      - "Diseño intuitivo y orientado a conversión"
+      - "Copywriting estratégico enfocado en resultados"
+      - "Experiencia en automatización y marketing digital"
+      - "Entregas rápidas y profesionales"
+      - "Acompañamiento humano, simple y transparente"
     cta:
-      text: "Comenzá tu transformación hoy"
+      text: "Comenzá tu proyecto hoy"
       url: "https://wa.me/5491121652703"
 
 
