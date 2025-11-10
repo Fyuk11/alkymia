@@ -92,15 +92,10 @@ class AlkymiaApp {
     });
   }
 
-  initConditionalModules() {
-    // Módulos que solo se inicializan si existen en la página
-    const conditionalModules = [
-      { 
-        name: 'Downloads Modal', 
-        init: initDownloadsModal,
-        check: () => document.getElementById('modal-download') 
-
-        { 
+initConditionalModules() {
+  // Módulos que solo se inicializan si existen en la página
+  const conditionalModules = [
+    { 
       name: 'Downloads Modal', 
       init: initDownloadsModal,
       check: () => document.getElementById('modal-download') 
@@ -110,21 +105,19 @@ class AlkymiaApp {
       init: initPortfolioVideos,
       check: () => document.querySelector('.portfolio-interactivo') 
     }
-      }
-    ];
+  ];
 
-    conditionalModules.forEach(module => {
-      try {
-        if (module.check && module.check()) {
-          module.init();
-          console.log(`✅ ${module.name} inicializado`);
-        }
-      } catch (error) {
-        console.warn(`⚠️ ${module.name} no se pudo inicializar:`, error);
+  conditionalModules.forEach(module => {
+    try {
+      if (module.check && module.check()) {
+        module.init();
+        console.log(`✅ ${module.name} inicializado`);
       }
-    });
-
-  }
+    } catch (error) {
+      console.warn(`⚠️ ${module.name} no se pudo inicializar:`, error);
+    }
+  });
+}
 
 
 

@@ -315,82 +315,6 @@ sections:
 
 
 
-  - type: casos-reales
-    title: "Casos reales de transformación"
-    subtitle: "Historias de éxito de emprendedores que confiaron en Alkymia"
-    casos:
-      - nombre: "Rubicon Soluciones"
-        tipo: "Landing + Sistema Automatizado"
-        descripcion: "Landing + sistema automatizado en Systeme + Zapier para vender su 'Manual de Excelencia Operacional', con cifrado y contraseña única para cada comprador."
-        resultado: "Sistema de ventas automatizado 24/7"
-        categoria: "Productos Digitales"
-        imagen: "/assets/images/cases1.webp"
-        
-      - nombre: "Noelia Viski"
-        tipo: "Sitio Web Completo"
-        descripcion: "Sitio web completo con talleres digitales, guías y automatización de servicios online."
-        resultado: "Presencia digital profesional consolidada"
-        categoria: "Web + Automatización"
-        imagen: "/assets/images/cases2.webp"
-        
-      - nombre: "TERAPIALMA"
-        tipo: "Programa Online"
-        descripcion: "Desarrollo de 'Mapa del Alma', un programa online basado en constelaciones familiares, con automatización de cursos y ventas."
-        resultado: "Plataforma de cursos escalable"
-        categoria: "Cursos Online"
-        imagen: "/assets/images/cases3.webp"
-        
-      - nombre: "Uniformes Prímula"
-        tipo: "E-commerce Completo"
-        descripcion: "Tienda online con +1000 productos de uniformes escolares para 8 colegios."
-        resultado: "Ventas centralizadas y organizadas"
-        categoria: "E-commerce"
-        imagen: "/assets/images/cases4.webp"
-        
-      - nombre: "Radent AR"
-        tipo: "Optimización de Tienda"
-        descripcion: "Optimización y rediseño de tienda de insumos odontológicos."
-        resultado: "Mejora en conversión y UX"
-        categoria: "E-commerce"
-        imagen: "/assets/images/cases6.webp"      
-
-      - nombre: "Ser Energía Escalar"
-        tipo: "Landing page"
-        descripcion: "Landing page personalizada con equipos detallados."
-        resultado: "Identidad digital"
-        categoria: "Landing page"
-        imagen: "/assets/images/cases7.webp"              
-
-
-  - type: portfolio
-    title: "Nuestro Trabajo"
-    subtitle: "Algunos de los proyectos destacados que hemos creado para nuestros clientes"
-    projects:
-      - title: "Rubicon Soluciones"
-        category: "Sistema Automatizado"
-        image: "/assets/images/cases1.webp"
-        url: "https://rubiconsoluciones.com"
-      - title: "Noelia Viski"
-        category: "Web Profesional"
-        image: "/assets/images/cases2.webp"
-        url: "https://noeliaviski.com"
-      - title: "TERAPIALMA"
-        category: "Plataforma Online"
-        image: "/assets/images/cases3.webp"
-        url: "https://terapialma.com"
-      - title: "Uniformes Prímula"
-        category: "E-commerce"
-        image: "/assets/images/cases4.webp"
-        url: "https://uniformesprimula.com"
-      - title: "Radent AR"
-        category: "Optimización E-commerce"
-        image: "/assets/images/cases6.webp"
-        url: "https://radent.com.ar"
-      - title: "Ser Energía Escalar"
-        category: "Landing page personalizada"
-        image: "/assets/images/cases7.webp"
-        url: "https://serenergiaescalar.com/"  
-
 
 
   - type: portfolio-interactivo
@@ -417,7 +341,7 @@ sections:
       - titulo: "Noelia Viski"
         categoria: "Web Profesional + Automatización"
         descripcion_corta: "Sitio web completo con talleres digitales y sistema de automatización"
-        video_desktop: "/assets/videos/portfolio/noelia-desktop-scroll.mp4"
+        video_desktop: "/assets/videos/portfolio/tienda Radent - Before.mkv"
         video_mobile: "/assets/videos/portfolio/noelia-mobile-scroll.mp4"
         url: "https://noeliaviski.com"
         testimonio: "Ahora vendo mis talleres mientras duermo. Recuperé mi tiempo para crear contenido valioso."
@@ -461,6 +385,38 @@ sections:
           - icono: "🛒"
             valor: "1000+"
             label: "productos online"
+
+      - titulo: "Radent AR"
+        categoria: "Optimización de Tienda"
+        descripcion_corta: "Optimización y rediseño de tienda de insumos odontológicos con mejora en conversión y UX"
+        video_desktop: "/assets/videos/portfolio/radent-desktop-scroll.mp4"
+        video_mobile: "/assets/videos/portfolio/radent-mobile-scroll.mp4"
+        url: "https://radentar.com"
+        testimonio: "La optimización nos permitió mejorar significativamente la experiencia de compra y aumentar las conversiones."
+        testimonio_autor: "Equipo Radent AR"
+        metricas:
+          - icono: "📊"
+            valor: "Mejor UX"
+            label: "experiencia optimizada"
+          - icono: "🔄"
+            valor: "+Conversión"
+            label: "tasa mejorada"
+
+      - titulo: "Ser Energía Escalar"
+        categoria: "Landing Page Premium"
+        descripcion_corta: "Landing page personalizada con equipos detallados y fuerte identidad digital"
+        video_desktop: "/assets/videos/portfolio/serenergia-desktop-scroll.mp4"
+        video_mobile: "/assets/videos/portfolio/serenergia-mobile-scroll.mp4"
+        url: "https://serenergiaescalar.com"
+        testimonio: "Logramos transmitir nuestra esencia profesional y captar clientes de alta gama desde el primer contacto."
+        testimonio_autor: "Ser Energía Escalar"
+        metricas:
+          - icono: "🎨"
+            valor: "Identidad"
+            label: "digital fortalecida"
+          - icono: "💎"
+            valor: "Premium"
+            label: "clientes gama alta"
 
         
 
