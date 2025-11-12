@@ -472,7 +472,7 @@ sections:
     contact:
       email: "academiaalkymia@gmail.com"
       whatsapp: "+54 9 11 6018-4124"
-      social:
+    social:
       - plataforma: "whatsapp"
         url: "https://wa.me/5491160184124"
         icon: "fab fa-whatsapp"
