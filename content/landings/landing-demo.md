@@ -15,7 +15,7 @@ nav:
   - text: Inicio
     url: "#hero"
   - text: Servicios
-    url: "#servicios-detallados"
+    url: "#servicios-completos"
   - text: Proceso
     url: "#proceso"
   - text: Portfolio
@@ -41,9 +41,10 @@ sections:
         label: "Clientes satisfechos"
     ctas:
       - text: "📅 Agenda consultoría gratuita (30 min)"
-        url: "#contacto"
+        url: "https://wa.me/5491121652703"
+        external: true
       - text: "Ver casos de éxito →"
-        url: "#casos-reales"
+        url: "#portfolio"
     features:
       - icon: "🛍️"
         text: "Tiendas en 14 días"
