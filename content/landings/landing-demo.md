@@ -241,12 +241,7 @@ sections:
         cta_text: "Obtener plantilla"
         tipo: "premium"
         
-      - title: "Kit SEO para E-commerce"
-        description: "Checklist completo de optimización para aparecer primero en Google"
-        image: "/assets/images/resources/seo-ecommerce.jpg"
-        download_url: "/assets/pdfs/kit-seo-ecommerce.pdf"  # → Modal + email
-        cta_text: "Descargar gratis"
-        tipo: "gratuito"
+
 
 
 
