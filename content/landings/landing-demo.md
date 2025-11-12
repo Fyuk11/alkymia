@@ -475,7 +475,7 @@ sections:
             url: "#faqs"
             
     contact:
-      email: "hola@alkymia.digital"
+      email: "academiaalkymia@gmail.com"
       whatsapp: "+54 9 11 2165-2703"
 
     social:
