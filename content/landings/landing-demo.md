@@ -23,7 +23,7 @@ nav:
   - text: Contacto
     url: "#cta-final"
   - text: WhatsApp
-    url: https://wa.me/5491121652703
+    url: https://wa.me/5491160184124
     external: true
 sections:
 
@@ -41,7 +41,7 @@ sections:
         label: "Clientes satisfechos"
     ctas:
       - text: "📅 Agenda consultoría gratuita (30 min)"
-        url: "https://wa.me/5491121652703"
+        url: "https://wa.me/5491160184124"
         external: true
       - text: "Ver casos de éxito →"
         url: "#portfolio"
@@ -74,7 +74,7 @@ sections:
         entrega: "5-7 días hábiles"
         pago: "50% al inicio – 50% al entregar el proyecto"
         cta_texto: "Quiero mi Landing Esencial"
-        cta_url: "https://wa.me/5491121652703"
+        cta_url: "https://wa.me/5491160184124"
         nota: ""
 
       - icon: "💎"
@@ -107,7 +107,7 @@ sections:
         entrega: "10-14 días hábiles"
         pago: "50% al iniciar – 50% al entregar"
         cta_texto: "Quiero mi Landing Premium"
-        cta_url: "https://wa.me/5491121652703"
+        cta_url: "https://wa.me/5491160184124"
         nota: ""
 
       - icon: "🎨"
@@ -125,7 +125,7 @@ sections:
         entrega: "10-14 días hábiles"
         pago: "50% al iniciar – 50% al entregar"
         cta_texto: "Quiero mi Portafolio"
-        cta_url: "https://wa.me/5491121652703"
+        cta_url: "https://wa.me/5491160184124"
         nota: "🔹 Si el proyecto requiere carga de grandes volúmenes de imágenes, videos o material adicional (ejemplo: más de 100 fotos), se cotiza de forma personalizada según la cantidad y tipo de contenido."
 
     servicios_personalizados:
@@ -141,7 +141,7 @@ sections:
         - icono: "⚡"
           texto: "Integraciones avanzadas (Zapier, email marketing, bases de datos, etc.)"
       cta_texto: "🪶 Cotización personalizada según alcance del proyecto"
-      cta_url: "https://wa.me/5491121652703"
+      cta_url: "https://wa.me/5491160184124"
 
     condiciones_generales:
       titulo: "CONDICIONES GENERALES"
@@ -159,10 +159,10 @@ sections:
   - type: garantia
     id: "garantia"
     title: "Garantía de Satisfacción Total"
-    texto: "Si en 7 días no estás 100% conforme con el resultado, te devolvemos el 100% de tu inversión. Sin preguntas, sin vueltas, sin drama."
+    texto: "Contrato con firma de ambas partes."
     cta:
       text: "📅 Agenda tu consultoría gratuita"
-      url: "https://wa.me/5491121652703"
+      url: "https://wa.me/5491160184124"
       external: true
 
 
@@ -307,7 +307,7 @@ sections:
       - "Acompañamiento humano, simple y transparente"
     cta:
       text: "Comenzá tu proyecto hoy"
-      url: "https://wa.me/5491121652703"
+      url: "https://wa.me/5491160184124"
 
 
 
@@ -441,7 +441,7 @@ sections:
   - type: cta-final
     title: "Tu próxima venta puede llegar mientras lees esto"
     subtitle: "No es magia, es Alkymia"
-    whatsapp_number: "5491121652703"
+    whatsapp_number: "5491160184124"
     cta_button: "Activá tu Alkymia ahora"
     nota: "Consultá por nuestros planes personalizados"
     background_image: "/assets/images/ctabackg.webp"  # Agregar esta línea
@@ -471,11 +471,10 @@ sections:
             
     contact:
       email: "academiaalkymia@gmail.com"
-      whatsapp: "+54 9 11 2165-2703"
-
-    social:
+      whatsapp: "+54 9 11 6018-4124"
+      social:
       - plataforma: "whatsapp"
-        url: "https://wa.me/5491121652703"
+        url: "https://wa.me/5491160184124"
         icon: "fab fa-whatsapp"
       - plataforma: "linkedin"
         url: "https://linkedin.com/company/alkymia"
