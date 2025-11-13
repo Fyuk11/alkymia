@@ -477,7 +477,7 @@ sections:
         url: "https://wa.me/5491160184124"
         icon: "fab fa-whatsapp"
       - plataforma: "linkedin"
-        url: "https://linkedin.com/company/alkymia"
+        url: "linkedin.com/in/micaela-rivas-178757213"
         icon: "fab fa-linkedin"
       - plataforma: "instagram" 
         url: "https://www.instagram.com/alkymiaacademia/"
