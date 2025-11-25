@@ -223,7 +223,7 @@ sections:
       - title: "Checklist Pre-Lanzamiento"
         description: "21 puntos críticos que revisamos en cada proyecto antes de publicar"
         image: "/assets/images/resources/checklist-landing.jpg"
-        download_url: "/assets/pdfs/checklist-pre-lanzamiento.pdf"  # → Modal + email
+        download_url: "/assets/pdfs/RECURSO GRATUITO ALKYMIA.pdf"  # → Modal + email
         cta_text: "Descargar gratis"
         tipo: "gratuito"
         
