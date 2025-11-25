@@ -217,11 +217,11 @@ sections:
 
 
   - type: downloads
-    title: "Recursos Gratuitos para Hacer Crecer tu Negocio"
+    title: "Recursos para Hacer Crecer tu Negocio"
     subtitle: "Descargá nuestras guías y checklists probados con +47 proyectos reales"
     items:
-      - title: "Checklist Pre-Lanzamiento"
-        description: "21 puntos críticos que revisamos en cada proyecto antes de publicar"
+      - title: "Prompt universal"
+        description: "Prompt universal para crear tu landing page con la estructura que vende"
         image: "/assets/images/resources/checklist-landing.jpg"
         download_url: "/assets/pdfs/RECURSO GRATUITO ALKYMIA.pdf"  # → Modal + email
         cta_text: "Descargar gratis"
