@@ -480,7 +480,7 @@ sections:
         url: "https://www.linkedin.com/in/micaela-rivas-178757213/"
         icon: "fab fa-linkedin"
       - plataforma: "instagram" 
-        url: "https://www.instagram.com/alkymiaacademia/"
+        url: "https://www.instagram.com/academiaalkymia"
         icon: "fab fa-instagram"
 
     legal:
