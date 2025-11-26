@@ -8,7 +8,7 @@ seo:
   canonical: https://alkymiadigital.netlify.app
   og_title: Alkymia Digital - Transformación Digital
   og_description: Especialistas en e-commerce, landing pages y automatización para emprendedores
-  og_image: /assets/images/og-image.jpg
+  og_image: /assets/images/ALKYMIA- Logo2.webp
   twitter_title: Alkymia Digital
   twitter_description: Transformamos ideas en sistemas de venta reales
 nav:

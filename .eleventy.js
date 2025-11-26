@@ -58,8 +58,8 @@ module.exports = function(eleventyConfig) {
     name: "Landing Demo",
     url: "https://landing-demo.netlify.app",
     robots: "index,follow",
-    og_image: "/assets/images/default-og.png",
-    twitter_image: "/assets/images/default-twitter.png",
+    og_image: "/assets/images/ALKYMIA- Logo2.webp",
+    twitter_image: "/assets/images/ALKYMIA- Logo2.webp",
     twitter_site: "@miusuario",
     verification: "ApWt3O30nl49iN-AGMI1hcr91sNwY0BtyH2wvV0xJQs",
   });
