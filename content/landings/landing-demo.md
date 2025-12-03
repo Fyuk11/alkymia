@@ -325,7 +325,7 @@ sections:
         video_mobile: "/assets/videos/portfolio/rubiconsl-mobile.mp4"
         url: "https://www.rubiconsoluciones.cl/"
         testimonio: "Pasé de vender 2 manuales al mes a 8. El sistema se paga solo, la mejor inversión del año."
-        testimonio_autor: "Juan Pérez, Rubicon Soluciones"
+        testimonio_autor: "Francisca Elgueta y Rodrigo Varas, Rubicon Soluciones"
         metricas:
           - icono: "📈"
             valor: "+300%"
@@ -357,7 +357,7 @@ sections:
         video_mobile: "/assets/videos/portfolio/terapialma-mobile.mp4"
         url: "https://www.terapialma.cl/"
         testimonio: "De atender consultas manualmente a tener un sistema que escala sin límites."
-        testimonio_autor: "Laura Martínez, TERAPIALMA"
+        testimonio_autor: "Paola Queirolo, TERAPIALMA"
         metricas:
           - icono: "🚀"
             valor: "100%"
@@ -373,7 +373,7 @@ sections:
         video_mobile: "/assets/videos/portfolio/uniformesprimula-mobile.mp4"
         url: "https://uniformesprimula.com"
         testimonio: "Ahorramos 15 horas semanales en toma de pedidos. Los padres compran online y nosotros solo despachamos."
-        testimonio_autor: "María González, Uniformes Prímula"
+        testimonio_autor: "Julieta Alonso, Uniformes Prímula"
         metricas:
           - icono: "⏱️"
             valor: "15h"
@@ -405,7 +405,7 @@ sections:
         video_mobile: "/assets/videos/portfolio/Ser energia escalar - mobile.mp4"
         url: "https://serenergiaescalar.com"
         testimonio: "Logramos transmitir nuestra esencia profesional y captar clientes de alta gama desde el primer contacto."
-        testimonio_autor: "Ser Energía Escalar"
+        testimonio_autor: "Sergio Emanuel Ramel, Ser Energía Escalar"
         metricas:
           - icono: "🎨"
             valor: "Identidad"
