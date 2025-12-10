@@ -226,20 +226,21 @@ sections:
         download_url: "/assets/pdfs/RECURSO GRATUITO ALKYMIA.pdf"  # → Modal + email
         cta_text: "Descargar gratis"
         tipo: "gratuito"
+    ###    
+  #    - title: "Guía TiendaNube Express"
+  #      description: "Cómo montar tu tienda online en 7 días (paso a paso con screenshots)"
+  #      image: "/assets/images/pdf- guia tiendanube.svg"
+  #      gumroad_url: "https://alkymia.gumroad.com/l/primeros-pasos"  # → Directo a compra
+  #      cta_text: "Comprar ahora"
+  #      tipo: "premium"
         
-      - title: "Guía TiendaNube Express"
-        description: "Cómo montar tu tienda online en 7 días (paso a paso con screenshots)"
-        image: "/assets/images/pdf- guia tiendanube.svg"
-        gumroad_url: "https://alkymia.gumroad.com/l/primeros-pasos"  # → Directo a compra
-        cta_text: "Comprar ahora"
-        tipo: "premium"
-        
-      - title: "Templates de Automatización"
-        description: "10 flujos de WhatsApp probados para ventas y atención al cliente"
-        image: "/assets/images/pdf - automatizacion.svg"
-        gumroad_url: "https://alkymia.gumroad.com/l/flujos-automatizacion"  # → Directo a compra
-        cta_text: "Obtener plantilla"
-        tipo: "premium"
+  #    - title: "Templates de Automatización"
+  #      description: "10 flujos de WhatsApp probados para ventas y atención al cliente"
+  #      image: "/assets/images/pdf - automatizacion.svg"
+  #      gumroad_url: "https://alkymia.gumroad.com/l/flujos-automatizacion"  # → Directo a compra
+  #      cta_text: "Obtener plantilla"
+  #      tipo: "premium"
+        ###
         
 
 
